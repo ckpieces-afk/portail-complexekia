@@ -137,7 +137,7 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);}
   </div>
   <img id="ocrPreview" class="ocr-preview" src="" alt="Aperçu" style="display:none;" />
   <div class="ocr-scanning-bar" id="ocrBar" style="display:none;"><div class="ocr-scanning-bar-inner" id="ocrBarInner"></div></div>
-  <div class="ocr-status" id="ocrStatus">Chargement de l'image...</div>
+  <div class="ocr-status" id="ocrStatus">Chargement...</div>
   <div class="ocr-vin-detected" id="ocrVinResult" style="display:none;"></div>
   <div class="ocr-actions" id="ocrActions" style="display:none;">
     <button class="ocr-btn confirm" id="ocrConfirmBtn">✅ Utiliser ce VIN</button>
@@ -269,7 +269,7 @@ function closeOcr() {
   document.getElementById('ocrVinResult').style.display = 'none';
   document.getElementById('ocrManualSection').style.display = 'none';
   document.getElementById('ocrConfirmBtn').style.display = 'inline-flex';
-  document.getElementById('ocrStatus').textContent = 'Chargement...';
+  document.getElementById('ocrStatus').textContent = "Chargement...";
   detectedVin = '';
 }
 

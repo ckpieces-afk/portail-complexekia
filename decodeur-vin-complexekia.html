@@ -223,7 +223,7 @@ footer{text-align:center;padding:2.5rem 2rem;border-top:1px solid var(--border);
   <div class="ocr-scanning-bar" id="ocrBar" style="display:none;">
     <div class="ocr-scanning-bar-inner" id="ocrBarInner"></div>
   </div>
-  <div class="ocr-status" id="ocrStatus">Chargement de l'image...</div>
+  <div class="ocr-status" id="ocrStatus">Chargement...</div>
   <div class="ocr-vin-detected" id="ocrVinResult" style="display:none;"></div>
   <div class="ocr-actions" id="ocrActions" style="display:none;">
     <button class="ocr-btn confirm" id="ocrConfirmBtn" data-action="confirmVin">✅ Utiliser ce VIN</button>
@@ -748,7 +748,7 @@ function closeOcr() {
   document.getElementById('ocrActions').style.display = 'none';
   document.getElementById('ocrVinResult').style.display = 'none';
   document.getElementById('ocrManualSection').style.display = 'none';
-  document.getElementById('ocrStatus').textContent = 'Chargement de l'image...';
+  document.getElementById('ocrStatus').textContent = "Chargement...";
   detectedVin = '';
 }
 
@@ -772,7 +772,7 @@ function processImage(event) {
   reader.onload = function(e) {
     preview.src = e.target.result;
     preview.style.display = 'block';
-    status.textContent = '🔍 Analyse de l'image en cours...';
+    status.textContent = '🔍 Analyse en cours...';
     barInner.style.width = '20%';
 
     // Run Tesseract OCR
@@ -781,7 +781,7 @@ function processImage(event) {
         if (m.status === 'recognizing text') {
           var pct = Math.round(m.progress * 80) + 20;
           barInner.style.width = pct + '%';
-          status.textContent = '🔍 Lecture du texte... ' + pct + '%';
+          status.textContent = "Lecture... " + pct + '%';
         }
       }
     }).then(function(result) {
@@ -810,13 +810,13 @@ function processImage(event) {
 
       if (foundVin && foundVin.length === 17) {
         detectedVin = foundVin;
-        status.textContent = '✅ VIN détecté avec succès!';
+        status.textContent = "VIN détecté!";
         var vinResult = document.getElementById('ocrVinResult');
         vinResult.textContent = foundVin;
         vinResult.style.display = 'block';
         document.getElementById('ocrActions').style.display = 'flex';
       } else {
-        status.textContent = '⚠️ VIN non détecté automatiquement. Vérifiez la qualité de la photo ou entrez le VIN manuellement.';
+        status.textContent = "VIN non détecté. Entrez-le manuellement.";
         document.getElementById('ocrManualSection').style.display = 'block';
         document.getElementById('ocrActions').style.display = 'flex';
         document.getElementById('ocrConfirmBtn').style.display = 'none';
@@ -827,7 +827,7 @@ function processImage(event) {
       }
     }).catch(function(err) {
       bar.style.display = 'none';
-      status.textContent = '❌ Erreur lors de l'analyse. Réessayez ou entrez le VIN manuellement.';
+      status.textContent = "Erreur. Entrez le VIN manuellement.";
       document.getElementById('ocrManualSection').style.display = 'block';
       document.getElementById('ocrActions').style.display = 'flex';
       document.getElementById('ocrConfirmBtn').style.display = 'none';
