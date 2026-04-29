@@ -203,8 +203,8 @@ footer{text-align:center;padding:2.5rem 2rem;border-top:1px solid var(--border);
   <div class="search-wrap">
     <div class="search-box">
       <input class="search-input" id="vinInput" type="text" placeholder="Entrez le VIN — 17 caractères" maxlength="17" autocomplete="off" autocorrect="off" spellcheck="false" />
-      <button class="search-btn" onclick="decodeVin()">Décoder</button>
-      <button class="camera-btn" onclick="openCamera()" title="Scanner le VIN avec la caméra">📷</button>
+      <button class="search-btn" id="decodeBtn">Décoder</button>
+      <button class="camera-btn" id="cameraBtn" title="Scanner le VIN avec la caméra">📷</button>
     </div>
     <div class="search-hint">Entrez le VIN manuellement ou 📷 scannez l'étiquette VIN du véhicule</div>
   </div>
@@ -217,7 +217,7 @@ footer{text-align:center;padding:2.5rem 2rem;border-top:1px solid var(--border);
 <div class="ocr-overlay" id="ocrOverlay" style="display:none;">
   <div style="width:100%;max-width:500px;display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
     <span style="font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--soft);">Scanner VIN</span>
-    <button class="ocr-btn cancel" onclick="closeOcr()" style="padding:6px 12px;font-size:0.75rem;">✕ Fermer</button>
+    <button class="ocr-btn cancel" data-action="closeOcr" style="padding:6px 12px;font-size:0.75rem;">✕ Fermer</button>
   </div>
   <img id="ocrPreview" class="ocr-preview" src="" alt="Aperçu" style="display:none;" />
   <div class="ocr-scanning-bar" id="ocrBar" style="display:none;">
@@ -226,21 +226,21 @@ footer{text-align:center;padding:2.5rem 2rem;border-top:1px solid var(--border);
   <div class="ocr-status" id="ocrStatus">Chargement de l'image...</div>
   <div class="ocr-vin-detected" id="ocrVinResult" style="display:none;"></div>
   <div class="ocr-actions" id="ocrActions" style="display:none;">
-    <button class="ocr-btn confirm" id="ocrConfirmBtn" onclick="confirmVin()">✅ Utiliser ce VIN</button>
-    <button class="ocr-btn retry" onclick="retryCamera()">🔄 Reprendre la photo</button>
-    <button class="ocr-btn cancel" onclick="closeOcr()">✕ Annuler</button>
+    <button class="ocr-btn confirm" id="ocrConfirmBtn" data-action="confirmVin">✅ Utiliser ce VIN</button>
+    <button class="ocr-btn retry" data-action="retryCamera">🔄 Reprendre la photo</button>
+    <button class="ocr-btn cancel" data-action="closeOcr">✕ Annuler</button>
   </div>
   <div id="ocrManualSection" style="display:none;width:100%;max-width:500px;margin-top:0.5rem;">
     <div style="font-size:0.75rem;color:var(--muted);margin-bottom:8px;text-align:center;">VIN non détecté automatiquement — corrigez manuellement :</div>
     <div style="display:flex;gap:8px;">
       <input id="ocrManualInput" type="text" maxlength="17" style="flex:1;background:#1a1a1a;border:1px solid var(--border);border-radius:8px;padding:10px 14px;font-family:'Courier New',monospace;font-size:0.9rem;color:var(--text);outline:none;text-transform:uppercase;letter-spacing:2px;" placeholder="Entrez le VIN" />
-      <button class="ocr-btn confirm" onclick="useManualVin()" style="padding:10px 16px;">✅</button>
+      <button class="ocr-btn confirm" data-action="useManualVin" style="padding:10px 16px;">✅</button>
     </div>
   </div>
 </div>
 
 <div class="results-wrap" id="results">
-  <a class="back-link" href="portail-complexekia.html">← Retour au portail</a>
+  <a class="back-link" href="/portail-complexekia/portail-complexekia.html">← Retour au portail</a>
 </div>
 
 <footer>
@@ -300,7 +300,7 @@ async function decodeVin() {
   if (vin.length < 17) { showError('Veuillez entrer un VIN complet de 17 caractères.'); return; }
 
   const resultsDiv = document.getElementById('results');
-  resultsDiv.innerHTML = '<a class="back-link" href="portail-complexekia.html">← Retour au portail</a><div class="loading"><div class="spinner"></div><p style="color:var(--soft);font-size:0.85rem;">Décodage en cours...</p></div>';
+  resultsDiv.innerHTML = '<a class="back-link" href="/portail-complexekia/portail-complexekia.html">← Retour au portail</a><div class="loading"><div class="spinner"></div><p style="color:var(--soft);font-size:0.85rem;">Décodage en cours...</p></div>';
 
   try {
     const vinRes = await fetch('https://vpic.nhtsa.dot.gov/api/vehicles/decodevinvalues/' + vin + '?format=json');
@@ -444,7 +444,7 @@ async function decodeVin() {
     let html = '';
 
     // Vehicle hero
-    html += '<a class="back-link" href="portail-complexekia.html">← Retour au portail</a>';
+    html += '<a class="back-link" href="/portail-complexekia/portail-complexekia.html">← Retour au portail</a>';
     html += '<div class="vehicle-hero">';
     html += '<div class="vehicle-title">';
     html += '<div class="vehicle-eyebrow">' + year + ' · ' + make + '</div>';
@@ -584,7 +584,7 @@ async function decodeVin() {
 
     // Print button
     const printedOn = new Date().toLocaleDateString('fr-CA', { year: 'numeric', month: 'long', day: 'numeric' });
-    const btnHtml = '<button id="printBtn" onclick="window.print()">🖨️ Imprimer / Exporter PDF — Pour assureur ou carrossier</button>';
+    const btnHtml = '<button id="printBtn">🖨️ Imprimer / Exporter PDF — Pour assureur ou carrossier</button>';
     const printFooter = '<div class="print-footer">Document généré le ' + printedOn + ' · Complexe Kia Montréal · portailcomplexekia.netlify.app · Données NHTSA vPIC — Gouvernement des États-Unis</div>';
 
     resultsDiv.innerHTML = btnHtml + html + printFooter;
@@ -595,13 +595,30 @@ async function decodeVin() {
 }
 
 function showError(msg) {
-  document.getElementById('results').innerHTML = '<a class="back-link" href="portail-complexekia.html">← Retour au portail</a><div class="empty-state"><div class="empty-icon">⚠️</div><p style="color:var(--text);">' + msg + '</p></div>';
+  document.getElementById('results').innerHTML = '<a class="back-link" href="/portail-complexekia/portail-complexekia.html">← Retour au portail</a><div class="empty-state"><div class="empty-icon">⚠️</div><p style="color:var(--text);">' + msg + '</p></div>';
 }
 
 document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('vinInput').addEventListener('keydown', function(e) {
     if (e.key === 'Enter') decodeVin();
   });
+  document.getElementById('decodeBtn').addEventListener('click', function() {
+    decodeVin();
+  });
+  document.getElementById('cameraBtn').addEventListener('click', function() {
+    openCamera();
+  });
+});
+
+// Global click handler for dynamic buttons
+document.addEventListener('click', function(e) {
+  if (!e.target) return;
+  var action = e.target.getAttribute('data-action');
+  if (e.target.id === 'printBtn') { window.print(); return; }
+  if (action === 'closeOcr') { closeOcr(); return; }
+  if (action === 'confirmVin') { confirmVin(); return; }
+  if (action === 'retryCamera') { retryCamera(); return; }
+  if (action === 'useManualVin') { useManualVin(); return; }
 });
 
 // ── WIPER SIZE LOOKUP ────────────────────────────────────
@@ -702,10 +719,10 @@ function renderWiperFallback(make, model, year, sourceUrl) {
 
   var html = '';
   html += '<div style="font-size:0.78rem;color:var(--soft);margin-bottom:12px;">Dimensions non trouvées automatiquement pour ce modèle. Consultez directement :</div>';
-  html += '<a href="' + wiperUrl + '" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:#1a1a1a;border:1px solid var(--border);border-radius:8px;padding:10px 16px;color:var(--text);text-decoration:none;font-size:0.82rem;font-weight:600;margin-bottom:12px;transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--red)'" onmouseout="this.style.borderColor='var(--border)'">🔍 Voir sur WiperSizeChart.com →</a>';
+  html += '<a href="' + wiperUrl + '" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:#1a1a1a;border:1px solid #C8102E;border-radius:8px;padding:10px 16px;color:#E8E8E8;text-decoration:none;font-size:0.82rem;font-weight:600;margin-bottom:12px;">🔍 Voir sur WiperSizeChart.com →</a>';
   html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:4px;">';
   html += '<div style="background:#111;border-radius:6px;padding:10px;border-left:3px solid var(--yellow);"><div style="font-size:0.7rem;font-weight:700;color:var(--yellow);margin-bottom:4px;">📍 Méthode 1</div><div style="font-size:0.73rem;color:var(--soft);">Couvercle du réservoir lave-glace (sous le capot) — étiquette constructeur</div></div>';
-  html += '<div style="background:#111;border-radius:6px;padding:10px;border-left:3px solid var(--yellow);"><div style="font-size:0.7rem;font-weight:700;color:var(--yellow);margin-bottom:4px;">📍 Méthode 2</div><div style="font-size:0.73rem;color:var(--soft);">Manuel du propriétaire section Entretien · ou sur le bras d'essuie-glace</div></div>';
+  html += '<div style="background:#111;border-radius:6px;padding:10px;border-left:3px solid var(--yellow);"><div style="font-size:0.7rem;font-weight:700;color:var(--yellow);margin-bottom:4px;">📍 Méthode 2</div><div style="font-size:0.73rem;color:var(--soft);">Manuel du propriétaire section Entretien · ou sur le bras d\'essuie-glace</div></div>';
   html += '</div>';
 
   wiperDiv.innerHTML = html;
