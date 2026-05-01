@@ -207,11 +207,14 @@ footer{text-align:center;padding:2.5rem 2rem;border-top:1px solid var(--border);
       <button class="camera-btn" id="cameraBtn" title="Scanner le VIN avec la caméra">📷</button>
     </div>
     <div class="search-hint">Entrez le VIN manuellement ou 📷 scannez l'étiquette VIN du véhicule</div>
+    <div style="margin-top:14px;display:inline-flex;align-items:flex-start;gap:8px;background:#111;border:1px solid #2a2a2a;border-radius:8px;padding:10px 14px;font-size:0.72rem;color:var(--muted);line-height:1.6;max-width:500px;text-align:left;">
+      <span>&#x1F916; Informations g&#233;n&#233;r&#233;es par IA &#224; partir de donn&#233;es officielles (NHTSA) et bases de donn&#233;es de r&#233;f&#233;rence. &#192; titre indicatif seulement &#8212; confirmez les sp&#233;cifications dans le manuel du propri&#233;taire ou aupr&#232;s d&#39;un professionnel avant toute intervention.</span>
+    </div>
   </div>
 </div>
 
 <!-- Hidden camera input -->
-<input type="file" id="cameraInput" accept="image/*" capture="environment" style="display:none" onchange="processImage(event)" />
+<input type="file" id="cameraInput" accept="image/*" capture="environment" style="display:none" />
 
 <!-- OCR Overlay -->
 <div class="ocr-overlay" id="ocrOverlay" style="display:none;">
@@ -504,7 +507,7 @@ async function decodeVin() {
     html += buildCard('Taille roue arrière', rimSize ? rimSize + ' po' : null);
     html += '</div></div>';
 
-    // SECTION 3 — Essuie-glaces via wipersizechart.com
+    // SECTION 3 — Essuie-glaces
     var wiperMake  = make.toLowerCase().replace(/\s+/g, '-');
     var wiperModel = model.toLowerCase().replace(/\s+/g, '-');
     var wiperUrl   = 'https://www.wipersizechart.com/make/' + wiperMake + '/' + wiperModel + '/' + year;
@@ -530,6 +533,28 @@ async function decodeVin() {
       html += buildCard('Type moteur élec.', electricMotors);
       html += buildCard('Autonomie électrique', electricRange ? electricRange + ' mi' : null);
       html += '</div>';
+    }
+
+    // SECTION 4b — Batterie 12V
+    var batteryData = getBatteryFromDB(make, model, year);
+    if (batteryData) {
+      html += "<div class=\"info-card\" style=\"margin-bottom:14px;\">";
+      html += "<div class=\"card-title\"><span>🔋</span> Batterie 12V</div>";
+      html += buildCard("Groupe BCI", batteryData.group, "hl");
+      html += buildCard("CCA (Cold Cranking Amps)", batteryData.cca + " A");
+      html += buildCard("Type recommandé", batteryData.type, "gr");
+      html += "</div>";
+    }
+
+    // SECTION 4c — Pneus OEM
+    var tireData = getTireFromDB(make, model, year);
+    if (tireData) {
+      html += "<div class=\"info-card\" style=\"margin-bottom:14px;\">";
+      html += "<div class=\"card-title\"><span>🔵</span> Dimensions de pneus OEM</div>";
+      html += buildCard("Taille standard", tireData.std, "hl");
+      if (tireData.opt) html += buildCard("Option / Trim supérieur", tireData.opt);
+      html += "<div style=\"margin-top:10px;padding:8px 12px;background:#0d0d0d;border-radius:6px;font-size:0.72rem;color:var(--muted);\">💡 Vérifiez toujours l'étiquette sur le jambage de porte conducteur pour la taille exacte de votre configuration.</div>";
+      html += "</div>";
     }
 
     // SECTION 5 — Fabrication
@@ -608,6 +633,30 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('cameraBtn').addEventListener('click', function() {
     openCamera();
   });
+  document.getElementById('cameraInput').addEventListener('change', function(e) {
+    processImage(e);
+  });
+  document.getElementById('ocrCloseBtn').addEventListener('click', function() { closeOcr(); });
+  document.getElementById('ocrCancelBtn').addEventListener('click', function() { closeOcr(); });
+  document.getElementById('ocrConfirmBtn').addEventListener('click', function() {
+    if (detectedVin) {
+      document.getElementById('vinInput').value = detectedVin;
+      closeOcr();
+      decodeVin();
+    }
+  });
+  document.getElementById('ocrRetryBtn').addEventListener('click', function() {
+    document.getElementById('cameraInput').value = '';
+    document.getElementById('cameraInput').click();
+  });
+  document.getElementById('ocrManualBtn').addEventListener('click', function() {
+    var manual = document.getElementById('ocrManualInput').value.trim().toUpperCase();
+    if (manual.length >= 15) {
+      document.getElementById('vinInput').value = manual.substring(0, 17);
+      closeOcr();
+      decodeVin();
+    }
+  });
 });
 
 // Global click handler for dynamic buttons
@@ -621,42 +670,666 @@ document.addEventListener('click', function(e) {
   if (action === 'useManualVin') { useManualVin(); return; }
 });
 
+
+// OEM Tire size database — toutes marques (taille OEM principale)
+var TIRE_DB = {
+  "KIA": {
+    "SPORTAGE":   { "2023-2025":{"std":"235/50R19","opt":"235/45R20"}, "2017-2022":{"std":"235/55R18","opt":"235/50R19"}, "2011-2016":{"std":"225/65R17","opt":"235/50R18"} },
+    "SORENTO":    { "2021-2025":{"std":"235/65R17","opt":"235/55R19"}, "2016-2020":{"std":"235/65R17","opt":"245/45R20"}, "2011-2015":{"std":"235/65R17","opt":"235/55R19"} },
+    "FORTE":      { "2019-2025":{"std":"205/60R16","opt":"225/40R18"}, "2014-2018":{"std":"205/65R16","opt":"225/45R17"} },
+    "SOUL":       { "2020-2025":{"std":"205/60R16","opt":"235/45R18"}, "2012-2019":{"std":"205/60R16","opt":"235/45R17"} },
+    "RIO":        { "2018-2023":{"std":"195/65R15","opt":"205/45R17"}, "2012-2017":{"std":"195/65R15","opt":"205/45R16"} },
+    "TELLURIDE":  { "2020-2025":{"std":"245/65R17","opt":"265/45R20"} },
+    "NIRO":       { "2023-2025":{"std":"215/55R17","opt":"235/45R18"}, "2017-2022":{"std":"215/55R17","opt":"225/45R18"} },
+    "SELTOS":     { "2021-2025":{"std":"215/60R17","opt":"235/45R19"} },
+    "STINGER":    { "2018-2023":{"std":"225/40R19","opt":"255/35R19"} },
+    "K5":         { "2021-2025":{"std":"225/45R18","opt":"245/40R19"} },
+    "CARNIVAL":   { "2022-2025":{"std":"235/60R17","opt":"235/55R19"} },
+    "EV6":        { "2022-2025":{"std":"235/55R19","opt":"255/45R20"} },
+    "EV9":        { "2024-2025":{"std":"255/55R20","opt":"285/45R21"} },
+    "K4":         { "2025":{"std":"215/55R17","opt":"235/45R18"} }
+  },
+  "HYUNDAI": {
+    "TUCSON":     { "2022-2025":{"std":"235/60R17","opt":"255/45R19"}, "2016-2021":{"std":"225/65R17","opt":"245/45R19"} },
+    "SANTA FE":   { "2021-2025":{"std":"235/65R17","opt":"255/45R20"}, "2013-2020":{"std":"235/65R17","opt":"235/55R19"} },
+    "ELANTRA":    { "2021-2025":{"std":"205/60R16","opt":"245/40R18"}, "2017-2020":{"std":"205/55R16","opt":"225/45R17"} },
+    "SONATA":     { "2020-2025":{"std":"215/55R17","opt":"245/40R19"}, "2015-2019":{"std":"215/55R17","opt":"235/45R18"} },
+    "KONA":       { "2018-2025":{"std":"215/60R16","opt":"235/45R18"} },
+    "PALISADE":   { "2020-2025":{"std":"245/60R18","opt":"265/45R20"} },
+    "IONIQ 5":    { "2022-2025":{"std":"235/55R19","opt":"255/45R20"} },
+    "VENUE":      { "2020-2025":{"std":"205/60R16","opt":"215/55R17"} }
+  },
+  "TOYOTA": {
+    "CAMRY":      { "2018-2025":{"std":"215/55R17","opt":"235/45R18"}, "2012-2017":{"std":"205/65R16","opt":"215/55R17"} },
+    "COROLLA":    { "2020-2025":{"std":"205/55R16","opt":"225/40R18"}, "2014-2019":{"std":"205/55R16","opt":"215/45R17"} },
+    "RAV4":       { "2019-2025":{"std":"225/65R17","opt":"235/55R18"}, "2013-2018":{"std":"225/65R17","opt":"235/55R18"} },
+    "HIGHLANDER": { "2020-2025":{"std":"245/60R18","opt":"245/55R19"}, "2014-2019":{"std":"245/65R17","opt":"245/55R19"} },
+    "TACOMA":     { "2016-2025":{"std":"245/75R16","opt":"265/65R17"} },
+    "TUNDRA":     { "2022-2025":{"std":"275/65R18","opt":"275/55R20"}, "2007-2021":{"std":"245/75R17","opt":"275/65R18"} },
+    "SIENNA":     { "2021-2025":{"std":"235/60R17","opt":"235/55R19"} },
+    "4RUNNER":    { "2003-2025":{"std":"265/70R16","opt":"265/65R17"} },
+    "PRIUS":      { "2016-2025":{"std":"195/65R15","opt":"215/45R17"} }
+  },
+  "HONDA": {
+    "CIVIC":      { "2022-2025":{"std":"215/55R16","opt":"235/40R18"}, "2016-2021":{"std":"215/55R16","opt":"235/40R18"} },
+    "ACCORD":     { "2023-2025":{"std":"225/50R17","opt":"245/40R19"}, "2018-2022":{"std":"225/50R17","opt":"235/45R18"} },
+    "CR-V":       { "2023-2025":{"std":"235/60R18","opt":"235/55R19"}, "2017-2022":{"std":"225/65R17","opt":"235/60R18"} },
+    "PILOT":      { "2023-2025":{"std":"245/60R18","opt":"255/50R20"}, "2016-2022":{"std":"245/60R18","opt":"255/55R18"} },
+    "HR-V":       { "2023-2025":{"std":"215/60R16","opt":"225/50R18"} },
+    "ODYSSEY":    { "2018-2025":{"std":"235/60R17","opt":"235/55R19"} },
+    "RIDGELINE":  { "2017-2025":{"std":"245/60R18","opt":"245/55R20"} }
+  },
+  "FORD": {
+    "F-150":      { "2021-2025":{"std":"265/70R17","opt":"275/55R20"}, "2015-2020":{"std":"245/70R17","opt":"275/55R20"} },
+    "ESCAPE":     { "2020-2025":{"std":"225/60R17","opt":"235/45R19"}, "2013-2019":{"std":"225/65R16","opt":"235/50R18"} },
+    "EXPLORER":   { "2020-2025":{"std":"255/60R18","opt":"255/50R20"}, "2011-2019":{"std":"245/60R18","opt":"255/55R20"} },
+    "EDGE":       { "2019-2025":{"std":"235/60R18","opt":"245/50R20"} },
+    "MUSTANG":    { "2015-2025":{"std":"235/55R19","opt":"255/40R19"} },
+    "RANGER":     { "2019-2025":{"std":"255/65R17","opt":"265/50R20"} },
+    "BRONCO":     { "2021-2025":{"std":"255/70R18","opt":"285/70R17"} },
+    "EXPEDITION": { "2018-2025":{"std":"275/55R20","opt":"275/50R22"} }
+  },
+  "CHEVROLET": {
+    "SILVERADO":  { "2019-2025":{"std":"265/65R18","opt":"275/55R20"}, "2014-2018":{"std":"255/65R18","opt":"275/55R20"} },
+    "EQUINOX":    { "2018-2025":{"std":"225/65R17","opt":"235/50R19"}, "2010-2017":{"std":"225/65R17","opt":"235/50R18"} },
+    "TRAVERSE":   { "2018-2025":{"std":"255/65R18","opt":"255/55R20"} },
+    "MALIBU":     { "2016-2025":{"std":"215/55R17","opt":"235/45R18"} },
+    "TAHOE":      { "2021-2025":{"std":"275/55R20","opt":"285/45R22"}, "2015-2020":{"std":"265/65R18","opt":"275/55R20"} },
+    "COLORADO":   { "2015-2025":{"std":"255/65R17","opt":"265/60R18"} },
+    "TRAX":       { "2013-2025":{"std":"205/70R15","opt":"215/55R18"} }
+  },
+  "GMC": {
+    "SIERRA":     { "2019-2025":{"std":"265/65R18","opt":"275/55R20"} },
+    "TERRAIN":    { "2018-2025":{"std":"225/65R17","opt":"235/50R19"} },
+    "ACADIA":     { "2017-2025":{"std":"255/65R18","opt":"255/50R20"} },
+    "YUKON":      { "2021-2025":{"std":"275/55R20","opt":"285/45R22"} }
+  },
+  "DODGE": {
+    "CHARGER":    { "2015-2025":{"std":"235/55R19","opt":"245/45R20"} },
+    "CHALLENGER": { "2015-2025":{"std":"235/55R19","opt":"275/40R20"} },
+    "DURANGO":    { "2014-2025":{"std":"265/50R20","opt":"295/45R20"} }
+  },
+  "RAM": {
+    "1500":       { "2019-2025":{"std":"275/55R20","opt":"285/45R22"}, "2013-2018":{"std":"265/70R17","opt":"275/60R20"} },
+    "2500":       { "2010-2025":{"std":"265/70R18","opt":"285/60R20"} },
+    "PROMASTER":  { "2014-2025":{"std":"215/65R16"} }
+  },
+  "JEEP": {
+    "GRAND CHEROKEE":{ "2021-2025":{"std":"265/60R18","opt":"285/45R20"}, "2011-2020":{"std":"265/60R18","opt":"295/45R20"} },
+    "WRANGLER":      { "2018-2025":{"std":"255/70R18","opt":"285/70R17"} },
+    "COMPASS":       { "2017-2025":{"std":"215/60R17","opt":"225/50R18"} },
+    "RENEGADE":      { "2015-2025":{"std":"215/60R16","opt":"225/45R18"} },
+    "GLADIATOR":     { "2020-2025":{"std":"255/70R18","opt":"285/70R17"} }
+  },
+  "NISSAN": {
+    "ROGUE":      { "2021-2025":{"std":"225/65R17","opt":"235/55R19"}, "2014-2020":{"std":"225/65R17","opt":"235/55R18"} },
+    "ALTIMA":     { "2019-2025":{"std":"215/55R17","opt":"235/40R19"} },
+    "SENTRA":     { "2020-2025":{"std":"205/60R16","opt":"215/45R18"} },
+    "MURANO":     { "2015-2025":{"std":"235/65R18","opt":"245/50R20"} },
+    "PATHFINDER": { "2022-2025":{"std":"245/65R17","opt":"265/50R20"} },
+    "FRONTIER":   { "2022-2025":{"std":"255/65R16","opt":"265/60R18"} },
+    "KICKS":      { "2018-2025":{"std":"205/60R16","opt":"215/50R17"} }
+  },
+  "MAZDA": {
+    "CX-5":       { "2017-2025":{"std":"225/65R17","opt":"225/55R19"} },
+    "CX-50":      { "2023-2025":{"std":"225/60R18","opt":"225/55R19"} },
+    "CX-9":       { "2016-2023":{"std":"245/65R17","opt":"255/50R19"} },
+    "MAZDA3":     { "2019-2025":{"std":"205/60R16","opt":"215/45R18"} },
+    "MAZDA6":     { "2014-2021":{"std":"215/55R17","opt":"225/45R19"} }
+  },
+  "SUBARU": {
+    "OUTBACK":    { "2020-2025":{"std":"225/60R18","opt":"225/55R18"}, "2015-2019":{"std":"225/60R17","opt":"225/55R18"} },
+    "FORESTER":   { "2019-2025":{"std":"225/55R17","opt":"225/50R18"} },
+    "CROSSTREK":  { "2018-2025":{"std":"215/60R16","opt":"225/50R17"} },
+    "IMPREZA":    { "2017-2025":{"std":"205/55R16","opt":"215/45R17"} },
+    "ASCENT":     { "2019-2025":{"std":"245/60R18","opt":"245/50R20"} },
+    "LEGACY":     { "2020-2025":{"std":"225/55R17","opt":"225/45R18"} }
+  },
+  "VOLKSWAGEN": {
+    "JETTA":      { "2019-2025":{"std":"205/60R16","opt":"225/40R18"} },
+    "TIGUAN":     { "2018-2025":{"std":"215/65R17","opt":"235/50R19"} },
+    "ATLAS":      { "2018-2025":{"std":"235/65R17","opt":"255/45R20"} },
+    "GOLF":       { "2015-2025":{"std":"205/55R16","opt":"225/45R17"} },
+    "PASSAT":     { "2012-2019":{"std":"215/55R17","opt":"235/45R18"} }
+  },
+  "BMW": {
+    "3 SERIES":   { "2019-2025":{"std":"225/50R17","opt":"225/45R18"}, "2012-2018":{"std":"205/60R16","opt":"225/45R18"} },
+    "5 SERIES":   { "2017-2025":{"std":"245/45R18","opt":"245/40R19"} },
+    "X3":         { "2018-2025":{"std":"225/60R18","opt":"245/50R19"} },
+    "X5":         { "2019-2025":{"std":"255/55R19","opt":"275/45R20"} },
+    "X1":         { "2016-2025":{"std":"225/50R17","opt":"225/45R18"} }
+  },
+  "MERCEDES-BENZ": {
+    "C-CLASS":    { "2019-2025":{"std":"225/45R18","opt":"255/40R18"} },
+    "E-CLASS":    { "2017-2025":{"std":"245/45R18","opt":"255/40R19"} },
+    "GLC":        { "2016-2025":{"std":"235/55R19","opt":"255/45R20"} },
+    "GLE":        { "2020-2025":{"std":"265/50R19","opt":"285/45R20"} }
+  },
+  "LEXUS": {
+    "RX":         { "2020-2025":{"std":"235/55R20","opt":"235/50R21"} },
+    "NX":         { "2022-2025":{"std":"225/60R18","opt":"235/50R19"} },
+    "ES":         { "2019-2025":{"std":"215/55R17","opt":"235/45R18"} }
+  },
+  "ACURA": {
+    "MDX":        { "2022-2025":{"std":"245/55R19","opt":"275/40R21"} },
+    "RDX":        { "2019-2025":{"std":"235/60R18","opt":"235/55R19"} }
+  }
+,
+  "INFINITI": {
+    "QX60":       { "2022-2025":{"std":"235/55R20","opt":"255/50R20"} },
+    "QX50":       { "2019-2025":{"std":"235/60R18","opt":"235/55R19"} }
+  },
+  "LINCOLN": {
+    "NAVIGATOR":  { "2018-2025":{"std":"275/55R20","opt":"275/45R22"} },
+    "CORSAIR":    { "2020-2025":{"std":"235/55R18","opt":"235/50R19"} },
+    "NAUTILUS":   { "2019-2025":{"std":"235/60R18","opt":"245/50R20"} }
+  },
+  "BUICK": {
+    "ENCLAVE":    { "2018-2025":{"std":"255/65R18","opt":"255/50R20"} },
+    "ENCORE GX":  { "2020-2025":{"std":"215/60R17","opt":"225/50R18"} }
+  },
+  "CADILLAC": {
+    "ESCALADE":   { "2021-2025":{"std":"275/55R20","opt":"285/45R22"} },
+    "XT5":        { "2017-2025":{"std":"235/65R17","opt":"255/50R19"} },
+    "XT4":        { "2019-2025":{"std":"225/65R17","opt":"235/50R19"} }
+  },
+  "MITSUBISHI": {
+    "OUTLANDER":  { "2022-2025":{"std":"225/60R18","opt":"235/55R18"}, "2014-2021":{"std":"225/65R17","opt":"225/55R18"} },
+    "RVR":        { "2011-2025":{"std":"215/65R16","opt":"215/55R18"} },
+    "ECLIPSE CROSS": { "2018-2025":{"std":"215/60R17","opt":"225/55R18"} }
+  },
+  "GENESIS": {
+    "GV80":       { "2021-2025":{"std":"265/45R21","opt":"265/40R22"} },
+    "GV70":       { "2022-2025":{"std":"235/55R19","opt":"255/45R20"} },
+    "G80":        { "2021-2025":{"std":"245/45R19","opt":"245/40R20"} }
+  }
+};
+
+function getTireFromDB(make, model, year) {
+  var m  = (make  || "").toUpperCase();
+  var mo = (model || "").toUpperCase().trim();
+  var yr = parseInt(year) || 0;
+  if (!TIRE_DB[m]) return null;
+  var modelData = TIRE_DB[m][mo];
+  if (!modelData) {
+    for (var dbModel in TIRE_DB[m]) {
+      if (mo.indexOf(dbModel) > -1 || dbModel.indexOf(mo) > -1) {
+        modelData = TIRE_DB[m][dbModel];
+        break;
+      }
+    }
+  }
+  if (!modelData) return null;
+  for (var range in modelData) {
+    var parts = range.split("-");
+    var from = parseInt(parts[0]);
+    var to   = parts[1] ? parseInt(parts[1]) : from;
+    if (yr >= from && yr <= to) return modelData[range];
+  }
+  return null;
+}
+
+
 // ── WIPER SIZE LOOKUP ────────────────────────────────────
 
+// Local Kia wiper database
+var WIPER_DB = {
+  "KIA": {
+    "SPORTAGE":   { "2017-2024": { d: '26"', p: '16"', r: '12"' }, "2011-2016": { d: '26"', p: '14"', r: '12"' } },
+    "SORENTO":    { "2021-2024": { d: '26"', p: '18"', r: '12"' }, "2016-2020": { d: '26"', p: '16"', r: '12"' }, "2011-2015": { d: '24"', p: '20"', r: '12"' } },
+    "FORTE":      { "2019-2024": { d: '26"', p: '16"', r: '12"' }, "2014-2018": { d: '28"', p: '14"', r: '12"' } },
+    "SOUL":       { "2020-2024": { d: '26"', p: '14"', r: '12"' }, "2014-2019": { d: '26"', p: '16"', r: '12"' } },
+    "RIO":        { "2012-2023": { d: '24"', p: '16"', r: '12"' } },
+    "TELLURIDE":  { "2020-2024": { d: '26"', p: '18"', r: '14"' } },
+    "NIRO":       { "2023-2024": { d: '26"', p: '18"', r: '14"' }, "2017-2022": { d: '26"', p: '14"', r: '14"' } },
+    "SELTOS":     { "2021-2024": { d: '22"', p: '17"', r: '12"' } },
+    "STINGER":    { "2018-2023": { d: '26"', p: '18"' } },
+    "K5":         { "2021-2024": { d: '26"', p: '16"' } },
+    "EV6":        { "2022-2024": { d: '26"', p: '16"' } },
+    "EV9":        { "2024":      { d: '28"', p: '22"' } },
+    "CARNIVAL":   { "2022-2024": { d: '26"', p: '20"', r: '13"' } },
+    "CADENZA":    { "2017-2020": { d: '26"', p: '18"' } },
+    "K4":         { "2025":      { d: '26"', p: '16"' } }
+  },
+  "HYUNDAI": {
+    "TUCSON":     { "2022-2024": { d: '26"', p: '18"', r: '14"' }, "2016-2021": { d: '26"', p: '16"', r: '14"' } },
+    "SANTA FE":   { "2021-2024": { d: '26"', p: '18"', r: '12"' }, "2013-2020": { d: '26"', p: '18"', r: '12"' } },
+    "ELANTRA":    { "2021-2024": { d: '26"', p: '18"' }, "2011-2020": { d: '26"', p: '14"' } },
+    "SONATA":     { "2020-2024": { d: '26"', p: '16"' }, "2015-2019": { d: '26"', p: '16"' } },
+    "KONA":       { "2018-2024": { d: '24"', p: '16"', r: '12"' } },
+    "PALISADE":   { "2020-2024": { d: '26"', p: '18"', r: '14"' } },
+    "IONIQ 5":    { "2022-2024": { d: '26"', p: '18"' } },
+    "VENUE":      { "2020-2024": { d: '22"', p: '16"' } }
+  },
+  "TOYOTA": {
+    "CAMRY":      { "2018-2024": { d: '26"', p: '18"' }, "2012-2017": { d: '26"', p: '18"' } },
+    "COROLLA":    { "2020-2024": { d: '26"', p: '16"' }, "2014-2019": { d: '26"', p: '16"' } },
+    "RAV4":       { "2019-2024": { d: '26"', p: '16"', r: '12"' }, "2013-2018": { d: '26"', p: '16"', r: '12"' } },
+    "HIGHLANDER": { "2020-2024": { d: '26"', p: '22"', r: '14"' }, "2014-2019": { d: '26"', p: '22"', r: '16"' } },
+    "TACOMA":     { "2016-2024": { d: '24"', p: '18"', r: '12"' } },
+    "TUNDRA":     { "2022-2024": { d: '22"', p: '22"' }, "2007-2021": { d: '22"', p: '22"' } },
+    "SIENNA":     { "2021-2024": { d: '26"', p: '20"' } },
+    "4RUNNER":    { "2003-2024": { d: '22"', p: '18"', r: '12"' } },
+    "PRIUS":      { "2016-2024": { d: '26"', p: '16"', r: '12"' } }
+  },
+  "HONDA": {
+    "CIVIC":      { "2022-2024": { d: '26"', p: '16"' }, "2016-2021": { d: '26"', p: '18"' } },
+    "ACCORD":     { "2023-2024": { d: '26"', p: '20"' }, "2018-2022": { d: '26"', p: '20"' } },
+    "CR-V":       { "2023-2024": { d: '26"', p: '20"', r: '14"' }, "2017-2022": { d: '26"', p: '16"', r: '14"' } },
+    "PILOT":      { "2023-2024": { d: '26"', p: '22"' }, "2016-2022": { d: '26"', p: '22"' } },
+    "HR-V":       { "2023-2024": { d: '26"', p: '14"', r: '12"' } },
+    "ODYSSEY":    { "2018-2024": { d: '28"', p: '28"' } },
+    "RIDGELINE":  { "2017-2024": { d: '26"', p: '16"' } }
+  },
+  "FORD": {
+    "F-150":      { "2021-2024": { d: '22"', p: '22"' }, "2015-2020": { d: '22"', p: '22"' } },
+    "ESCAPE":     { "2020-2024": { d: '26"', p: '16"', r: '11"' }, "2013-2019": { d: '26"', p: '16"', r: '12"' } },
+    "EXPLORER":   { "2020-2024": { d: '24"', p: '24"' }, "2011-2019": { d: '22"', p: '20"' } },
+    "EDGE":       { "2019-2024": { d: '26"', p: '20"' } },
+    "MUSTANG":    { "2015-2024": { d: '22"', p: '22"' } },
+    "RANGER":     { "2019-2024": { d: '22"', p: '20"' } },
+    "BRONCO":     { "2021-2024": { d: '22"', p: '22"' } },
+    "EXPEDITION": { "2018-2024": { d: '22"', p: '22"' } }
+  },
+  "CHEVROLET": {
+    "SILVERADO":  { "2019-2024": { d: '22"', p: '22"' }, "2014-2018": { d: '22"', p: '22"' } },
+    "EQUINOX":    { "2018-2024": { d: '24"', p: '18"', r: '14"' }, "2010-2017": { d: '24"', p: '18"', r: '14"' } },
+    "TRAVERSE":   { "2018-2024": { d: '26"', p: '20"' } },
+    "MALIBU":     { "2016-2024": { d: '26"', p: '16"' } },
+    "TAHOE":      { "2021-2024": { d: '22"', p: '22"' }, "2015-2020": { d: '22"', p: '22"' } },
+    "COLORADO":   { "2015-2024": { d: '22"', p: '18"' } },
+    "TRAX":       { "2013-2024": { d: '24"', p: '16"' } }
+  },
+  "GMC": {
+    "SIERRA":     { "2019-2024": { d: '22"', p: '22"' } },
+    "TERRAIN":    { "2018-2024": { d: '24"', p: '18"', r: '14"' } },
+    "ACADIA":     { "2017-2024": { d: '26"', p: '20"' } },
+    "YUKON":      { "2021-2024": { d: '22"', p: '22"' } }
+  },
+  "DODGE": {
+    "CHARGER":    { "2015-2024": { d: '24"', p: '24"' } },
+    "CHALLENGER": { "2015-2024": { d: '22"', p: '22"' } },
+    "DURANGO":    { "2014-2024": { d: '24"', p: '21"' } }
+  },
+  "RAM": {
+    "1500":       { "2019-2024": { d: '22"', p: '22"' }, "2013-2018": { d: '22"', p: '22"' } },
+    "2500":       { "2010-2024": { d: '22"', p: '22"' } },
+    "PROMASTER":  { "2014-2024": { d: '28"', p: '28"' } }
+  },
+  "JEEP": {
+    "GRAND CHEROKEE": { "2021-2024": { d: '24"', p: '20"' }, "2011-2020": { d: '24"', p: '20"' } },
+    "WRANGLER":       { "2018-2024": { d: '21"', p: '21"', r: '16"' } },
+    "COMPASS":        { "2017-2024": { d: '22"', p: '16"', r: '12"' } },
+    "RENEGADE":       { "2015-2024": { d: '22"', p: '14"', r: '12"' } },
+    "GLADIATOR":      { "2020-2024": { d: '21"', p: '21"' } }
+  },
+  "NISSAN": {
+    "ROGUE":      { "2021-2024": { d: '26"', p: '16"', r: '12"' }, "2014-2020": { d: '26"', p: '16"', r: '12"' } },
+    "ALTIMA":     { "2019-2024": { d: '26"', p: '16"' } },
+    "SENTRA":     { "2020-2024": { d: '26"', p: '14"' } },
+    "MURANO":     { "2015-2024": { d: '26"', p: '18"' } },
+    "PATHFINDER": { "2022-2024": { d: '26"', p: '20"' } },
+    "FRONTIER":   { "2022-2024": { d: '22"', p: '20"' } },
+    "KICKS":      { "2018-2024": { d: '24"', p: '16"' } }
+  },
+  "MAZDA": {
+    "CX-5":       { "2017-2024": { d: '26"', p: '14"', r: '12"' } },
+    "CX-50":      { "2023-2024": { d: '26"', p: '18"' } },
+    "CX-9":       { "2016-2023": { d: '26"', p: '20"' } },
+    "MAZDA3":     { "2019-2024": { d: '26"', p: '16"' } },
+    "MAZDA6":     { "2014-2021": { d: '26"', p: '18"' } }
+  },
+  "SUBARU": {
+    "OUTBACK":    { "2020-2024": { d: '26"', p: '18"', r: '14"' }, "2015-2019": { d: '26"', p: '18"', r: '14"' } },
+    "FORESTER":   { "2019-2024": { d: '26"', p: '18"', r: '14"' } },
+    "CROSSTREK":  { "2018-2024": { d: '26"', p: '16"', r: '12"' } },
+    "IMPREZA":    { "2017-2024": { d: '26"', p: '16"' } },
+    "ASCENT":     { "2019-2024": { d: '26"', p: '22"', r: '14"' } },
+    "LEGACY":     { "2020-2024": { d: '26"', p: '18"' } }
+  },
+  "VOLKSWAGEN": {
+    "JETTA":      { "2019-2024": { d: '24"', p: '20"' } },
+    "TIGUAN":     { "2018-2024": { d: '24"', p: '20"', r: '14"' } },
+    "ATLAS":      { "2018-2024": { d: '26"', p: '22"' } },
+    "GOLF":       { "2015-2024": { d: '24"', p: '18"' } },
+    "PASSAT":     { "2012-2019": { d: '24"', p: '20"' } }
+  },
+  "BMW": {
+    "3 SERIES":   { "2019-2024": { d: '24"', p: '20"' }, "2012-2018": { d: '24"', p: '20"' } },
+    "5 SERIES":   { "2017-2024": { d: '26"', p: '20"' } },
+    "X3":         { "2018-2024": { d: '24"', p: '20"', r: '12"' } },
+    "X5":         { "2019-2024": { d: '26"', p: '20"' } },
+    "X1":         { "2016-2024": { d: '24"', p: '18"' } }
+  },
+  "MERCEDES-BENZ": {
+    "C-CLASS":    { "2019-2024": { d: '26"', p: '22"' } },
+    "E-CLASS":    { "2017-2024": { d: '26"', p: '22"' } },
+    "GLC":        { "2016-2024": { d: '24"', p: '20"', r: '12"' } },
+    "GLE":        { "2020-2024": { d: '26"', p: '20"' } }
+  },
+  "LEXUS": {
+    "RX":         { "2020-2024": { d: '26"', p: '18"' } },
+    "NX":         { "2022-2024": { d: '26"', p: '16"', r: '12"' } },
+    "ES":         { "2019-2024": { d: '26"', p: '18"' } }
+  },
+  "ACURA": {
+    "MDX":        { "2022-2024": { d: '26"', p: '20"' } },
+    "RDX":        { "2019-2024": { d: '26"', p: '18"' } }
+  },
+  "INFINITI": {
+    "QX60":       { "2022-2024": { d: '26"', p: '20"' } },
+    "QX50":       { "2019-2024": { d: '24"', p: '18"' } }
+  },
+  "LINCOLN": {
+    "NAVIGATOR":  { "2018-2024": { d: '22"', p: '22"' } },
+    "CORSAIR":    { "2020-2024": { d: '26"', p: '16"' } },
+    "NAUTILUS":   { "2019-2024": { d: '26"', p: '20"' } }
+  },
+  "BUICK": {
+    "ENCLAVE":    { "2018-2024": { d: '26"', p: '20"' } },
+    "ENCORE GX":  { "2020-2024": { d: '24"', p: '16"' } }
+  },
+  "CADILLAC": {
+    "ESCALADE":   { "2021-2024": { d: '22"', p: '22"' } },
+    "XT5":        { "2017-2024": { d: '24"', p: '20"' } },
+    "XT4":        { "2019-2024": { d: '24"', p: '18"' } }
+  },
+  "MITSUBISHI": {
+    "OUTLANDER":  { "2022-2024": { d: '26"', p: '16"', r: '12"' }, "2014-2021": { d: '24"', p: '16"', r: '12"' } },
+    "RVR":        { "2011-2024": { d: '24"', p: '16"', r: '12"' } },
+    "ECLIPSE CROSS": { "2018-2024": { d: '24"', p: '18"', r: '12"' } }
+  },
+  "GENESIS": {
+    "GV80":       { "2021-2024": { d: '26"', p: '20"' } },
+    "GV70":       { "2022-2024": { d: '26"', p: '18"' } },
+    "G80":        { "2021-2024": { d: '26"', p: '20"' } }
+  }
+};
+
+
+var BATTERY_DB = {
+  "KIA": {
+    "SPORTAGE":  { "2023-2025":{"group":"H6 (48)","cca":"730","type":"AGM"}, "2017-2022":{"group":"124R","cca":"700","type":"Standard"}, "2011-2016":{"group":"124R","cca":"600","type":"Standard"} },
+    "SORENTO":   { "2021-2025":{"group":"H7 (94R)","cca":"760","type":"AGM"}, "2016-2020":{"group":"47","cca":"650","type":"Standard"}, "2011-2015":{"group":"124R","cca":"650","type":"Standard"} },
+    "FORTE":     { "2019-2025":{"group":"47","cca":"600","type":"Standard"}, "2014-2018":{"group":"47","cca":"550","type":"Standard"} },
+    "SOUL":      { "2020-2025":{"group":"47","cca":"600","type":"Standard"}, "2012-2019":{"group":"121R","cca":"550","type":"Standard"} },
+    "RIO":       { "2012-2023":{"group":"121R","cca":"500","type":"Standard"} },
+    "TELLURIDE": { "2020-2025":{"group":"H6 (48)","cca":"730","type":"AGM"} },
+    "NIRO":      { "2023-2025":{"group":"H5 (47)","cca":"600","type":"AGM"}, "2017-2022":{"group":"47","cca":"550","type":"Standard"} },
+    "SELTOS":    { "2021-2025":{"group":"H6 (48)","cca":"760","type":"AGM"} },
+    "STINGER":   { "2018-2023":{"group":"H6 (48)","cca":"730","type":"AGM"} },
+    "K5":        { "2021-2025":{"group":"H6 (48)","cca":"730","type":"AGM"} },
+    "CARNIVAL":  { "2022-2025":{"group":"H6 (48)","cca":"730","type":"AGM"} },
+    "K4":        { "2025":{"group":"H5 (47)","cca":"600","type":"AGM"} },
+    "CADENZA":   { "2017-2020":{"group":"H6 (48)","cca":"730","type":"AGM"} },
+    "EV6":       { "2022-2025":{"group":"H5 (47)","cca":"600","type":"AGM"} }
+  },
+  "HYUNDAI": {
+    "TUCSON":    { "2022-2025":{"group":"H6 (48)","cca":"730","type":"AGM"}, "2016-2021":{"group":"H5 (47)","cca":"600","type":"Standard"} },
+    "SANTA FE":  { "2021-2025":{"group":"H6 (48)","cca":"730","type":"AGM"}, "2013-2020":{"group":"H6 (48)","cca":"700","type":"Standard"} },
+    "ELANTRA":   { "2021-2025":{"group":"H5 (47)","cca":"600","type":"Standard"}, "2017-2020":{"group":"H5 (47)","cca":"550","type":"Standard"} },
+    "SONATA":    { "2020-2025":{"group":"H6 (48)","cca":"700","type":"AGM"}, "2015-2019":{"group":"H6 (48)","cca":"650","type":"Standard"} },
+    "KONA":      { "2018-2025":{"group":"H5 (47)","cca":"600","type":"Standard"} },
+    "PALISADE":  { "2020-2025":{"group":"H7 (94R)","cca":"760","type":"AGM"} },
+    "IONIQ 5":   { "2022-2025":{"group":"H6 (48)","cca":"730","type":"AGM"} },
+    "VENUE":     { "2020-2025":{"group":"121R","cca":"500","type":"Standard"} }
+  },
+  "TOYOTA": {
+    "CAMRY":     { "2018-2025":{"group":"35","cca":"640","type":"Standard"}, "2012-2017":{"group":"35","cca":"585","type":"Standard"} },
+    "COROLLA":   { "2020-2025":{"group":"35","cca":"585","type":"Standard"}, "2014-2019":{"group":"35","cca":"550","type":"Standard"} },
+    "RAV4":      { "2019-2025":{"group":"35","cca":"640","type":"Standard"}, "2013-2018":{"group":"35","cca":"585","type":"Standard"} },
+    "HIGHLANDER":{ "2020-2025":{"group":"24F","cca":"700","type":"Standard"}, "2014-2019":{"group":"24F","cca":"650","type":"Standard"} },
+    "TACOMA":    { "2016-2025":{"group":"24F","cca":"650","type":"Standard"} },
+    "TUNDRA":    { "2007-2025":{"group":"27F","cca":"710","type":"Standard"} },
+    "SIENNA":    { "2021-2025":{"group":"35","cca":"640","type":"Standard"} },
+    "4RUNNER":   { "2003-2025":{"group":"27F","cca":"710","type":"Standard"} },
+    "PRIUS":     { "2016-2025":{"group":"S46B24R","cca":"380","type":"AGM"} }
+  },
+  "HONDA": {
+    "CIVIC":     { "2022-2025":{"group":"51R","cca":"500","type":"Standard"}, "2016-2021":{"group":"51R","cca":"500","type":"Standard"} },
+    "ACCORD":    { "2023-2025":{"group":"H6 (48)","cca":"730","type":"AGM"}, "2018-2022":{"group":"51R","cca":"550","type":"Standard"} },
+    "CR-V":      { "2023-2025":{"group":"H6 (48)","cca":"730","type":"AGM"}, "2017-2022":{"group":"51R","cca":"550","type":"Standard"} },
+    "PILOT":     { "2023-2025":{"group":"H6 (48)","cca":"730","type":"AGM"}, "2016-2022":{"group":"24F","cca":"650","type":"Standard"} },
+    "HR-V":      { "2023-2025":{"group":"51R","cca":"500","type":"Standard"} },
+    "ODYSSEY":   { "2018-2025":{"group":"24F","cca":"650","type":"Standard"} },
+    "RIDGELINE": { "2017-2025":{"group":"24F","cca":"650","type":"Standard"} }
+  },
+  "FORD": {
+    "F-150":     { "2021-2025":{"group":"65","cca":"750","type":"AGM"}, "2015-2020":{"group":"65","cca":"750","type":"Standard"} },
+    "ESCAPE":    { "2020-2025":{"group":"H6 (48)","cca":"730","type":"AGM"}, "2013-2019":{"group":"40R","cca":"590","type":"Standard"} },
+    "EXPLORER":  { "2020-2025":{"group":"H7 (94R)","cca":"760","type":"AGM"}, "2011-2019":{"group":"65","cca":"650","type":"Standard"} },
+    "EDGE":      { "2019-2025":{"group":"H6 (48)","cca":"730","type":"AGM"} },
+    "MUSTANG":   { "2015-2025":{"group":"H6 (48)","cca":"730","type":"AGM"} },
+    "RANGER":    { "2019-2025":{"group":"65","cca":"750","type":"Standard"} },
+    "BRONCO":    { "2021-2025":{"group":"65","cca":"750","type":"AGM"} },
+    "EXPEDITION":{ "2018-2025":{"group":"65","cca":"750","type":"AGM"} }
+  },
+  "CHEVROLET": {
+    "SILVERADO":  { "2019-2025":{"group":"48H6","cca":"730","type":"AGM"}, "2014-2018":{"group":"34","cca":"730","type":"Standard"} },
+    "EQUINOX":    { "2018-2025":{"group":"H6 (48)","cca":"730","type":"AGM"}, "2010-2017":{"group":"34","cca":"600","type":"Standard"} },
+    "TRAVERSE":   { "2018-2025":{"group":"H7 (94R)","cca":"760","type":"AGM"} },
+    "MALIBU":     { "2016-2025":{"group":"H6 (48)","cca":"730","type":"AGM"} },
+    "TAHOE":      { "2021-2025":{"group":"H7 (94R)","cca":"760","type":"AGM"}, "2015-2020":{"group":"34","cca":"730","type":"Standard"} },
+    "COLORADO":   { "2015-2025":{"group":"34","cca":"600","type":"Standard"} },
+    "TRAX":       { "2013-2025":{"group":"H5 (47)","cca":"600","type":"Standard"} }
+  },
+  "GMC": {
+    "SIERRA":    { "2019-2025":{"group":"48H6","cca":"730","type":"AGM"}, "2014-2018":{"group":"34","cca":"730","type":"Standard"} },
+    "TERRAIN":   { "2018-2025":{"group":"H6 (48)","cca":"730","type":"AGM"} },
+    "ACADIA":    { "2017-2025":{"group":"H7 (94R)","cca":"760","type":"AGM"} },
+    "YUKON":     { "2021-2025":{"group":"H7 (94R)","cca":"760","type":"AGM"} }
+  },
+  "DODGE": {
+    "CHARGER":   { "2015-2025":{"group":"34","cca":"730","type":"Standard"} },
+    "CHALLENGER":{ "2015-2025":{"group":"34","cca":"730","type":"Standard"} },
+    "DURANGO":   { "2014-2025":{"group":"34","cca":"730","type":"Standard"} }
+  },
+  "RAM": {
+    "1500":      { "2019-2025":{"group":"34","cca":"730","type":"AGM"}, "2013-2018":{"group":"34","cca":"730","type":"Standard"} },
+    "2500":      { "2010-2025":{"group":"34","cca":"800","type":"Standard"} },
+    "PROMASTER": { "2014-2025":{"group":"94R","cca":"760","type":"Standard"} }
+  },
+  "JEEP": {
+    "GRAND CHEROKEE":{ "2021-2025":{"group":"48H6","cca":"730","type":"AGM"}, "2011-2020":{"group":"34","cca":"730","type":"Standard"} },
+    "WRANGLER":      { "2018-2025":{"group":"34","cca":"730","type":"AGM"} },
+    "COMPASS":       { "2017-2025":{"group":"H5 (47)","cca":"600","type":"Standard"} },
+    "RENEGADE":      { "2015-2025":{"group":"H5 (47)","cca":"600","type":"Standard"} },
+    "GLADIATOR":     { "2020-2025":{"group":"34","cca":"730","type":"AGM"} }
+  },
+  "NISSAN": {
+    "ROGUE":     { "2021-2025":{"group":"35","cca":"640","type":"Standard"}, "2014-2020":{"group":"35","cca":"585","type":"Standard"} },
+    "ALTIMA":    { "2019-2025":{"group":"35","cca":"640","type":"Standard"} },
+    "SENTRA":    { "2020-2025":{"group":"35","cca":"550","type":"Standard"} },
+    "MURANO":    { "2015-2025":{"group":"35","cca":"640","type":"Standard"} },
+    "PATHFINDER":{ "2022-2025":{"group":"35","cca":"640","type":"Standard"} },
+    "FRONTIER":  { "2022-2025":{"group":"35","cca":"640","type":"Standard"} },
+    "KICKS":     { "2018-2025":{"group":"35","cca":"550","type":"Standard"} }
+  },
+  "MAZDA": {
+    "CX-5":      { "2017-2025":{"group":"35","cca":"585","type":"Standard"} },
+    "CX-50":     { "2023-2025":{"group":"35","cca":"640","type":"Standard"} },
+    "CX-9":      { "2016-2023":{"group":"35","cca":"640","type":"Standard"} },
+    "MAZDA3":    { "2019-2025":{"group":"35","cca":"550","type":"Standard"} },
+    "MAZDA6":    { "2014-2021":{"group":"35","cca":"585","type":"Standard"} }
+  },
+  "SUBARU": {
+    "OUTBACK":   { "2020-2025":{"group":"25","cca":"550","type":"Standard"}, "2015-2019":{"group":"25","cca":"550","type":"Standard"} },
+    "FORESTER":  { "2019-2025":{"group":"25","cca":"550","type":"Standard"} },
+    "CROSSTREK": { "2018-2025":{"group":"25","cca":"500","type":"Standard"} },
+    "IMPREZA":   { "2017-2025":{"group":"25","cca":"500","type":"Standard"} },
+    "ASCENT":    { "2019-2025":{"group":"H6 (48)","cca":"730","type":"AGM"} },
+    "LEGACY":    { "2020-2025":{"group":"H6 (48)","cca":"730","type":"AGM"} }
+  },
+  "VOLKSWAGEN": {
+    "JETTA":     { "2019-2025":{"group":"H6 (48)","cca":"730","type":"AGM"} },
+    "TIGUAN":    { "2018-2025":{"group":"H7 (94R)","cca":"760","type":"AGM"} },
+    "ATLAS":     { "2018-2025":{"group":"H7 (94R)","cca":"760","type":"AGM"} },
+    "GOLF":      { "2015-2025":{"group":"H6 (48)","cca":"730","type":"AGM"} },
+    "PASSAT":    { "2012-2019":{"group":"H6 (48)","cca":"730","type":"AGM"} }
+  },
+  "BMW": {
+    "3 SERIES":  { "2019-2025":{"group":"H6 (48)","cca":"730","type":"AGM"}, "2012-2018":{"group":"H7 (94R)","cca":"760","type":"AGM"} },
+    "5 SERIES":  { "2017-2025":{"group":"H7 (94R)","cca":"760","type":"AGM"} },
+    "X3":        { "2018-2025":{"group":"H7 (94R)","cca":"760","type":"AGM"} },
+    "X5":        { "2019-2025":{"group":"H8 (49)","cca":"900","type":"AGM"} },
+    "X1":        { "2016-2025":{"group":"H6 (48)","cca":"730","type":"AGM"} }
+  },
+  "MERCEDES-BENZ": {
+    "C-CLASS":   { "2019-2025":{"group":"H7 (94R)","cca":"760","type":"AGM"} },
+    "E-CLASS":   { "2017-2025":{"group":"H8 (49)","cca":"900","type":"AGM"} },
+    "GLC":       { "2016-2025":{"group":"H7 (94R)","cca":"760","type":"AGM"} },
+    "GLE":       { "2020-2025":{"group":"H8 (49)","cca":"900","type":"AGM"} }
+  },
+  "LEXUS": {
+    "RX":        { "2020-2025":{"group":"24F","cca":"650","type":"Standard"} },
+    "NX":        { "2022-2025":{"group":"35","cca":"640","type":"Standard"} },
+    "ES":        { "2019-2025":{"group":"35","cca":"640","type":"Standard"} }
+  },
+  "ACURA": {
+    "MDX":       { "2022-2025":{"group":"H6 (48)","cca":"730","type":"AGM"} },
+    "RDX":       { "2019-2025":{"group":"51R","cca":"550","type":"Standard"} }
+  },
+  "INFINITI": {
+    "QX60":      { "2022-2025":{"group":"35","cca":"640","type":"Standard"} },
+    "QX50":      { "2019-2025":{"group":"35","cca":"585","type":"Standard"} }
+  }
+,
+  "LINCOLN": {
+    "NAVIGATOR":  { "2018-2025":{"group":"H7 (94R)","cca":"760","type":"AGM"} },
+    "CORSAIR":    { "2020-2025":{"group":"H6 (48)","cca":"730","type":"AGM"} },
+    "NAUTILUS":   { "2019-2025":{"group":"H6 (48)","cca":"730","type":"AGM"} }
+  },
+  "BUICK": {
+    "ENCLAVE":    { "2018-2025":{"group":"H7 (94R)","cca":"760","type":"AGM"} },
+    "ENCORE GX":  { "2020-2025":{"group":"H5 (47)","cca":"600","type":"Standard"} }
+  },
+  "CADILLAC": {
+    "ESCALADE":   { "2021-2025":{"group":"H7 (94R)","cca":"760","type":"AGM"} },
+    "XT5":        { "2017-2025":{"group":"H6 (48)","cca":"730","type":"AGM"} },
+    "XT4":        { "2019-2025":{"group":"H6 (48)","cca":"730","type":"AGM"} }
+  },
+  "MITSUBISHI": {
+    "OUTLANDER":  { "2022-2025":{"group":"H6 (48)","cca":"730","type":"AGM"}, "2014-2021":{"group":"51","cca":"550","type":"Standard"} },
+    "RVR":        { "2011-2025":{"group":"51","cca":"500","type":"Standard"} },
+    "ECLIPSE CROSS": { "2018-2025":{"group":"51","cca":"550","type":"Standard"} }
+  },
+  "GENESIS": {
+    "GV80":       { "2021-2025":{"group":"H7 (94R)","cca":"760","type":"AGM"} },
+    "GV70":       { "2022-2025":{"group":"H6 (48)","cca":"730","type":"AGM"} },
+    "G80":        { "2021-2025":{"group":"H7 (94R)","cca":"760","type":"AGM"} }
+  }
+};
+
+function getBatteryFromDB(make, model, year) {
+  var m  = (make  || "").toUpperCase();
+  var mo = (model || "").toUpperCase().trim();
+  var yr = parseInt(year) || 0;
+
+  // Try exact match first
+  if (BATTERY_DB[m] && BATTERY_DB[m][mo]) {
+    var modelData = BATTERY_DB[m][mo];
+    for (var range in modelData) {
+      var parts = range.split("-");
+      var from = parseInt(parts[0]);
+      var to   = parts[1] ? parseInt(parts[1]) : from;
+      if (yr >= from && yr <= to) return modelData[range];
+    }
+  }
+
+  // Try partial match (e.g. "GRAND CHEROKEE L" matches "GRAND CHEROKEE")
+  if (BATTERY_DB[m]) {
+    for (var dbModel in BATTERY_DB[m]) {
+      if (mo.indexOf(dbModel) > -1 || dbModel.indexOf(mo) > -1) {
+        var modelData2 = BATTERY_DB[m][dbModel];
+        for (var range2 in modelData2) {
+          var parts2 = range2.split("-");
+          var from2 = parseInt(parts2[0]);
+          var to2   = parts2[1] ? parseInt(parts2[1]) : from2;
+          if (yr >= from2 && yr <= to2) return modelData2[range2];
+        }
+      }
+    }
+  }
+  return null;
+}
+
+
+  var m  = (make  || "").toUpperCase();
+  var mo = (model || "").toUpperCase();
+  var yr = parseInt(year) || 0;
+  if (!BATTERY_DB[m] || !BATTERY_DB[m][mo]) return null;
+  var modelData = BATTERY_DB[m][mo];
+  for (var range in modelData) {
+    var parts = range.split("-");
+    var from = parseInt(parts[0]);
+    var to   = parts[1] ? parseInt(parts[1]) : from;
+    if (yr >= from && yr <= to) return modelData[range];
+  }
+  return null;
+}
+
+
+
+function getWiperFromDB(make, model, year) {
+  var m = (make || '').toUpperCase();
+  var mo = (model || '').toUpperCase();
+  var yr = parseInt(year) || 0;
+
+  if (!WIPER_DB[m]) return null;
+  var modelData = WIPER_DB[m][mo];
+  if (!modelData) return null;
+
+  // Find matching year range
+  for (var range in modelData) {
+    var parts = range.split('-');
+    var from = parseInt(parts[0]);
+    var to = parts[1] ? parseInt(parts[1]) : from;
+    if (yr >= from && yr <= to) {
+      return modelData[range];
+    }
+  }
+  return null;
+}
+
 function fetchWiperSizes(wiperMake, wiperModel, year, make, model) {
-  var wiperUrl = 'https://www.wipersizechart.com/make/' + wiperMake + '/' + wiperModel + '/' + year;
-  var proxyUrl = 'https://api.allorigins.win/get?url=' + encodeURIComponent(wiperUrl);
+  var wiperDiv = document.getElementById("wiperContent");
+  if (!wiperDiv) return;
+
+  // Try local database first
+  var localData = getWiperFromDB(make, model, year);
+  if (localData) {
+    renderWiperResult(localData.d, localData.p, localData.r || null, null, make, model, year);
+    return;
+  }
+
+  // For non-Kia or unknown models, try external API
+  var wiperUrl = "https://www.wipersizechart.com/make/" + wiperMake + "/" + wiperModel + "/" + year;
+  var proxyUrl = "https://api.allorigins.win/get?url=" + encodeURIComponent(wiperUrl);
 
   fetch(proxyUrl)
     .then(function(res) { return res.json(); })
     .then(function(data) {
-      var html = data.contents || '';
+      var html = data.contents || "";
+      var driver    = extractWiperSize(html, ["driver", "conducteur", "front left", "lh"]);
+      var passenger = extractWiperSize(html, ["passenger", "passager", "front right", "rh"]);
+      var rear      = extractWiperSize(html, ["rear", "arriere", "back"]);
 
-      // Parse driver, passenger, rear wiper sizes
-      var driver    = extractWiperSize(html, ['driver', 'conducteur', 'front left', 'lh']);
-      var passenger = extractWiperSize(html, ['passenger', 'passager', 'front right', 'rh']);
-      var rear      = extractWiperSize(html, ['rear', 'arrière', 'arriere', 'back']);
-
-      // Also try to find sizes directly from the page pattern
       if (!driver) {
-        // wipersizechart.com specific pattern: numbers followed by inch/in
         var sizes = html.match(/(\d{1,2})\s*(?:"|inch|in|po)/gi);
         if (sizes && sizes.length >= 2) {
-          driver    = sizes[0].replace(/[^0-9]/g, '') + '"';
-          passenger = sizes[1].replace(/[^0-9]/g, '') + '"';
-          if (sizes[2]) rear = sizes[2].replace(/[^0-9]/g, '') + '"';
+          driver    = sizes[0].replace(/[^0-9]/g, "") + '"';
+          passenger = sizes[1].replace(/[^0-9]/g, "") + '"';
+          if (sizes[2]) rear = sizes[2].replace(/[^0-9]/g, "") + '"';
         }
       }
-
-      renderWiperResult(driver, passenger, rear, wiperUrl, make, model, year);
+      renderWiperResult(driver, passenger, rear, null, make, model, year);
     })
     .catch(function() {
-      renderWiperFallback(make, model, year, wiperUrl);
+      renderWiperFallback(make, model, year);
     });
 }
 
 function extractWiperSize(html, keywords) {
-  // Look for size near keywords
   var lhtml = html.toLowerCase();
   for (var i = 0; i < keywords.length; i++) {
     var idx = lhtml.indexOf(keywords[i]);
@@ -667,65 +1340,6 @@ function extractWiperSize(html, keywords) {
     }
   }
   return null;
-}
-
-function renderWiperResult(driver, passenger, rear, sourceUrl, make, model, year) {
-  var wiperDiv = document.getElementById('wiperContent');
-  if (!wiperDiv) return;
-
-  var html = '';
-
-  if (driver || passenger) {
-    html += '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:12px;">';
-
-    if (driver) {
-      html += '<div style="background:#1a1a1a;border-radius:8px;padding:12px 14px;border-top:2px solid var(--blue,#3B82F6);">';
-      html += '<div style="font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:6px;">Conducteur</div>';
-      html += '<div style="font-family:Bebas Neue,sans-serif;font-size:2rem;color:#3B82F6;letter-spacing:1px;">' + driver + '</div>';
-      html += '</div>';
-    }
-
-    if (passenger) {
-      html += '<div style="background:#1a1a1a;border-radius:8px;padding:12px 14px;border-top:2px solid #8B5CF6;">';
-      html += '<div style="font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:6px;">Passager</div>';
-      html += '<div style="font-family:Bebas Neue,sans-serif;font-size:2rem;color:#8B5CF6;letter-spacing:1px;">' + passenger + '</div>';
-      html += '</div>';
-    }
-
-    if (rear) {
-      html += '<div style="background:#1a1a1a;border-radius:8px;padding:12px 14px;border-top:2px solid var(--green);">';
-      html += '<div style="font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:6px;">Arrière</div>';
-      html += '<div style="font-family:Bebas Neue,sans-serif;font-size:2rem;color:var(--green);letter-spacing:1px;">' + rear + '</div>';
-      html += '</div>';
-    }
-
-    html += '</div>';
-    html += '<div style="font-size:0.72rem;color:var(--muted);padding:8px 12px;background:#0d0d0d;border-radius:6px;">';
-    html += '📐 Dimensions en pouces · Source : <a href="' + sourceUrl + '" target="_blank" style="color:var(--soft);text-decoration:underline;">WiperSizeChart.com</a>';
-    html += '</div>';
-  } else {
-    renderWiperFallback(make, model, year, sourceUrl);
-    return;
-  }
-
-  wiperDiv.innerHTML = html;
-}
-
-function renderWiperFallback(make, model, year, sourceUrl) {
-  var wiperDiv = document.getElementById('wiperContent');
-  if (!wiperDiv) return;
-
-  var wiperUrl = sourceUrl || ('https://www.wipersizechart.com/make/' + make.toLowerCase() + '/' + model.toLowerCase() + '/' + year);
-
-  var html = '';
-  html += '<div style="font-size:0.78rem;color:var(--soft);margin-bottom:12px;">Dimensions non trouvées automatiquement pour ce modèle. Consultez directement :</div>';
-  html += '<a href="' + wiperUrl + '" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:#1a1a1a;border:1px solid #C8102E;border-radius:8px;padding:10px 16px;color:#E8E8E8;text-decoration:none;font-size:0.82rem;font-weight:600;margin-bottom:12px;">🔍 Voir sur WiperSizeChart.com →</a>';
-  html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:4px;">';
-  html += '<div style="background:#111;border-radius:6px;padding:10px;border-left:3px solid var(--yellow);"><div style="font-size:0.7rem;font-weight:700;color:var(--yellow);margin-bottom:4px;">📍 Méthode 1</div><div style="font-size:0.73rem;color:var(--soft);">Couvercle du réservoir lave-glace (sous le capot) — étiquette constructeur</div></div>';
-  html += '<div style="background:#111;border-radius:6px;padding:10px;border-left:3px solid var(--yellow);"><div style="font-size:0.7rem;font-weight:700;color:var(--yellow);margin-bottom:4px;">📍 Méthode 2</div><div style="font-size:0.73rem;color:var(--soft);">Manuel du propriétaire section Entretien · ou sur le bras d\'essuie-glace</div></div>';
-  html += '</div>';
-
-  wiperDiv.innerHTML = html;
 }
 
 // ── CAMERA / OCR FUNCTIONS ──────────────────────────────
