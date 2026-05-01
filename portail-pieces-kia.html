@@ -332,7 +332,9 @@ function processImage(file) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  var d = new Date(FILE_DATE);
+  // Fix timezone issue: add T12:00:00 to avoid UTC offset shifting the date
+  var dateParts = FILE_DATE.split('-');
+  var d = new Date(parseInt(dateParts[0]), parseInt(dateParts[1])-1, parseInt(dateParts[2]));
   document.getElementById('updateDate').textContent = d.toLocaleDateString('fr-CA', { year: 'numeric', month: 'long', day: 'numeric' });
   
   document.getElementById('searchBtn').addEventListener('click', function() { doSearch(); });
