@@ -243,7 +243,7 @@ footer{text-align:center;padding:2.5rem 2rem;border-top:1px solid var(--border);
 </div>
 
 <div class="results-wrap" id="results">
-  <a class="back-link" href="/portail-complexekia/portail-complexekia.html">← Retour au portail</a>
+  <a class="back-link" href="/portail-complexekia.html">← Retour au portail</a>
 </div>
 
 <footer>
@@ -303,7 +303,7 @@ async function decodeVin() {
   if (vin.length < 17) { showError('Veuillez entrer un VIN complet de 17 caractères.'); return; }
 
   const resultsDiv = document.getElementById('results');
-  resultsDiv.innerHTML = '<a class="back-link" href="/portail-complexekia/portail-complexekia.html">← Retour au portail</a><div class="loading"><div class="spinner"></div><p style="color:var(--soft);font-size:0.85rem;">Décodage en cours...</p></div>';
+  resultsDiv.innerHTML = '<a class="back-link" href="/portail-complexekia.html">← Retour au portail</a><div class="loading"><div class="spinner"></div><p style="color:var(--soft);font-size:0.85rem;">Décodage en cours...</p></div>';
 
   try {
     const vinRes = await fetch('https://vpic.nhtsa.dot.gov/api/vehicles/decodevinvalues/' + vin + '?format=json');
@@ -447,7 +447,7 @@ async function decodeVin() {
     let html = '';
 
     // Vehicle hero
-    html += '<a class="back-link" href="/portail-complexekia/portail-complexekia.html">← Retour au portail</a>';
+    html += '<a class="back-link" href="/portail-complexekia.html">← Retour au portail</a>';
     html += '<div class="vehicle-hero">';
     html += '<div class="vehicle-title">';
     html += '<div class="vehicle-eyebrow">' + year + ' · ' + make + '</div>';
@@ -546,17 +546,6 @@ async function decodeVin() {
       html += "</div>";
     }
 
-    // SECTION 4c — Pneus OEM
-    var tireData = getTireFromDB(make, model, year);
-    if (tireData) {
-      html += "<div class=\"info-card\" style=\"margin-bottom:14px;\">";
-      html += "<div class=\"card-title\"><span>🔵</span> Dimensions de pneus OEM</div>";
-      html += buildCard("Taille standard", tireData.std, "hl");
-      if (tireData.opt) html += buildCard("Option / Trim supérieur", tireData.opt);
-      html += "<div style=\"margin-top:10px;padding:8px 12px;background:#0d0d0d;border-radius:6px;font-size:0.72rem;color:var(--muted);\">💡 Vérifiez toujours l'étiquette sur le jambage de porte conducteur pour la taille exacte de votre configuration.</div>";
-      html += "</div>";
-    }
-
     // SECTION 5 — Fabrication
     html += '<div class="grid-2">';
     html += '<div class="info-card"><div class="card-title"><span>🏭</span> Fabrication</div>';
@@ -620,7 +609,7 @@ async function decodeVin() {
 }
 
 function showError(msg) {
-  document.getElementById('results').innerHTML = '<a class="back-link" href="/portail-complexekia/portail-complexekia.html">← Retour au portail</a><div class="empty-state"><div class="empty-icon">⚠️</div><p style="color:var(--text);">' + msg + '</p></div>';
+  document.getElementById('results').innerHTML = '<a class="back-link" href="/portail-complexekia.html">← Retour au portail</a><div class="empty-state"><div class="empty-icon">⚠️</div><p style="color:var(--text);">' + msg + '</p></div>';
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -669,205 +658,6 @@ document.addEventListener('click', function(e) {
   if (action === 'retryCamera') { retryCamera(); return; }
   if (action === 'useManualVin') { useManualVin(); return; }
 });
-
-
-// OEM Tire size database — toutes marques (taille OEM principale)
-var TIRE_DB = {
-  "KIA": {
-    "SPORTAGE":   { "2023-2025":{"std":"235/50R19","opt":"235/45R20"}, "2017-2022":{"std":"235/55R18","opt":"235/50R19"}, "2011-2016":{"std":"225/65R17","opt":"235/50R18"} },
-    "SORENTO":    { "2021-2025":{"std":"235/65R17","opt":"235/55R19"}, "2016-2020":{"std":"235/65R17","opt":"245/45R20"}, "2011-2015":{"std":"235/65R17","opt":"235/55R19"} },
-    "FORTE":      { "2019-2025":{"std":"205/60R16","opt":"225/40R18"}, "2014-2018":{"std":"205/65R16","opt":"225/45R17"} },
-    "SOUL":       { "2020-2025":{"std":"205/60R16","opt":"235/45R18"}, "2012-2019":{"std":"205/60R16","opt":"235/45R17"} },
-    "RIO":        { "2018-2023":{"std":"195/65R15","opt":"205/45R17"}, "2012-2017":{"std":"195/65R15","opt":"205/45R16"} },
-    "TELLURIDE":  { "2020-2025":{"std":"245/65R17","opt":"265/45R20"} },
-    "NIRO":       { "2023-2025":{"std":"215/55R17","opt":"235/45R18"}, "2017-2022":{"std":"215/55R17","opt":"225/45R18"} },
-    "SELTOS":     { "2021-2025":{"std":"215/60R17","opt":"235/45R19"} },
-    "STINGER":    { "2018-2023":{"std":"225/40R19","opt":"255/35R19"} },
-    "K5":         { "2021-2025":{"std":"225/45R18","opt":"245/40R19"} },
-    "CARNIVAL":   { "2022-2025":{"std":"235/60R17","opt":"235/55R19"} },
-    "EV6":        { "2022-2025":{"std":"235/55R19","opt":"255/45R20"} },
-    "EV9":        { "2024-2025":{"std":"255/55R20","opt":"285/45R21"} },
-    "K4":         { "2025":{"std":"215/55R17","opt":"235/45R18"} }
-  },
-  "HYUNDAI": {
-    "TUCSON":     { "2022-2025":{"std":"235/60R17","opt":"255/45R19"}, "2016-2021":{"std":"225/65R17","opt":"245/45R19"} },
-    "SANTA FE":   { "2021-2025":{"std":"235/65R17","opt":"255/45R20"}, "2013-2020":{"std":"235/65R17","opt":"235/55R19"} },
-    "ELANTRA":    { "2021-2025":{"std":"205/60R16","opt":"245/40R18"}, "2017-2020":{"std":"205/55R16","opt":"225/45R17"} },
-    "SONATA":     { "2020-2025":{"std":"215/55R17","opt":"245/40R19"}, "2015-2019":{"std":"215/55R17","opt":"235/45R18"} },
-    "KONA":       { "2018-2025":{"std":"215/60R16","opt":"235/45R18"} },
-    "PALISADE":   { "2020-2025":{"std":"245/60R18","opt":"265/45R20"} },
-    "IONIQ 5":    { "2022-2025":{"std":"235/55R19","opt":"255/45R20"} },
-    "VENUE":      { "2020-2025":{"std":"205/60R16","opt":"215/55R17"} }
-  },
-  "TOYOTA": {
-    "CAMRY":      { "2018-2025":{"std":"215/55R17","opt":"235/45R18"}, "2012-2017":{"std":"205/65R16","opt":"215/55R17"} },
-    "COROLLA":    { "2020-2025":{"std":"205/55R16","opt":"225/40R18"}, "2014-2019":{"std":"205/55R16","opt":"215/45R17"} },
-    "RAV4":       { "2019-2025":{"std":"225/65R17","opt":"235/55R18"}, "2013-2018":{"std":"225/65R17","opt":"235/55R18"} },
-    "HIGHLANDER": { "2020-2025":{"std":"245/60R18","opt":"245/55R19"}, "2014-2019":{"std":"245/65R17","opt":"245/55R19"} },
-    "TACOMA":     { "2016-2025":{"std":"245/75R16","opt":"265/65R17"} },
-    "TUNDRA":     { "2022-2025":{"std":"275/65R18","opt":"275/55R20"}, "2007-2021":{"std":"245/75R17","opt":"275/65R18"} },
-    "SIENNA":     { "2021-2025":{"std":"235/60R17","opt":"235/55R19"} },
-    "4RUNNER":    { "2003-2025":{"std":"265/70R16","opt":"265/65R17"} },
-    "PRIUS":      { "2016-2025":{"std":"195/65R15","opt":"215/45R17"} }
-  },
-  "HONDA": {
-    "CIVIC":      { "2022-2025":{"std":"215/55R16","opt":"235/40R18"}, "2016-2021":{"std":"215/55R16","opt":"235/40R18"} },
-    "ACCORD":     { "2023-2025":{"std":"225/50R17","opt":"245/40R19"}, "2018-2022":{"std":"225/50R17","opt":"235/45R18"} },
-    "CR-V":       { "2023-2025":{"std":"235/60R18","opt":"235/55R19"}, "2017-2022":{"std":"225/65R17","opt":"235/60R18"} },
-    "PILOT":      { "2023-2025":{"std":"245/60R18","opt":"255/50R20"}, "2016-2022":{"std":"245/60R18","opt":"255/55R18"} },
-    "HR-V":       { "2023-2025":{"std":"215/60R16","opt":"225/50R18"} },
-    "ODYSSEY":    { "2018-2025":{"std":"235/60R17","opt":"235/55R19"} },
-    "RIDGELINE":  { "2017-2025":{"std":"245/60R18","opt":"245/55R20"} }
-  },
-  "FORD": {
-    "F-150":      { "2021-2025":{"std":"265/70R17","opt":"275/55R20"}, "2015-2020":{"std":"245/70R17","opt":"275/55R20"} },
-    "ESCAPE":     { "2020-2025":{"std":"225/60R17","opt":"235/45R19"}, "2013-2019":{"std":"225/65R16","opt":"235/50R18"} },
-    "EXPLORER":   { "2020-2025":{"std":"255/60R18","opt":"255/50R20"}, "2011-2019":{"std":"245/60R18","opt":"255/55R20"} },
-    "EDGE":       { "2019-2025":{"std":"235/60R18","opt":"245/50R20"} },
-    "MUSTANG":    { "2015-2025":{"std":"235/55R19","opt":"255/40R19"} },
-    "RANGER":     { "2019-2025":{"std":"255/65R17","opt":"265/50R20"} },
-    "BRONCO":     { "2021-2025":{"std":"255/70R18","opt":"285/70R17"} },
-    "EXPEDITION": { "2018-2025":{"std":"275/55R20","opt":"275/50R22"} }
-  },
-  "CHEVROLET": {
-    "SILVERADO":  { "2019-2025":{"std":"265/65R18","opt":"275/55R20"}, "2014-2018":{"std":"255/65R18","opt":"275/55R20"} },
-    "EQUINOX":    { "2018-2025":{"std":"225/65R17","opt":"235/50R19"}, "2010-2017":{"std":"225/65R17","opt":"235/50R18"} },
-    "TRAVERSE":   { "2018-2025":{"std":"255/65R18","opt":"255/55R20"} },
-    "MALIBU":     { "2016-2025":{"std":"215/55R17","opt":"235/45R18"} },
-    "TAHOE":      { "2021-2025":{"std":"275/55R20","opt":"285/45R22"}, "2015-2020":{"std":"265/65R18","opt":"275/55R20"} },
-    "COLORADO":   { "2015-2025":{"std":"255/65R17","opt":"265/60R18"} },
-    "TRAX":       { "2013-2025":{"std":"205/70R15","opt":"215/55R18"} }
-  },
-  "GMC": {
-    "SIERRA":     { "2019-2025":{"std":"265/65R18","opt":"275/55R20"} },
-    "TERRAIN":    { "2018-2025":{"std":"225/65R17","opt":"235/50R19"} },
-    "ACADIA":     { "2017-2025":{"std":"255/65R18","opt":"255/50R20"} },
-    "YUKON":      { "2021-2025":{"std":"275/55R20","opt":"285/45R22"} }
-  },
-  "DODGE": {
-    "CHARGER":    { "2015-2025":{"std":"235/55R19","opt":"245/45R20"} },
-    "CHALLENGER": { "2015-2025":{"std":"235/55R19","opt":"275/40R20"} },
-    "DURANGO":    { "2014-2025":{"std":"265/50R20","opt":"295/45R20"} }
-  },
-  "RAM": {
-    "1500":       { "2019-2025":{"std":"275/55R20","opt":"285/45R22"}, "2013-2018":{"std":"265/70R17","opt":"275/60R20"} },
-    "2500":       { "2010-2025":{"std":"265/70R18","opt":"285/60R20"} },
-    "PROMASTER":  { "2014-2025":{"std":"215/65R16"} }
-  },
-  "JEEP": {
-    "GRAND CHEROKEE":{ "2021-2025":{"std":"265/60R18","opt":"285/45R20"}, "2011-2020":{"std":"265/60R18","opt":"295/45R20"} },
-    "WRANGLER":      { "2018-2025":{"std":"255/70R18","opt":"285/70R17"} },
-    "COMPASS":       { "2017-2025":{"std":"215/60R17","opt":"225/50R18"} },
-    "RENEGADE":      { "2015-2025":{"std":"215/60R16","opt":"225/45R18"} },
-    "GLADIATOR":     { "2020-2025":{"std":"255/70R18","opt":"285/70R17"} }
-  },
-  "NISSAN": {
-    "ROGUE":      { "2021-2025":{"std":"225/65R17","opt":"235/55R19"}, "2014-2020":{"std":"225/65R17","opt":"235/55R18"} },
-    "ALTIMA":     { "2019-2025":{"std":"215/55R17","opt":"235/40R19"} },
-    "SENTRA":     { "2020-2025":{"std":"205/60R16","opt":"215/45R18"} },
-    "MURANO":     { "2015-2025":{"std":"235/65R18","opt":"245/50R20"} },
-    "PATHFINDER": { "2022-2025":{"std":"245/65R17","opt":"265/50R20"} },
-    "FRONTIER":   { "2022-2025":{"std":"255/65R16","opt":"265/60R18"} },
-    "KICKS":      { "2018-2025":{"std":"205/60R16","opt":"215/50R17"} }
-  },
-  "MAZDA": {
-    "CX-5":       { "2017-2025":{"std":"225/65R17","opt":"225/55R19"} },
-    "CX-50":      { "2023-2025":{"std":"225/60R18","opt":"225/55R19"} },
-    "CX-9":       { "2016-2023":{"std":"245/65R17","opt":"255/50R19"} },
-    "MAZDA3":     { "2019-2025":{"std":"205/60R16","opt":"215/45R18"} },
-    "MAZDA6":     { "2014-2021":{"std":"215/55R17","opt":"225/45R19"} }
-  },
-  "SUBARU": {
-    "OUTBACK":    { "2020-2025":{"std":"225/60R18","opt":"225/55R18"}, "2015-2019":{"std":"225/60R17","opt":"225/55R18"} },
-    "FORESTER":   { "2019-2025":{"std":"225/55R17","opt":"225/50R18"} },
-    "CROSSTREK":  { "2018-2025":{"std":"215/60R16","opt":"225/50R17"} },
-    "IMPREZA":    { "2017-2025":{"std":"205/55R16","opt":"215/45R17"} },
-    "ASCENT":     { "2019-2025":{"std":"245/60R18","opt":"245/50R20"} },
-    "LEGACY":     { "2020-2025":{"std":"225/55R17","opt":"225/45R18"} }
-  },
-  "VOLKSWAGEN": {
-    "JETTA":      { "2019-2025":{"std":"205/60R16","opt":"225/40R18"} },
-    "TIGUAN":     { "2018-2025":{"std":"215/65R17","opt":"235/50R19"} },
-    "ATLAS":      { "2018-2025":{"std":"235/65R17","opt":"255/45R20"} },
-    "GOLF":       { "2015-2025":{"std":"205/55R16","opt":"225/45R17"} },
-    "PASSAT":     { "2012-2019":{"std":"215/55R17","opt":"235/45R18"} }
-  },
-  "BMW": {
-    "3 SERIES":   { "2019-2025":{"std":"225/50R17","opt":"225/45R18"}, "2012-2018":{"std":"205/60R16","opt":"225/45R18"} },
-    "5 SERIES":   { "2017-2025":{"std":"245/45R18","opt":"245/40R19"} },
-    "X3":         { "2018-2025":{"std":"225/60R18","opt":"245/50R19"} },
-    "X5":         { "2019-2025":{"std":"255/55R19","opt":"275/45R20"} },
-    "X1":         { "2016-2025":{"std":"225/50R17","opt":"225/45R18"} }
-  },
-  "MERCEDES-BENZ": {
-    "C-CLASS":    { "2019-2025":{"std":"225/45R18","opt":"255/40R18"} },
-    "E-CLASS":    { "2017-2025":{"std":"245/45R18","opt":"255/40R19"} },
-    "GLC":        { "2016-2025":{"std":"235/55R19","opt":"255/45R20"} },
-    "GLE":        { "2020-2025":{"std":"265/50R19","opt":"285/45R20"} }
-  },
-  "LEXUS": {
-    "RX":         { "2020-2025":{"std":"235/55R20","opt":"235/50R21"} },
-    "NX":         { "2022-2025":{"std":"225/60R18","opt":"235/50R19"} },
-    "ES":         { "2019-2025":{"std":"215/55R17","opt":"235/45R18"} }
-  },
-  "ACURA": {
-    "MDX":        { "2022-2025":{"std":"245/55R19","opt":"275/40R21"} },
-    "RDX":        { "2019-2025":{"std":"235/60R18","opt":"235/55R19"} }
-  }
-,
-  "INFINITI": {
-    "QX60":       { "2022-2025":{"std":"235/55R20","opt":"255/50R20"} },
-    "QX50":       { "2019-2025":{"std":"235/60R18","opt":"235/55R19"} }
-  },
-  "LINCOLN": {
-    "NAVIGATOR":  { "2018-2025":{"std":"275/55R20","opt":"275/45R22"} },
-    "CORSAIR":    { "2020-2025":{"std":"235/55R18","opt":"235/50R19"} },
-    "NAUTILUS":   { "2019-2025":{"std":"235/60R18","opt":"245/50R20"} }
-  },
-  "BUICK": {
-    "ENCLAVE":    { "2018-2025":{"std":"255/65R18","opt":"255/50R20"} },
-    "ENCORE GX":  { "2020-2025":{"std":"215/60R17","opt":"225/50R18"} }
-  },
-  "CADILLAC": {
-    "ESCALADE":   { "2021-2025":{"std":"275/55R20","opt":"285/45R22"} },
-    "XT5":        { "2017-2025":{"std":"235/65R17","opt":"255/50R19"} },
-    "XT4":        { "2019-2025":{"std":"225/65R17","opt":"235/50R19"} }
-  },
-  "MITSUBISHI": {
-    "OUTLANDER":  { "2022-2025":{"std":"225/60R18","opt":"235/55R18"}, "2014-2021":{"std":"225/65R17","opt":"225/55R18"} },
-    "RVR":        { "2011-2025":{"std":"215/65R16","opt":"215/55R18"} },
-    "ECLIPSE CROSS": { "2018-2025":{"std":"215/60R17","opt":"225/55R18"} }
-  },
-  "GENESIS": {
-    "GV80":       { "2021-2025":{"std":"265/45R21","opt":"265/40R22"} },
-    "GV70":       { "2022-2025":{"std":"235/55R19","opt":"255/45R20"} },
-    "G80":        { "2021-2025":{"std":"245/45R19","opt":"245/40R20"} }
-  }
-};
-
-function getTireFromDB(make, model, year) {
-  var m  = (make  || "").toUpperCase();
-  var mo = (model || "").toUpperCase().trim();
-  var yr = parseInt(year) || 0;
-  if (!TIRE_DB[m]) return null;
-  var modelData = TIRE_DB[m][mo];
-  if (!modelData) {
-    for (var dbModel in TIRE_DB[m]) {
-      if (mo.indexOf(dbModel) > -1 || dbModel.indexOf(mo) > -1) {
-        modelData = TIRE_DB[m][dbModel];
-        break;
-      }
-    }
-  }
-  if (!modelData) return null;
-  for (var range in modelData) {
-    var parts = range.split("-");
-    var from = parseInt(parts[0]);
-    var to   = parts[1] ? parseInt(parts[1]) : from;
-    if (yr >= from && yr <= to) return modelData[range];
-  }
-  return null;
-}
 
 
 // ── WIPER SIZE LOOKUP ────────────────────────────────────
