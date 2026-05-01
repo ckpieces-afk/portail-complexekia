@@ -1254,20 +1254,6 @@ function getBatteryFromDB(make, model, year) {
 }
 
 
-  var m  = (make  || "").toUpperCase();
-  var mo = (model || "").toUpperCase();
-  var yr = parseInt(year) || 0;
-  if (!BATTERY_DB[m] || !BATTERY_DB[m][mo]) return null;
-  var modelData = BATTERY_DB[m][mo];
-  for (var range in modelData) {
-    var parts = range.split("-");
-    var from = parseInt(parts[0]);
-    var to   = parts[1] ? parseInt(parts[1]) : from;
-    if (yr >= from && yr <= to) return modelData[range];
-  }
-  return null;
-}
-
 
 
 function getWiperFromDB(make, model, year) {
