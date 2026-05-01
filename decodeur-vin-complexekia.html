@@ -243,7 +243,7 @@ footer{text-align:center;padding:2.5rem 2rem;border-top:1px solid var(--border);
 </div>
 
 <div class="results-wrap" id="results">
-  <a class="back-link" href="/portail-complexekia.html">← Retour au portail</a>
+  <a class="back-link" href="portail-complexekia.html">← Retour au portail</a>
 </div>
 
 <footer>
@@ -303,7 +303,7 @@ async function decodeVin() {
   if (vin.length < 17) { showError('Veuillez entrer un VIN complet de 17 caractères.'); return; }
 
   const resultsDiv = document.getElementById('results');
-  resultsDiv.innerHTML = '<a class="back-link" href="/portail-complexekia.html">← Retour au portail</a><div class="loading"><div class="spinner"></div><p style="color:var(--soft);font-size:0.85rem;">Décodage en cours...</p></div>';
+  resultsDiv.innerHTML = '<a class="back-link" href="portail-complexekia.html">← Retour au portail</a><div class="loading"><div class="spinner"></div><p style="color:var(--soft);font-size:0.85rem;">Décodage en cours...</p></div>';
 
   try {
     const vinRes = await fetch('https://vpic.nhtsa.dot.gov/api/vehicles/decodevinvalues/' + vin + '?format=json');
@@ -447,7 +447,7 @@ async function decodeVin() {
     let html = '';
 
     // Vehicle hero
-    html += '<a class="back-link" href="/portail-complexekia.html">← Retour au portail</a>';
+    html += '<a class="back-link" href="portail-complexekia.html">← Retour au portail</a>';
     html += '<div class="vehicle-hero">';
     html += '<div class="vehicle-title">';
     html += '<div class="vehicle-eyebrow">' + year + ' · ' + make + '</div>';
@@ -609,7 +609,7 @@ async function decodeVin() {
 }
 
 function showError(msg) {
-  document.getElementById('results').innerHTML = '<a class="back-link" href="/portail-complexekia.html">← Retour au portail</a><div class="empty-state"><div class="empty-icon">⚠️</div><p style="color:var(--text);">' + msg + '</p></div>';
+  document.getElementById('results').innerHTML = '<a class="back-link" href="portail-complexekia.html">← Retour au portail</a><div class="empty-state"><div class="empty-icon">⚠️</div><p style="color:var(--text);">' + msg + '</p></div>';
 }
 
 document.addEventListener('DOMContentLoaded', function() {
