@@ -3,6 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#C8102E">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="CK Pièces">
+<link rel="apple-touch-icon" href="icon-192.png">
 <title>Décodeur VIN — Complexe Kia Montréal</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -169,6 +175,14 @@ footer{text-align:center;padding:2.5rem 2rem;border-top:1px solid var(--border);
 @media(max-width:600px){.grid-2{grid-template-columns:1fr;}.hero{padding:2.5rem 1rem 2rem;}.results-wrap{padding-left:1rem;padding-right:1rem;}.vehicle-hero{flex-direction:column;}.badges{flex-direction:row;flex-wrap:wrap;}header{padding:0 1rem;}.header-right{display:none;}}
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/4.1.1/tesseract.min.js"></script>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7KWSBPV16"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-B7KWSBPV16');
+</script>
 </head>
 <body>
 <div class="print-header" style="display:none;justify-content:space-between;align-items:center;margin-bottom:24px;padding-bottom:16px;border-bottom:3px solid #C8102E;">
@@ -1068,6 +1082,50 @@ function getWiperFromDB(make, model, year) {
     }
   }
   return null;
+}
+
+function renderWiperResult(driver, passenger, rear, sourceUrl, make, model, year) {
+  var wiperDiv = document.getElementById("wiperContent");
+  if (!wiperDiv) return;
+  var html = "";
+  if (driver || passenger) {
+    html += "<div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:12px;\">";
+    if (driver) {
+      html += "<div style=\"background:#1a1a1a;border-radius:8px;padding:12px 14px;border-top:2px solid #3B82F6;\">";
+      html += "<div style=\"font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:6px;\">Conducteur</div>";
+      html += "<div style=\"font-family:Bebas Neue,sans-serif;font-size:2rem;color:#3B82F6;letter-spacing:1px;\">" + driver + "</div>";
+      html += "</div>";
+    }
+    if (passenger) {
+      html += "<div style=\"background:#1a1a1a;border-radius:8px;padding:12px 14px;border-top:2px solid #8B5CF6;\">";
+      html += "<div style=\"font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:6px;\">Passager</div>";
+      html += "<div style=\"font-family:Bebas Neue,sans-serif;font-size:2rem;color:#8B5CF6;letter-spacing:1px;\">" + passenger + "</div>";
+      html += "</div>";
+    }
+    if (rear) {
+      html += "<div style=\"background:#1a1a1a;border-radius:8px;padding:12px 14px;border-top:2px solid #22C55E;\">";
+      html += "<div style=\"font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:6px;\">Arrière</div>";
+      html += "<div style=\"font-family:Bebas Neue,sans-serif;font-size:2rem;color:#22C55E;letter-spacing:1px;\">" + rear + "</div>";
+      html += "</div>";
+    }
+    html += "</div>";
+  } else {
+    renderWiperFallback(make, model, year);
+    return;
+  }
+  wiperDiv.innerHTML = html;
+}
+
+function renderWiperFallback(make, model, year) {
+  var wiperDiv = document.getElementById("wiperContent");
+  if (!wiperDiv) return;
+  var html = "";
+  html += "<div style=\"font-size:0.78rem;color:var(--soft);margin-bottom:12px;\">Dimensions non trouvées automatiquement. Voici comment les trouver :</div>";
+  html += "<div style=\"display:grid;grid-template-columns:1fr 1fr;gap:8px;\">";
+  html += "<div style=\"background:#111;border-radius:6px;padding:10px;border-left:3px solid var(--yellow);\"><div style=\"font-size:0.7rem;font-weight:700;color:var(--yellow);margin-bottom:4px;\">📍 Méthode 1</div><div style=\"font-size:0.73rem;color:var(--soft);\">Couvercle du réservoir lave-glace (sous le capot)</div></div>";
+  html += "<div style=\"background:#111;border-radius:6px;padding:10px;border-left:3px solid var(--yellow);\"><div style=\"font-size:0.7rem;font-weight:700;color:var(--yellow);margin-bottom:4px;\">📍 Méthode 2</div><div style=\"font-size:0.73rem;color:var(--soft);\">Manuel du propriétaire section Entretien</div></div>";
+  html += "</div>";
+  wiperDiv.innerHTML = html;
 }
 
 function fetchWiperSizes(wiperMake, wiperModel, year, make, model) {

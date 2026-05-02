@@ -3,6 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#C8102E">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="CK Pièces">
+<link rel="apple-touch-icon" href="icon-192.png">
 <title>Portail Pièces — Statut &amp; ETA</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/4.1.1/tesseract.min.js"></script>
@@ -70,15 +76,60 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);}
 .footer-contact{font-size:0.72rem;color:var(--muted);}
 .footer-contact a{color:var(--muted);text-decoration:none;}
 @media print{
+  @page{size:8.5in 11in;margin:0.5in;}
   header,.hero,.warning-banner,.search-wrap,#printBtn,.ocr-overlay,footer{display:none !important;}
-  body{background:#fff !important;color:#000 !important;}
-  .print-header{display:flex !important;}
-  .result-card{background:#fff !important;border:1px solid #ccc !important;page-break-inside:avoid;color:#000 !important;}
-  .part-name,.eta-date{color:#000 !important;}
-  .card-field{background:#f5f5f5 !important;}
-  .field-label{color:#555 !important;}
-  .field-value{color:#000 !important;}
-  .print-footer{display:block !important;text-align:center;font-size:0.7rem;color:#888;margin-top:24px;border-top:1px solid #ccc;padding-top:10px;}
+  body{background:#fff !important;color:#000 !important;font-size:9pt;}
+  .print-header{display:flex !important;margin-bottom:12px;padding-bottom:10px;}
+  .print-header img{height:36px !important;}
+  
+  .results-section{padding:0 !important;margin:0 !important;}
+  .results-label{font-size:7pt !important;margin-bottom:8px !important;}
+  
+  .result-card{
+    background:#fff !important;
+    border:0.5px solid #ccc !important;
+    border-radius:0 !important;
+    padding:8px 10px !important;
+    margin-bottom:6px !important;
+    page-break-inside:avoid;
+    color:#000 !important;
+  }
+  .card-header{margin-bottom:6px !important;}
+  .part-name{font-size:9pt !important;color:#000 !important;}
+  .part-no{font-size:7pt !important;}
+  .eta-label{font-size:6pt !important;margin-bottom:1px !important;}
+  .eta-date{font-size:14pt !important;color:#000 !important;}
+  
+  .card-grid{
+    display:grid !important;
+    grid-template-columns:repeat(4,1fr) !important;
+    gap:4px !important;
+  }
+  .card-field{
+    background:#f8f8f8 !important;
+    border-radius:3px !important;
+    padding:4px 6px !important;
+  }
+  .field-label{font-size:5.5pt !important;color:#666 !important;margin-bottom:1px !important;}
+  .field-value{font-size:7.5pt !important;color:#000 !important;}
+  .field-value.mono{font-size:6.5pt !important;}
+  
+  .print-footer{
+    display:block !important;
+    text-align:center;
+    font-size:6.5pt;
+    color:#888;
+    margin-top:10px;
+    border-top:0.5px solid #ccc;
+    padding-top:6px;
+  }
+  
+  /* Rental badge compact */
+  div[style*="inline-flex"]{
+    font-size:6pt !important;
+    padding:1px 6px !important;
+    margin-top:3px !important;
+  }
 }
 .print-header{display:none;}
 .print-footer{display:none;}
@@ -89,6 +140,14 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);}
   .card-grid{grid-template-columns:1fr 1fr;}
 }
 </style>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7KWSBPV16"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-B7KWSBPV16');
+</script>
 </head>
 <body>
 
@@ -165,8 +224,8 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);}
 </footer>
 
 <script>
-var PARTS = [{"partNo": "J5529AP500", "partName": "WHEEL-ALUMINUM - FR", "orderNo": "61153PC73E", "dealerOrder": "FC83126", "orderDate": "2026-03-26", "elapsedDays": 36, "eta": "2026-05-29", "roNumber": "FC83126", "vin": "KNAE55LCXN6114390", "carRental": "N"}, {"partNo": "29110AO000", "partName": "PANEL ASSY-UNDER COVER", "orderNo": "61153PD13R", "dealerOrder": "S0423", "orderDate": "2026-04-23", "elapsedDays": 8, "eta": "2026-05-05", "roNumber": "", "vin": "", "carRental": ""}, {"partNo": "58731H8000", "partName": "HOSE-BRAKE FRONT,LH", "orderNo": "61153PD12R", "dealerOrder": "S0421", "orderDate": "2026-04-21", "elapsedDays": 10, "eta": "2026-05-26", "roNumber": "", "vin": "", "carRental": ""}, {"partNo": "58732H8000", "partName": "HOSE-BRAKE FRONT,RH", "orderNo": "61153PD12R", "dealerOrder": "S0421", "orderDate": "2026-04-21", "elapsedDays": 10, "eta": "2026-05-15", "roNumber": "", "vin": "", "carRental": ""}, {"partNo": "645J4L2000", "partName": "PANEL-F/APRON UPPER OTR RR,RH", "orderNo": "61153PD57E", "dealerOrder": "FC84306", "orderDate": "2026-04-29", "elapsedDays": 2, "eta": "2026-05-25", "roNumber": "FC84306", "vin": "5XXG24J29PG171967", "carRental": "N"}, {"partNo": "66321P1500", "partName": "PANEL-FENDER,RH", "orderNo": "61153PD38E", "dealerOrder": "FC83960", "orderDate": "2026-04-21", "elapsedDays": 10, "eta": "2026-05-29", "roNumber": "83960", "vin": "KNDPXDDG2T7286437", "carRental": "N"}, {"partNo": "71503L3C00", "partName": "PANEL ASSY-QUARTER OUTER,LH", "orderNo": "61153PD29E", "dealerOrder": "FC83803", "orderDate": "2026-04-14", "elapsedDays": 17, "eta": "2026-06-29", "roNumber": "83803", "vin": "5XXG64J2XMG060330", "carRental": "N"}, {"partNo": "81710AT000WK", "partName": "TRIM ASSY-TAIL GATE LWR", "orderNo": "61153PD60E", "dealerOrder": "FC84383", "orderDate": "2026-04-29", "elapsedDays": 2, "eta": "2026-05-20", "roNumber": "FC84383", "vin": "KNDCP3L18P5054688", "carRental": "N"}, {"partNo": "84774DO100MG6", "partName": "COVER ASSY-CTR C/PAD RH", "orderNo": "61153PD44E", "dealerOrder": "FC84123", "orderDate": "2026-04-22", "elapsedDays": 9, "eta": "2026-05-25", "roNumber": "84123", "vin": "KNDADFS50S6056489", "carRental": "N"}, {"partNo": "85770P2000WK", "partName": "TRIM ASSY-RR TRANSVERSE", "orderNo": "61153PD35E", "dealerOrder": "FC83894", "orderDate": "2026-04-17", "elapsedDays": 14, "eta": "2026-05-20", "roNumber": "83894", "vin": "KNDRJDJH3T5435988", "carRental": "N"}, {"partNo": "85770P2000WK", "partName": "TRIM ASSY-RR TRANSVERSE", "orderNo": "61153PD51E", "dealerOrder": "FC84271", "orderDate": "2026-04-27", "elapsedDays": 4, "eta": "2026-05-25", "roNumber": "FC84271", "vin": "KNDRMDJH9S5359909", "carRental": "N"}, {"partNo": "865B5AT000", "partName": "GARNISH ASSY-FR BUMPER", "orderNo": "61153PD58E", "dealerOrder": "FDC84292", "orderDate": "2026-04-29", "elapsedDays": 2, "eta": "2026-05-12", "roNumber": "FC84292", "vin": "KNDCS3LF1R5199567", "carRental": "N"}, {"partNo": "86512P1700BKL", "partName": "COVER-FR BUMPER,LWR", "orderNo": "61153PD47E", "dealerOrder": "FC84214", "orderDate": "2026-04-27", "elapsedDays": 4, "eta": "2026-05-29", "roNumber": "FC84214", "vin": "KNDPXCDF7T7456499", "carRental": "N"}, {"partNo": "86611AT001", "partName": "COVER-RR BUMPER", "orderNo": "61153PD54E", "dealerOrder": "FC84311", "orderDate": "2026-04-28", "elapsedDays": 3, "eta": "2026-05-26", "roNumber": "FC84311", "vin": "KNDCP3LE7S5253923", "carRental": "N"}, {"partNo": "86631P1800", "partName": "BEAM-RR BUMPER", "orderNo": "61153PD45E", "dealerOrder": "FC84181", "orderDate": "2026-04-24", "elapsedDays": 7, "eta": "2026-05-26", "roNumber": "FC84181", "vin": "KNDPXCDF7T7456499", "carRental": "N"}, {"partNo": "86650AT000", "partName": "COVER-RR BUMPER LWR", "orderNo": "61153PD54E", "dealerOrder": "FC84311", "orderDate": "2026-04-28", "elapsedDays": 3, "eta": "2026-05-29", "roNumber": "FC84311", "vin": "KNDCP3LE7S5253923", "carRental": "N"}, {"partNo": "86650P1530", "partName": "COVER-RR BUMPER,LWR", "orderNo": "61153PD43E", "dealerOrder": "FC84105", "orderDate": "2026-04-22", "elapsedDays": 9, "eta": "2026-05-25", "roNumber": "", "vin": "KNDPVCDF5T7426813", "carRental": "N"}, {"partNo": "86652DO000", "partName": "BRACKET ASSY-RR BUMPER LWR,RH", "orderNo": "61153PD50E", "dealerOrder": "FC84258", "orderDate": "2026-04-27", "elapsedDays": 4, "eta": "2026-05-20", "roNumber": "FC84258", "vin": "KNDAFFS53S6056092", "carRental": "N"}, {"partNo": "86842DO000", "partName": "GUARD-REAR MUD,RH", "orderNo": "61153PD21E", "dealerOrder": "FC83615", "orderDate": "2026-04-10", "elapsedDays": 21, "eta": "2026-05-15", "roNumber": "83615", "vin": "KNDAFFS57S6060937", "carRental": "N"}, {"partNo": "86842DO000", "partName": "GUARD-REAR MUD,RH", "orderNo": "61153PD28E", "dealerOrder": "FC83760", "orderDate": "2026-04-14", "elapsedDays": 17, "eta": "2026-05-15", "roNumber": "83760", "vin": "KNDAFFS54T6066261", "carRental": "N"}, {"partNo": "86842DO000", "partName": "GUARD-REAR MUD,RH", "orderNo": "61153PD52E", "dealerOrder": "FC84215", "orderDate": "2026-04-28", "elapsedDays": 3, "eta": "2026-05-20", "roNumber": "FC84215", "vin": "KNDADFS50T6066215", "carRental": "N"}, {"partNo": "87721C6000", "partName": "GARNISH ASSY-FR DR SIDE LH", "orderNo": "61153PC53E", "dealerOrder": "FC82777", "orderDate": "2026-03-17", "elapsedDays": 45, "eta": "2026-07-10", "roNumber": "82777", "vin": "5XYPHDA54KG606889", "carRental": "N"}, {"partNo": "87721C6000", "partName": "GARNISH ASSY-FR DR SIDE LH", "orderNo": "61153PC94E", "dealerOrder": "FC83273", "orderDate": "2026-03-31", "elapsedDays": 31, "eta": "2026-07-10", "roNumber": "83273", "vin": "5XYPHDA18HG202273", "carRental": "N"}, {"partNo": "88200Q5OM0AXA", "partName": "CUSHION ASSY-FR SEAT,RH", "orderNo": "61153PC55E", "dealerOrder": "BR08255", "orderDate": "2026-03-17", "elapsedDays": 45, "eta": "2026-07-10", "roNumber": "BR08255", "vin": "KNDETCA20N7318455", "carRental": "N"}, {"partNo": "88840P1550WK", "partName": "BUCKLE ASSY-FR S/BELT,RH", "orderNo": "61153PD56E", "dealerOrder": "FC84346", "orderDate": "2026-04-28", "elapsedDays": 3, "eta": "2026-05-25", "roNumber": "FC84346", "vin": "KNDPUCDF8R7264395", "carRental": "N"}, {"partNo": "89853R0500OFB", "partName": "S/BELT ASSY-3RD CTR", "orderNo": "61153PD08R", "dealerOrder": "S0416", "orderDate": "2026-04-16", "elapsedDays": 15, "eta": "2026-05-20", "roNumber": "", "vin": "", "carRental": ""}, {"partNo": "91507B0010", "partName": "WIRING ASSY-FLOOR", "orderNo": "61153PD25E", "dealerOrder": "BR08059", "orderDate": "2026-04-14", "elapsedDays": 17, "eta": "2026-05-20", "roNumber": "BR08059", "vin": "3KPFL4A83JE179561", "carRental": "N"}, {"partNo": "91720H9240", "partName": "WIRING ASSY-FRT", "orderNo": "61153PB44E", "dealerOrder": "CC14636", "orderDate": "2026-02-10", "elapsedDays": 80, "eta": "2026-06-19", "roNumber": "CC14636", "vin": "3KPA25AD5PE564404", "carRental": "N"}, {"partNo": "91885P2AK0", "partName": "WIRING HARNESS-RR BUMPER", "orderNo": "61153PD26E", "dealerOrder": "FC83699", "orderDate": "2026-04-14", "elapsedDays": 17, "eta": "2026-05-20", "roNumber": "83699", "vin": "KNDRGDJG7S5404506", "carRental": "N"}, {"partNo": "91955D9AH0", "partName": "PCB BLOCK ASSY", "orderNo": "61153PD61E", "dealerOrder": "BR09924", "orderDate": "2026-04-29", "elapsedDays": 2, "eta": "2026-06-01", "roNumber": "BR09924", "vin": "KNDPNCAC7N7024322", "carRental": "N"}, {"partNo": "95720A40013D", "partName": "ULTRASONIC SENSOR ASSY-FBWS", "orderNo": "61153PD24E", "dealerOrder": "FC83741", "orderDate": "2026-04-13", "elapsedDays": 18, "eta": "2026-05-14", "roNumber": "FC83741", "vin": "KNAHT8A35E7029216", "carRental": "N"}, {"partNo": "96611CV600", "partName": "HORN ASSY-LOW PITCH", "orderNo": "61153PD23E", "dealerOrder": "CLGOON00", "orderDate": "2026-04-13", "elapsedDays": 18, "eta": "2026-05-22", "roNumber": "CLGOON00", "vin": "5XYC4DJC4SG004311", "carRental": "N"}, {"partNo": "97490Q5000QA1", "partName": "DUCT ASSY-SIDE AIR VENT,RH", "orderNo": "61153PD20E", "dealerOrder": "BR09014", "orderDate": "2026-04-09", "elapsedDays": 22, "eta": "2026-07-10", "roNumber": "BR09014", "vin": "KNDEP2AA4P7357994", "carRental": "N"}];
-var FILE_DATE = "2026-05-01";
+var PARTS = [{"partNo": "J5529AP500", "partName": "WHEEL-ALUMINUM - FR", "orderNo": "61153PC73E", "dealerOrder": "FC83126", "orderDate": "2026-03-26", "elapsedDays": 37, "eta": "2026-05-29", "roNumber": "FC83126", "vin": "KNAE55LCXN6114390", "carRental": "N"}, {"partNo": "29110AO000", "partName": "PANEL ASSY-UNDER COVER", "orderNo": "61153PD13R", "dealerOrder": "S0423", "orderDate": "2026-04-23", "elapsedDays": 9, "eta": "2026-05-11", "roNumber": "", "vin": "", "carRental": ""}, {"partNo": "58731H8000", "partName": "HOSE-BRAKE FRONT,LH", "orderNo": "61153PD12R", "dealerOrder": "S0421", "orderDate": "2026-04-21", "elapsedDays": 11, "eta": "2026-05-26", "roNumber": "", "vin": "", "carRental": ""}, {"partNo": "58732H8000", "partName": "HOSE-BRAKE FRONT,RH", "orderNo": "61153PD12R", "dealerOrder": "S0421", "orderDate": "2026-04-21", "elapsedDays": 11, "eta": "2026-05-15", "roNumber": "", "vin": "", "carRental": ""}, {"partNo": "645J4L2000", "partName": "PANEL-F/APRON UPPER OTR RR,RH", "orderNo": "61153PD57E", "dealerOrder": "FC84306", "orderDate": "2026-04-29", "elapsedDays": 3, "eta": "2026-05-25", "roNumber": "FC84306", "vin": "5XXG24J29PG171967", "carRental": "N"}, {"partNo": "66321P1500", "partName": "PANEL-FENDER,RH", "orderNo": "61153PD38E", "dealerOrder": "FC83960", "orderDate": "2026-04-21", "elapsedDays": 11, "eta": "2026-05-22", "roNumber": "83960", "vin": "KNDPXDDG2T7286437", "carRental": "N"}, {"partNo": "71503L3C00", "partName": "PANEL ASSY-QUARTER OUTER,LH", "orderNo": "61153PD29E", "dealerOrder": "FC83803", "orderDate": "2026-04-14", "elapsedDays": 18, "eta": "2026-05-26", "roNumber": "83803", "vin": "5XXG64J2XMG060330", "carRental": "N"}, {"partNo": "81710AT000WK", "partName": "TRIM ASSY-TAIL GATE LWR", "orderNo": "61153PD60E", "dealerOrder": "FC84383", "orderDate": "2026-04-29", "elapsedDays": 3, "eta": "2026-05-20", "roNumber": "FC84383", "vin": "KNDCP3L18P5054688", "carRental": "N"}, {"partNo": "84774DO100MG6", "partName": "COVER ASSY-CTR C/PAD RH", "orderNo": "61153PD44E", "dealerOrder": "FC84123", "orderDate": "2026-04-22", "elapsedDays": 10, "eta": "2026-05-25", "roNumber": "84123", "vin": "KNDADFS50S6056489", "carRental": "N"}, {"partNo": "85770P2000WK", "partName": "TRIM ASSY-RR TRANSVERSE", "orderNo": "61153PD35E", "dealerOrder": "FC83894", "orderDate": "2026-04-17", "elapsedDays": 15, "eta": "2026-05-20", "roNumber": "83894", "vin": "KNDRJDJH3T5435988", "carRental": "N"}, {"partNo": "85770P2000WK", "partName": "TRIM ASSY-RR TRANSVERSE", "orderNo": "61153PD51E", "dealerOrder": "FC84271", "orderDate": "2026-04-27", "elapsedDays": 5, "eta": "2026-05-25", "roNumber": "FC84271", "vin": "KNDRMDJH9S5359909", "carRental": "N"}, {"partNo": "865B5AT000", "partName": "GARNISH ASSY-FR BUMPER", "orderNo": "61153PD58E", "dealerOrder": "FDC84292", "orderDate": "2026-04-29", "elapsedDays": 3, "eta": "2026-05-12", "roNumber": "FC84292", "vin": "KNDCS3LF1R5199567", "carRental": "N"}, {"partNo": "86512P1700BKL", "partName": "COVER-FR BUMPER,LWR", "orderNo": "61153PD47E", "dealerOrder": "FC84214", "orderDate": "2026-04-27", "elapsedDays": 5, "eta": "2026-05-29", "roNumber": "FC84214", "vin": "KNDPXCDF7T7456499", "carRental": "N"}, {"partNo": "86611AT001", "partName": "COVER-RR BUMPER", "orderNo": "61153PD54E", "dealerOrder": "FC84311", "orderDate": "2026-04-28", "elapsedDays": 4, "eta": "2026-05-26", "roNumber": "FC84311", "vin": "KNDCP3LE7S5253923", "carRental": "N"}, {"partNo": "86631P1800", "partName": "BEAM-RR BUMPER", "orderNo": "61153PD45E", "dealerOrder": "FC84181", "orderDate": "2026-04-24", "elapsedDays": 8, "eta": "2026-05-26", "roNumber": "FC84181", "vin": "KNDPXCDF7T7456499", "carRental": "N"}, {"partNo": "86650AT000", "partName": "COVER-RR BUMPER LWR", "orderNo": "61153PD54E", "dealerOrder": "FC84311", "orderDate": "2026-04-28", "elapsedDays": 4, "eta": "2026-05-29", "roNumber": "FC84311", "vin": "KNDCP3LE7S5253923", "carRental": "N"}, {"partNo": "86650P1530", "partName": "COVER-RR BUMPER,LWR", "orderNo": "61153PD43E", "dealerOrder": "FC84105", "orderDate": "2026-04-22", "elapsedDays": 10, "eta": "2026-05-25", "roNumber": "", "vin": "KNDPVCDF5T7426813", "carRental": "N"}, {"partNo": "86652DO000", "partName": "BRACKET ASSY-RR BUMPER LWR,RH", "orderNo": "61153PD50E", "dealerOrder": "FC84258", "orderDate": "2026-04-27", "elapsedDays": 5, "eta": "2026-05-20", "roNumber": "FC84258", "vin": "KNDAFFS53S6056092", "carRental": "N"}, {"partNo": "86842DO000", "partName": "GUARD-REAR MUD,RH", "orderNo": "61153PD21E", "dealerOrder": "FC83615", "orderDate": "2026-04-10", "elapsedDays": 22, "eta": "2026-05-20", "roNumber": "83615", "vin": "KNDAFFS57S6060937", "carRental": "N"}, {"partNo": "86842DO000", "partName": "GUARD-REAR MUD,RH", "orderNo": "61153PD28E", "dealerOrder": "FC83760", "orderDate": "2026-04-14", "elapsedDays": 18, "eta": "2026-05-20", "roNumber": "83760", "vin": "KNDAFFS54T6066261", "carRental": "N"}, {"partNo": "86842DO000", "partName": "GUARD-REAR MUD,RH", "orderNo": "61153PD52E", "dealerOrder": "FC84215", "orderDate": "2026-04-28", "elapsedDays": 4, "eta": "2026-05-20", "roNumber": "FC84215", "vin": "KNDADFS50T6066215", "carRental": "N"}, {"partNo": "87721C6000", "partName": "GARNISH ASSY-FR DR SIDE LH", "orderNo": "61153PC53E", "dealerOrder": "FC82777", "orderDate": "2026-03-17", "elapsedDays": 46, "eta": "2026-07-10", "roNumber": "82777", "vin": "5XYPHDA54KG606889", "carRental": "N"}, {"partNo": "87721C6000", "partName": "GARNISH ASSY-FR DR SIDE LH", "orderNo": "61153PC94E", "dealerOrder": "FC83273", "orderDate": "2026-03-31", "elapsedDays": 32, "eta": "2026-07-10", "roNumber": "83273", "vin": "5XYPHDA18HG202273", "carRental": "N"}, {"partNo": "88200Q5OM0AXA", "partName": "CUSHION ASSY-FR SEAT,RH", "orderNo": "61153PC55E", "dealerOrder": "BR08255", "orderDate": "2026-03-17", "elapsedDays": 46, "eta": "2026-05-26", "roNumber": "BR08255", "vin": "KNDETCA20N7318455", "carRental": "N"}, {"partNo": "88840P1550WK", "partName": "BUCKLE ASSY-FR S/BELT,RH", "orderNo": "61153PD56E", "dealerOrder": "FC84346", "orderDate": "2026-04-28", "elapsedDays": 4, "eta": "2026-05-25", "roNumber": "FC84346", "vin": "KNDPUCDF8R7264395", "carRental": "N"}, {"partNo": "89853R0500OFB", "partName": "S/BELT ASSY-3RD CTR", "orderNo": "61153PD08R", "dealerOrder": "S0416", "orderDate": "2026-04-16", "elapsedDays": 16, "eta": "2026-05-15", "roNumber": "", "vin": "", "carRental": ""}, {"partNo": "91507B0010", "partName": "WIRING ASSY-FLOOR", "orderNo": "61153PD25E", "dealerOrder": "BR08059", "orderDate": "2026-04-14", "elapsedDays": 18, "eta": "2026-05-20", "roNumber": "BR08059", "vin": "3KPFL4A83JE179561", "carRental": "N"}, {"partNo": "91720H9240", "partName": "WIRING ASSY-FRT", "orderNo": "61153PB44E", "dealerOrder": "CC14636", "orderDate": "2026-02-10", "elapsedDays": 81, "eta": "2026-06-19", "roNumber": "CC14636", "vin": "3KPA25AD5PE564404", "carRental": "N"}, {"partNo": "91885P2AK0", "partName": "WIRING HARNESS-RR BUMPER", "orderNo": "61153PD26E", "dealerOrder": "FC83699", "orderDate": "2026-04-14", "elapsedDays": 18, "eta": "2026-05-20", "roNumber": "83699", "vin": "KNDRGDJG7S5404506", "carRental": "N"}, {"partNo": "91955D9AH0", "partName": "PCB BLOCK ASSY", "orderNo": "61153PD61E", "dealerOrder": "BR09924", "orderDate": "2026-04-29", "elapsedDays": 3, "eta": "2026-06-01", "roNumber": "BR09924", "vin": "KNDPNCAC7N7024322", "carRental": "N"}, {"partNo": "95720A40013D", "partName": "ULTRASONIC SENSOR ASSY-FBWS", "orderNo": "61153PD24E", "dealerOrder": "FC83741", "orderDate": "2026-04-13", "elapsedDays": 19, "eta": "2026-05-20", "roNumber": "FC83741", "vin": "KNAHT8A35E7029216", "carRental": "N"}, {"partNo": "96611CV600", "partName": "HORN ASSY-LOW PITCH", "orderNo": "61153PD23E", "dealerOrder": "CLGOON00", "orderDate": "2026-04-13", "elapsedDays": 19, "eta": "2026-05-20", "roNumber": "CLGOON00", "vin": "5XYC4DJC4SG004311", "carRental": "N"}, {"partNo": "97490Q5000QA1", "partName": "DUCT ASSY-SIDE AIR VENT,RH", "orderNo": "61153PD20E", "dealerOrder": "BR09014", "orderDate": "2026-04-09", "elapsedDays": 23, "eta": "2026-05-20", "roNumber": "BR09014", "vin": "KNDEP2AA4P7357994", "carRental": "N"}];
+var FILE_DATE = "2026-05-02";
 
 
 function etaClass(etaStr) {
@@ -253,7 +312,7 @@ function doSearch() {
     html += '</div>';
   }
 
-  var printFooter = '<div class="print-footer">Document généré le ' + printedOn + ' · Complexe Kia Montréal · Ce document est une confirmation officielle.</div>';
+  var printFooter = '<div class="print-footer">Document généré le ' + printedOn + ' · Complexe Kia Montréal · Ce document est une confirmation officielle.<br>📅 Pour voir l\'historique complet des changements de dates : <strong>portailcomplexekia.com/historique.html</strong></div>';
   section.innerHTML = '<button id="printBtn">&#128424;&#65039; Imprimer / Exporter PDF &#8212; Pour assureur</button>' + html + printFooter;
   
   document.getElementById('printBtn').addEventListener('click', function() { window.print(); });

@@ -3,6 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#C8102E">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="CK Pièces">
+<link rel="apple-touch-icon" href="icon-192.png">
 <title>Portail Client — Complexe Kia Montréal</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -214,6 +220,14 @@ footer{
   .header-contact{display:none;}
 }
 </style>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7KWSBPV16"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-B7KWSBPV16');
+</script>
 </head>
 <body>
 
@@ -274,7 +288,21 @@ footer{
     </a>
 
 
-    <!-- MODULE 4 : Suivi livraison (à venir) -->
+    <!-- MODULE 3 : Historique ETAs -->
+    <a class="module-card" href="historique.html">
+      <span class="module-tag active">En ligne</span>
+      <div class="module-icon">📅</div>
+      <div class="module-title">Historique des ETAs</div>
+      <p class="module-desc">Consultez l'évolution des dates de relâche pour chaque pièce. Idéal pour les dossiers d'assurance et le suivi des délais.</p>
+      <div class="module-features">
+        <div class="module-feature">Recherche par VIN ou N° RO</div>
+        <div class="module-feature">Historique complet des changements</div>
+        <div class="module-feature">Délais repoussés ou avancés indiqués</div>
+      </div>
+      <div class="module-cta">
+        <span class="cta-btn">Consulter →</span>
+      </div>
+    </a>
 
   </div>
 
