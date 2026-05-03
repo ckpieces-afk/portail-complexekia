@@ -1,3 +1,4 @@
+<!-- © 2026 Complexe Kia Montréal — Tous droits réservés. Reproduction interdite sans autorisation écrite. -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -210,7 +211,7 @@ footer{text-align:center;padding:2.5rem 2rem;border-top:1px solid var(--border);
     <div class="logo-sep"></div>
     <span class="logo-sub">Décodeur VIN</span>
   </div>
-  <div class="header-right">Toutes marques</div>
+  <a href="portail-complexekia.html" style="font-size:0.75rem;color:#fff;text-decoration:none;letter-spacing:1px;text-transform:uppercase;background:var(--red);padding:8px 14px;border-radius:8px;font-weight:600;white-space:nowrap;">← Portail</a>
 </header>
 
 <div class="hero">
@@ -320,7 +321,7 @@ async function decodeVin() {
   if (vin.length < 17) { showError('Veuillez entrer un VIN complet de 17 caractères.'); return; }
 
   const resultsDiv = document.getElementById('results');
-  resultsDiv.innerHTML = '<a class="back-link" href="portail-complexekia.html">← Retour au portail</a><div class="loading"><div class="spinner"></div><p style="color:var(--soft);font-size:0.85rem;">Décodage en cours...</p></div>';
+  resultsDiv.innerHTML = '<div class="loading"><div class="spinner"></div><p style="color:var(--soft);font-size:0.85rem;">Décodage en cours...</p></div>';
 
   try {
     const vinRes = await fetch('https://vpic.nhtsa.dot.gov/api/vehicles/decodevinvalues/' + vin + '?format=json');
@@ -464,7 +465,7 @@ async function decodeVin() {
     let html = '';
 
     // Vehicle hero
-    html += '<a class="back-link" href="portail-complexekia.html">← Retour au portail</a>';
+    html += '';
     html += '<div class="vehicle-hero">';
     html += '<div class="vehicle-title">';
     html += '<div class="vehicle-eyebrow">' + year + ' · ' + make + '</div>';
@@ -626,7 +627,7 @@ async function decodeVin() {
 }
 
 function showError(msg) {
-  document.getElementById('results').innerHTML = '<a class="back-link" href="portail-complexekia.html">← Retour au portail</a><div class="empty-state"><div class="empty-icon">⚠️</div><p style="color:var(--text);">' + msg + '</p></div>';
+  document.getElementById('results').innerHTML = '<div class="empty-state"><div class="empty-icon">⚠️</div><p style="color:var(--text);">' + msg + '</p></div>';
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -1308,6 +1309,173 @@ function useManualVin() {
     document.getElementById('ocrManualInput').style.borderColor = 'var(--red)';
   }
 }
+</script>
+
+<script>
+// ── EFFETS FESTIFS ────────────────────────────────────────
+(function() {
+  var now = new Date();
+  var month = now.getMonth() + 1; // 1-12
+  var day = now.getDate();
+
+  var fete = null;
+
+  // Noël : 18-25 décembre
+  if (month === 12 && day >= 18 && day <= 25) {
+    fete = {
+      nom: "Joyeux Noël! 🎄",
+      souhaits: "Toute l'équipe du département des pièces de Complexe Kia vous souhaite un joyeux temps des fêtes!",
+      couleur1: "#C8102E",
+      couleur2: "#22C55E",
+      effet: "neige",
+      emoji: ["❄️","⛄","🎄","🎁","⭐"]
+    };
+  }
+  // Jour de l'An : 26 déc - 1er jan
+  else if ((month === 12 && day >= 26) || (month === 1 && day === 1)) {
+    fete = {
+      nom: "Bonne et heureuse année! 🎊",
+      souhaits: "Toute l'équipe de Complexe Kia vous souhaite une excellente année remplie de succès!",
+      couleur1: "#FACC15",
+      couleur2: "#F97316",
+      effet: "feux",
+      emoji: ["🎆","🎇","✨","🥂","🎊"]
+    };
+  }
+  // St-Jean-Baptiste : 17-24 juin
+  else if (month === 6 && day >= 17 && day <= 24) {
+    fete = {
+      nom: "Bonne St-Jean-Baptiste! 🏔️",
+      souhaits: "Toute l'équipe de Complexe Kia vous souhaite une belle fête nationale du Québec!",
+      couleur1: "#003DA5",
+      couleur2: "#ffffff",
+      effet: "confettis",
+      emoji: ["🔵","⚪","⚜️","🎆","🎉"]
+    };
+  }
+  // Fête du Canada : 24 juin - 1er juillet
+  else if ((month === 6 && day >= 24) || (month === 7 && day === 1)) {
+    fete = {
+      nom: "Bonne Fête du Canada! 🍁",
+      souhaits: "Toute l'équipe de Complexe Kia vous souhaite une belle fête nationale!",
+      couleur1: "#C8102E",
+      couleur2: "#ffffff",
+      effet: "confettis",
+      emoji: ["🍁","🇨🇦","✨","🎉","❤️"]
+    };
+  }
+
+  if (!fete) return;
+
+  // ── BANNIÈRE ──────────────────────────────────────────────
+  var banner = document.createElement('div');
+  banner.id = 'fete-banner';
+  banner.style.cssText = [
+    'position:fixed',
+    'top:64px',
+    'left:0',
+    'right:0',
+    'z-index:200',
+    'background:linear-gradient(135deg,' + fete.couleur1 + ',' + fete.couleur2 + ')',
+    'color:#fff',
+    'text-align:center',
+    'padding:10px 2rem',
+    'font-family:DM Sans,sans-serif',
+    'font-size:0.85rem',
+    'font-weight:600',
+    'display:flex',
+    'align-items:center',
+    'justify-content:center',
+    'gap:12px',
+    'box-shadow:0 2px 10px rgba(0,0,0,0.3)',
+    'letter-spacing:0.5px'
+  ].join(';');
+  banner.innerHTML = '<span style="font-size:1.2rem">' + fete.emoji[0] + '</span>' +
+    '<span>' + fete.nom + ' &nbsp;—&nbsp; ' + fete.souhaits + '</span>' +
+    '<span style="font-size:1.2rem">' + fete.emoji[0] + '</span>' +
+    '<button onclick="document.getElementById(\'fete-banner\').style.display=\'none\'" ' +
+    'style="background:rgba(255,255,255,0.25);border:none;color:#fff;border-radius:50%;width:22px;height:22px;cursor:pointer;font-size:0.75rem;margin-left:8px;flex-shrink:0;">✕</button>';
+  document.body.appendChild(banner);
+
+  // ── CANVAS EFFET ─────────────────────────────────────────
+  var canvas = document.createElement('canvas');
+  canvas.id = 'fete-canvas';
+  canvas.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:199;';
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  document.body.appendChild(canvas);
+  var ctx = canvas.getContext('2d');
+
+  window.addEventListener('resize', function() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  });
+
+  var particles = [];
+  var emojis = fete.emoji;
+
+  function randomRange(a, b) { return a + Math.random() * (b - a); }
+
+  // Create particles
+  function createParticles() {
+    for (var i = 0; i < 60; i++) {
+      particles.push({
+        x: randomRange(0, canvas.width),
+        y: fete.effet === 'neige' ? randomRange(-100, 0) : randomRange(canvas.height + 10, canvas.height + 50),
+        size: randomRange(10, 20),
+        speed: randomRange(0.5, 2),
+        drift: randomRange(-0.5, 0.5),
+        opacity: randomRange(0.5, 1),
+        emoji: emojis[Math.floor(Math.random() * emojis.length)],
+        rotation: randomRange(0, 360),
+        rotSpeed: randomRange(-2, 2)
+      });
+    }
+  }
+
+  createParticles();
+
+  function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.font = '18px serif';
+
+    for (var i = 0; i < particles.length; i++) {
+      var p = particles[i];
+      ctx.save();
+      ctx.globalAlpha = p.opacity;
+      ctx.translate(p.x, p.y);
+      ctx.rotate(p.rotation * Math.PI / 180);
+      ctx.font = p.size + 'px serif';
+      ctx.fillText(p.emoji, -p.size/2, p.size/2);
+      ctx.restore();
+
+      if (fete.effet === 'neige') {
+        p.y += p.speed;
+        p.x += p.drift;
+        p.rotation += p.rotSpeed;
+        if (p.y > canvas.height + 30) {
+          p.y = -30;
+          p.x = randomRange(0, canvas.width);
+        }
+      } else {
+        // Confettis / feux : tombent du haut
+        p.y -= p.speed;
+        p.x += p.drift;
+        p.rotation += p.rotSpeed;
+        p.opacity -= 0.003;
+        if (p.y < -30 || p.opacity <= 0) {
+          p.y = canvas.height + 30;
+          p.x = randomRange(0, canvas.width);
+          p.opacity = randomRange(0.5, 1);
+        }
+      }
+    }
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+})();
+
 </script>
 </body>
 </html>
