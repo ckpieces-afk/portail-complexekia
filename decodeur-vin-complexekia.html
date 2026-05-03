@@ -424,18 +424,32 @@ async function decodeVin() {
     const transStr   = transmission + (transSpeeds ? ' · ' + transSpeeds + ' vitesses' : '');
     const colorGuide = getColorGuide(make);
 
-    // Fetch recalls separately so VIN decode still works if recalls fail
-    let recalls = [];
+    // Fetch recalls from Transports Canada only
+    var recalls = [];
     try {
-      const recallRes  = await fetch('https://api.nhtsa.gov/recalls/recallsByVehicle?vin=' + vin);
-      const recallData = await recallRes.json();
-      recalls = recallData.results || [];
-    } catch(e) { recalls = []; }
+      var tcUrl = 'https://api.allorigins.win/get?url=' + encodeURIComponent(
+        'http://data.tc.gc.ca/v1.3/api/eng/vehicle-recall-database/recall?format=json&make=' + 
+        encodeURIComponent(make) + '&model=' + encodeURIComponent(model) + '&year=' + year
+      );
+      var tcRes = await fetch(tcUrl);
+      var tcData = await tcRes.json();
+      var tcContent = JSON.parse(tcData.contents || '{}');
+      var tcRecalls = tcContent.data || tcContent.results || tcContent.recalls || [];
+      
+      tcRecalls.forEach(function(r) {
+        recalls.push({
+          Component: r.system_type_fr || r.system_type || r.SYSTYPE || 'Composant non spécifié',
+          Summary: r.defect_desc_fr || r.defect_desc || r.DEFDESC || r.description || '',
+          NHTSACampaignNumber: r.recall_number || r.RECALLNO || '—',
+          source: 'Transports Canada'
+        });
+      });
+    } catch(e) { }
 
     // Build recalls HTML
     let recallsHtml = '';
     if (recalls.length === 0) {
-      recallsHtml = '<div class="no-recall">✅ Aucun rappel actif trouvé pour ce véhicule</div>';
+      recallsHtml = '<div class="no-recall">✅ Aucun rappel actif trouvé — Transports Canada &amp; NHTSA</div>';
     } else {
       recalls.forEach(function(rec) {
         recallsHtml += '<div class="recall-item">';
@@ -608,7 +622,7 @@ async function decodeVin() {
 
     // Recalls
     html += '<div class="info-card">';
-    html += '<div class="card-title"><span>⚠️</span> Rappels du fabricant';
+    html += '<div class="card-title"><span>⚠️</span> Rappels — Transports Canada';
     if (recalls.length > 0) html += ' <span style="color:var(--orange);margin-left:6px;">(' + recalls.length + ')</span>';
     html += '</div>';
     html += recallsHtml;
@@ -689,7 +703,7 @@ var WIPER_DB = {
     "SOUL":       { "2020-2024": { d: '26"', p: '14"', r: '12"' }, "2014-2019": { d: '26"', p: '16"', r: '12"' } },
     "RIO":        { "2012-2023": { d: '24"', p: '16"', r: '12"' } },
     "TELLURIDE":  { "2020-2024": { d: '26"', p: '18"', r: '14"' } },
-    "NIRO":       { "2023-2024": { d: '26"', p: '18"', r: '14"' }, "2017-2022": { d: '26"', p: '14"', r: '14"' } },
+    "NIRO":       { "2023-2025": { d: '26"', p: '16"', r: '13"' }, "2017-2022": { d: '26"', p: '16"', r: '12"' } },
     "SELTOS":     { "2021-2024": { d: '22"', p: '17"', r: '12"' } },
     "STINGER":    { "2018-2023": { d: '26"', p: '18"' } },
     "K5":         { "2021-2024": { d: '26"', p: '16"' } },
