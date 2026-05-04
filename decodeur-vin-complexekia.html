@@ -659,7 +659,7 @@ document.addEventListener('DOMContentLoaded', function() {
     openCamera();
   });
   document.getElementById('cameraInput').addEventListener('change', function(e) {
-    processImage(e);
+    processImage(e.target.files[0]);
   });
   document.getElementById('ocrCloseBtn').addEventListener('click', function() { closeOcr(); });
   document.getElementById('ocrCancelBtn').addEventListener('click', function() { closeOcr(); });
@@ -1225,8 +1225,7 @@ function closeOcr() {
   detectedVin = '';
 }
 
-function processImage(event) {
-  var file = event.target.files[0];
+function processImage(file) {
   if (!file) return;
 
   var overlay = document.getElementById('ocrOverlay');
