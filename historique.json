@@ -38,6 +38,10 @@
       {
         "date": "2026-05-02",
         "eta": "2026-05-26"
+      },
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-29"
       }
     ]
   },
@@ -94,6 +98,10 @@
       {
         "date": "2026-05-02",
         "eta": "2026-05-26"
+      },
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-14"
       }
     ]
   },
@@ -210,6 +218,10 @@
       {
         "date": "2026-05-02",
         "eta": "2026-05-26"
+      },
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-29"
       }
     ]
   },
@@ -238,6 +250,10 @@
       {
         "date": "2026-05-02",
         "eta": "2026-05-25"
+      },
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-26"
       }
     ]
   },
@@ -274,6 +290,10 @@
       {
         "date": "2026-05-04",
         "eta": "2026-05-15"
+      },
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-14"
       }
     ]
   },
@@ -292,6 +312,10 @@
       {
         "date": "2026-05-04",
         "eta": "2026-05-15"
+      },
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-14"
       }
     ]
   },
@@ -310,6 +334,10 @@
       {
         "date": "2026-05-04",
         "eta": "2026-05-15"
+      },
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-14"
       }
     ]
   },
@@ -394,6 +422,10 @@
       {
         "date": "2026-05-02",
         "eta": "2026-05-20"
+      },
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-25"
       }
     ]
   },
@@ -422,6 +454,10 @@
       {
         "date": "2026-05-02",
         "eta": "2026-05-20"
+      },
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-14"
       }
     ]
   },
@@ -454,6 +490,10 @@
       {
         "date": "2026-05-04",
         "eta": "2026-05-15"
+      },
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-14"
       }
     ]
   },
@@ -482,6 +522,286 @@
       {
         "date": "2026-05-02",
         "eta": "2026-05-20"
+      },
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-14"
+      }
+    ]
+  },
+  "KNDPU3DF1R7261421_DEMO-92850S2000": {
+    "partNo": "DEMO-92850S2000",
+    "partName": "MODULE ASSY-CCTV (DEMO)",
+    "vin": "KNDPU3DF1R7261421",
+    "roNumber": "DEMO001",
+    "dealerOrder": "DEMO001",
+    "orderDate": "2026-04-15",
+    "history": [
+      {
+        "date": "2026-04-15",
+        "eta": "2026-05-05"
+      },
+      {
+        "date": "2026-04-22",
+        "eta": "2026-05-12"
+      },
+      {
+        "date": "2026-04-29",
+        "eta": "2026-05-20"
+      }
+    ]
+  },
+  "KNDPU3DF1R7261421_DEMO-86731S1000": {
+    "partNo": "DEMO-86731S1000",
+    "partName": "GARNISH ASSY-FR BUMPER (DEMO)",
+    "vin": "KNDPU3DF1R7261421",
+    "roNumber": "BR99001",
+    "dealerOrder": "BR99001",
+    "orderDate": "2026-04-20",
+    "history": [
+      {
+        "date": "2026-04-20",
+        "eta": "2026-05-15"
+      },
+      {
+        "date": "2026-04-27",
+        "eta": "2026-05-28"
+      },
+      {
+        "date": "2026-05-02",
+        "eta": "2026-06-05"
+      }
+    ]
+  },
+  "KNDPU3DF1R7261421_DEMO-97250S2510": {
+    "partNo": "DEMO-97250S2510",
+    "partName": "BLOWER UNIT-A/C (DEMO)",
+    "vin": "KNDPU3DF1R7261421",
+    "roNumber": "DEMO003",
+    "dealerOrder": "DEMO003",
+    "orderDate": "2026-04-28",
+    "history": [
+      {
+        "date": "2026-04-28",
+        "eta": "2026-05-20"
+      },
+      {
+        "date": "2026-05-01",
+        "eta": "2026-05-26"
+      },
+      {
+        "date": "2026-05-04",
+        "eta": "2026-05-30"
+      }
+    ]
+  },
+  "61153PE01R_28220B2200": {
+    "partNo": "28220B2200",
+    "partName": "DUCT \"B\" ASSY-AIR",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0504",
+    "orderDate": "2026-05-04",
+    "history": [
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-15"
+      }
+    ]
+  },
+  "61153PE01R_56820DO000": {
+    "partNo": "56820DO000",
+    "partName": "END ASSY-TIE ROD",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0504",
+    "orderDate": "2026-05-04",
+    "history": [
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-22"
+      }
+    ]
+  },
+  "61153PE01R_69100S9500": {
+    "partNo": "69100S9500",
+    "partName": "PANEL ASSY-BACK",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0504",
+    "orderDate": "2026-05-04",
+    "history": [
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-12"
+      }
+    ]
+  },
+  "KNDCB3LCXN5544319_84750G5400WK": {
+    "partNo": "84750G5400WK",
+    "partName": "PANEL ASSY-LOWER CRASH PAD,LH",
+    "vin": "KNDCB3LCXN5544319",
+    "roNumber": "FC84512",
+    "dealerOrder": "FC84512",
+    "orderDate": "2026-05-04",
+    "history": [
+      {
+        "date": "2026-05-05",
+        "eta": "2026-08-04"
+      }
+    ]
+  },
+  "61153PE01R_85730S9AA0WK": {
+    "partNo": "85730S9AA0WK",
+    "partName": "TRIM ASSY-LUGGAGE SIDE LH",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0504",
+    "orderDate": "2026-05-04",
+    "history": [
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-12"
+      }
+    ]
+  },
+  "61153PE01R_85770S9600WK": {
+    "partNo": "85770S9600WK",
+    "partName": "TRIM ASSY-RR TRANSVERSE",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0504",
+    "orderDate": "2026-05-04",
+    "history": [
+      {
+        "date": "2026-05-05",
+        "eta": "2026-07-08"
+      }
+    ]
+  },
+  "61153PE01R_86531P1520BKL": {
+    "partNo": "86531P1520BKL",
+    "partName": "GRILLE-FRONT BUMPER",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0504",
+    "orderDate": "2026-05-04",
+    "history": [
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-26"
+      }
+    ]
+  },
+  "61153PE01R_86577P1500": {
+    "partNo": "86577P1500",
+    "partName": "SKID PLATE-FR BUMPER",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0504",
+    "orderDate": "2026-05-04",
+    "history": [
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-12"
+      }
+    ]
+  },
+  "61153PE01R_86591P1000": {
+    "partNo": "86591P1000",
+    "partName": "LIP-FR BUMPER",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0504",
+    "orderDate": "2026-05-04",
+    "history": [
+      {
+        "date": "2026-05-05",
+        "eta": "2026-06-02"
+      }
+    ]
+  },
+  "61153PE01R_86596P1520BKL": {
+    "partNo": "86596P1520BKL",
+    "partName": "MOULDING-FRONT BUMPER,RH",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0504",
+    "orderDate": "2026-05-04",
+    "history": [
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-12"
+      }
+    ]
+  },
+  "61153PE04D_86636AT050": {
+    "partNo": "86636AT050",
+    "partName": "BRACKET-RR BEAM LWR,CTR",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "D05042",
+    "orderDate": "2026-05-04",
+    "history": [
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-12"
+      }
+    ]
+  },
+  "61153PE01R_866612K500": {
+    "partNo": "866612K500",
+    "partName": "MLDG-RR BPR UPR CTR",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0504",
+    "orderDate": "2026-05-04",
+    "history": [
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-29"
+      }
+    ]
+  },
+  "61153PE01R_87712AT000": {
+    "partNo": "87712AT000",
+    "partName": "GARNISH ASSY-FNDR SIDE,RH",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0504",
+    "orderDate": "2026-05-04",
+    "history": [
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-15"
+      }
+    ]
+  },
+  "KNDCS3LF0S5262728_91686GI020": {
+    "partNo": "91686GI020",
+    "partName": "WIRING ASSY-NORM CHGE OUTL CBL",
+    "vin": "KNDCS3LF0S5262728",
+    "roNumber": "BR10111",
+    "dealerOrder": "BR10111",
+    "orderDate": "2026-05-04",
+    "history": [
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-26"
+      }
+    ]
+  },
+  "61153PE01R_92501S9000": {
+    "partNo": "92501S9000",
+    "partName": "LAMP ASSY-LICENSE PLATE,LH",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0504",
+    "orderDate": "2026-05-04",
+    "history": [
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-29"
       }
     ]
   }

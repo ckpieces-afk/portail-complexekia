@@ -582,6 +582,40 @@ async function decodeVin() {
       html += "</div>";
     }
 
+    // SECTION 4d — Spécifications canadiennes (Transport Canada CVS)
+    var canadaUrl = 'https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?year=' + year + '&make=' + encodeURIComponent(make) + '&model=' + encodeURIComponent(model) + '&units=0&format=json';
+    
+    fetch(canadaUrl)
+      .then(function(res) { return res.json(); })
+      .then(function(data) {
+        var cvs = data.Results || [];
+        if (cvs.length === 0) return;
+        var r = cvs[0];
+        
+        var canadaDiv = document.getElementById('canadaSpecs');
+        if (!canadaDiv) return;
+        
+        var html = '<div class="card-title"><span>🍁</span> Spécifications canadiennes — Transport Canada</div>';
+        
+        if (r.ll) html += buildCard('Longueur (mm)', r.ll);
+        if (r.ww) html += buildCard('Largeur (mm)', r.ww);
+        if (r.hh) html += buildCard('Hauteur (mm)', r.hh);
+        if (r.wb) html += buildCard('Empattement (mm)', r.wb);
+        if (r.cw) html += buildCard('Poids à vide (kg)', r.cw);
+        if (r.gvwr) html += buildCard('PNBV (kg)', r.gvwr);
+        if (r.fgawr) html += buildCard('Charge essieu avant (kg)', r.fgawr);
+        if (r.rgawr) html += buildCard('Charge essieu arrière (kg)', r.rgawr);
+        
+        if (html !== '<div class="card-title"><span>🍁</span> Spécifications canadiennes — Transport Canada</div>') {
+          canadaDiv.innerHTML = html;
+          canadaDiv.style.display = 'block';
+        }
+      })
+      .catch(function() {});
+
+    // Canada specs placeholder
+    html += '<div class="info-card" id="canadaSpecs" style="display:none;margin-bottom:14px;"></div>';
+
     // SECTION 5 — Fabrication
     html += '<div class="grid-2">';
     html += '<div class="info-card"><div class="card-title"><span>🏭</span> Fabrication</div>';
