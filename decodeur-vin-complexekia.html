@@ -591,6 +591,7 @@ async function decodeVin() {
 
     // Fetch wiper sizes after rendering
     setTimeout(function() { fetchWiperSizes(wiperMake, wiperModel, year, make, model); }, 300);
+    setTimeout(function() { fetchCarQuerySpecs(make, model, year); }, 600);
 
     // SECTION 3b — Camion/Pickup (si applicable)
     if (cabType || bedType || bedLength) {
@@ -661,6 +662,9 @@ async function decodeVin() {
 
     // Canada specs placeholder
     html += '<div class="info-card" id="canadaSpecs" style="display:none;margin-bottom:14px;"></div>';
+
+    // CarQuery specs div
+    html += '<div class="info-card" id="carquerySpecs" style="display:none;margin-bottom:14px;"></div>';
 
     // SECTION 5 — Fabrication
     html += '<div class="grid-2">';
@@ -784,6 +788,93 @@ document.addEventListener('click', function(e) {
   if (action === 'retryCamera') { retryCamera(); return; }
   if (action === 'useManualVin') { useManualVin(); return; }
 });
+
+
+// CarQuery API - specs complementaires (dimensions, poids, performance, consommation)
+function fetchCarQuerySpecs(make, model, year) {
+  var makeLC  = (make || '').toLowerCase();
+  var modelLC = (model || '').toLowerCase().replace(/\s+/g, '-');
+  
+  var callbackName = 'cqCB_' + Date.now();
+  var script = document.createElement('script');
+  var timeout = setTimeout(function() {
+    delete window[callbackName];
+    if (script.parentNode) script.parentNode.removeChild(script);
+  }, 8000);
+  
+  window[callbackName] = function(data) {
+    clearTimeout(timeout);
+    delete window[callbackName];
+    if (script.parentNode) script.parentNode.removeChild(script);
+    var trims = data.Trims || [];
+    if (trims.length === 0) return;
+    var best = trims[0];
+    for (var i = 0; i < trims.length; i++) {
+      if (trims[i].model_year == year) { best = trims[i]; break; }
+    }
+    renderCarQuerySpecs(best);
+  };
+  
+  script.src = 'https://www.carqueryapi.com/api/0.3/?callback=' + callbackName +
+    '&cmd=getTrims&make=' + encodeURIComponent(makeLC) +
+    '&model=' + encodeURIComponent(modelLC) +
+    '&year=' + year + '&full_results=1';
+  script.onerror = function() {
+    clearTimeout(timeout);
+    delete window[callbackName];
+  };
+  document.head.appendChild(script);
+}
+
+function renderCarQuerySpecs(t) {
+  var div = document.getElementById('carquerySpecs');
+  if (!div || !t) return;
+  var html = '';
+  var hasData = false;
+
+  if (t.model_length_mm || t.model_width_mm || t.model_height_mm || t.model_wheelbase_mm) {
+    html += '<div class="card-title"><span>&#128207;</span> Dimensions &amp; Poids</div>';
+    if (t.model_length_mm)    html += buildCard('Longueur', t.model_length_mm + ' mm');
+    if (t.model_width_mm)     html += buildCard('Largeur', t.model_width_mm + ' mm');
+    if (t.model_height_mm)    html += buildCard('Hauteur', t.model_height_mm + ' mm');
+    if (t.model_wheelbase_mm) html += buildCard('Empattement', t.model_wheelbase_mm + ' mm', 'hl');
+    if (t.model_weight_kg)    html += buildCard('Poids', t.model_weight_kg + ' kg');
+    hasData = true;
+  }
+
+  if (t.model_top_speed_kph || t.model_0_to_100_kph) {
+    if (!hasData) html += '<div class="card-title"><span>&#128207;</span> Performance</div>';
+    if (t.model_top_speed_kph) html += buildCard('Vitesse max', t.model_top_speed_kph + ' km/h');
+    if (t.model_0_to_100_kph)  html += buildCard('0-100 km/h', t.model_0_to_100_kph + ' s', 'hl');
+    hasData = true;
+  }
+
+  if (t.model_engine_torque_nm || t.model_engine_compression) {
+    if (t.model_engine_torque_nm)   html += buildCard('Couple', t.model_engine_torque_nm + ' Nm');
+    if (t.model_engine_power_rpm)   html += buildCard('Regime puissance max', t.model_engine_power_rpm + ' tr/min');
+    if (t.model_engine_compression) html += buildCard('Compression', t.model_engine_compression + ':1');
+    if (t.model_engine_bore_mm)     html += buildCard('Alesage', t.model_engine_bore_mm + ' mm');
+    if (t.model_engine_stroke_mm)   html += buildCard('Course', t.model_engine_stroke_mm + ' mm');
+    hasData = true;
+  }
+
+  if (t.model_lkm_city || t.model_lkm_hwy || t.model_lkm_mixed) {
+    html += '<div style="margin-top:8px;padding:8px 12px;background:#0d0d0d;border-radius:6px;">';
+    html += '<div style="font-size:0.62rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:6px;">Consommation (L/100km)</div>';
+    html += '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;">';
+    if (t.model_lkm_city)  html += '<div style="background:#1a1a1a;border-radius:6px;padding:6px 10px;text-align:center;"><div style="font-size:0.6rem;color:var(--muted);">Ville</div><div style="font-size:0.9rem;font-weight:600;">' + t.model_lkm_city + '</div></div>';
+    if (t.model_lkm_hwy)   html += '<div style="background:#1a1a1a;border-radius:6px;padding:6px 10px;text-align:center;"><div style="font-size:0.6rem;color:var(--muted);">Route</div><div style="font-size:0.9rem;font-weight:600;">' + t.model_lkm_hwy + '</div></div>';
+    if (t.model_lkm_mixed) html += '<div style="background:#1a1a1a;border-radius:6px;padding:6px 10px;text-align:center;"><div style="font-size:0.6rem;color:var(--muted);">Mixte</div><div style="font-size:0.9rem;font-weight:600;">' + t.model_lkm_mixed + '</div></div>';
+    html += '</div></div>';
+    if (t.model_fuel_cap_l) html += buildCard('Capacite reservoir', t.model_fuel_cap_l + ' L');
+    hasData = true;
+  }
+
+  if (hasData) {
+    div.innerHTML = html;
+    div.style.display = 'block';
+  }
+}
 
 
 // ── WIPER SIZE LOOKUP ────────────────────────────────────
