@@ -328,7 +328,7 @@ async function decodeVin() {
   resultsDiv.innerHTML = '<div class="loading"><div class="spinner"></div><p style="color:var(--soft);font-size:0.85rem;">Décodage en cours...</p></div>';
 
   try {
-    const vinRes = await fetch('https://vpic.nhtsa.dot.gov/api/vehicles/decodevinvalues/' + vin + '?format=json');
+    const vinRes = await fetch('https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValuesExtended/' + vin + '?format=json');
     const vinData = await vinRes.json();
     const flat = vinData.Results[0];
 
@@ -421,6 +421,39 @@ async function decodeVin() {
     const wiperFront   = getVal(flat, 'WiperFront');
     const wiperRear    = getVal(flat, 'WiperRear');
 
+    // Intérieur & Sièges
+    const seats        = getVal(flat, 'NumberOfSeats') || getVal(flat, 'Seats');
+    const seatRows     = getVal(flat, 'SeatRows');
+    const steering     = getVal(flat, 'SteeringLocation');
+    const entertainment= getVal(flat, 'EntertainmentSystem');
+
+    // Moteur — détails supplémentaires
+    const engineStroke = getVal(flat, 'EngineStrokeCycles');
+    const engineValves = getVal(flat, 'ValveTrainDesign') || getVal(flat, 'EngineValves');
+    const engineMfr2   = getVal(flat, 'EngineMfr');
+    const coolingType  = getVal(flat, 'CoolingType');
+    const displacement2= getVal(flat, 'DisplacementCC');
+
+    // Camion / Pickup
+    const cabType      = getVal(flat, 'CabType');
+    const bedType      = getVal(flat, 'BedType');
+    const bedLength    = getVal(flat, 'BedLengthIN');
+    const truckType    = getVal(flat, 'BodyCabType');
+
+    // Sécurité — NCAP ratings
+    const ncapFront    = getVal(flat, 'NCSAFrontDriverSideRating') || getVal(flat, 'OverallFrontStarRating');
+    const ncapSide     = getVal(flat, 'NCSASideDriverSideRating') || getVal(flat, 'OverallSideStarRating');
+    const ncapRollover = getVal(flat, 'NCSARolloverRating') || getVal(flat, 'RolloverStarRating');
+    const ncapPole     = getVal(flat, 'NCSAPoleRating');
+    const totalAirbags = getVal(flat, 'AirBagLocOther');
+
+    // Fenêtres & Toit
+    const roofType     = getVal(flat, 'RoofType') || getVal(flat, 'WindowsType');
+    const sunroof      = getVal(flat, 'Sunroof');
+
+    // Freins supplémentaires
+    const brakeType    = getVal(flat, 'BrakeSystemType');
+
     // plantStr defined below with full city/state/country
     const hpStr      = engineHP ? engineHP + ' hp' + (engineKW ? ' / ' + Math.round(parseFloat(engineKW)) + ' kW' : '') : null;
     const dispStr    = engineDisp ? parseFloat(engineDisp).toFixed(1) + ' L' : null;
@@ -512,6 +545,9 @@ async function decodeVin() {
     html += buildCard('Type de véhicule', vehicleType);
     html += buildCard('Empattement', wheelbase ? wheelbase + ' po' : null);
     html += buildCard('Poids brut (GVWR)', gvwr);
+    html += buildCard('Nombre de sièges', seats);
+    html += buildCard('Rangées de sièges', seatRows);
+    html += buildCard('Colonne de direction', steering);
     html += '</div>';
 
     html += '<div class="info-card"><div class="card-title"><span>⚙️</span> Moteur</div>';
@@ -555,6 +591,16 @@ async function decodeVin() {
 
     // Fetch wiper sizes after rendering
     setTimeout(function() { fetchWiperSizes(wiperMake, wiperModel, year, make, model); }, 300);
+
+    // SECTION 3b — Camion/Pickup (si applicable)
+    if (cabType || bedType || bedLength) {
+      html += '<div class="info-card" style="margin-bottom:14px;">';
+      html += '<div class="card-title"><span>🚛</span> Camion / Pickup</div>';
+      html += buildCard('Type de cabine', cabType);
+      html += buildCard('Type de caisse', bedType);
+      html += buildCard('Longueur caisse', bedLength ? bedLength + ' po' : null);
+      html += '</div>';
+    }
 
     // SECTION 4 — Électrique/Hybride (si applicable)
     if (isElectric || batteryType || batteryKwh) {
@@ -638,6 +684,16 @@ async function decodeVin() {
     html += buildCard('Aide au stationnement', parkingAssist);
     html += buildCard('Régulateur adaptatif', adaptiveCruise);
     html += buildCard('Freinage auto piétons', pedestrianAlert);
+    if (ncapFront || ncapSide || ncapRollover) {
+      html += '<div style="margin-top:10px;padding:8px 12px;background:#0d0d0d;border-radius:6px;">';
+      html += '<div style="font-size:0.62rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:8px;">⭐ Cotes de sécurité NCAP</div>';
+      html += '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:6px;">';
+      if (ncapFront) html += '<div style="background:#1a1a1a;border-radius:6px;padding:6px 10px;"><div style="font-size:0.6rem;color:var(--muted);">Frontal</div><div style="font-size:0.85rem;color:var(--yellow);">★ ' + ncapFront + '/5</div></div>';
+      if (ncapSide) html += '<div style="background:#1a1a1a;border-radius:6px;padding:6px 10px;"><div style="font-size:0.6rem;color:var(--muted);">Latéral</div><div style="font-size:0.85rem;color:var(--yellow);">★ ' + ncapSide + '/5</div></div>';
+      if (ncapRollover) html += '<div style="background:#1a1a1a;border-radius:6px;padding:6px 10px;"><div style="font-size:0.6rem;color:var(--muted);">Tonneaux</div><div style="font-size:0.85rem;color:var(--yellow);">★ ' + ncapRollover + '/5</div></div>';
+      if (ncapPole) html += '<div style="background:#1a1a1a;border-radius:6px;padding:6px 10px;"><div style="font-size:0.6rem;color:var(--muted);">Poteau</div><div style="font-size:0.85rem;color:var(--yellow);">★ ' + ncapPole + '/5</div></div>';
+      html += '</div></div>';
+    }
     html += '</div></div>';
 
     // SECTION 7 — Coussins gonflables
