@@ -10,6 +10,10 @@
       {
         "date": "2026-05-02",
         "eta": "2026-05-29"
+      },
+      {
+        "date": "2026-05-07",
+        "eta": "2026-06-24"
       }
     ]
   },
@@ -37,6 +41,14 @@
     "history": [
       {
         "date": "2026-05-02",
+        "eta": "2026-05-26"
+      },
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-29"
+      },
+      {
+        "date": "2026-05-04",
         "eta": "2026-05-26"
       },
       {
@@ -102,6 +114,14 @@
       {
         "date": "2026-05-05",
         "eta": "2026-05-14"
+      },
+      {
+        "date": "2026-05-04",
+        "eta": "2026-05-26"
+      },
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-14"
       }
     ]
   },
@@ -134,6 +154,10 @@
       {
         "date": "2026-05-02",
         "eta": "2026-05-25"
+      },
+      {
+        "date": "2026-05-07",
+        "eta": "2026-07-24"
       }
     ]
   },
@@ -148,6 +172,10 @@
       {
         "date": "2026-05-02",
         "eta": "2026-05-20"
+      },
+      {
+        "date": "2026-05-08",
+        "eta": "2026-05-19"
       }
     ]
   },
@@ -190,6 +218,10 @@
       {
         "date": "2026-05-02",
         "eta": "2026-05-29"
+      },
+      {
+        "date": "2026-05-08",
+        "eta": "2026-06-04"
       }
     ]
   },
@@ -222,6 +254,14 @@
       {
         "date": "2026-05-05",
         "eta": "2026-05-29"
+      },
+      {
+        "date": "2026-05-04",
+        "eta": "2026-05-26"
+      },
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-29"
       }
     ]
   },
@@ -249,6 +289,14 @@
     "history": [
       {
         "date": "2026-05-02",
+        "eta": "2026-05-25"
+      },
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-26"
+      },
+      {
+        "date": "2026-05-04",
         "eta": "2026-05-25"
       },
       {
@@ -294,6 +342,14 @@
       {
         "date": "2026-05-05",
         "eta": "2026-05-14"
+      },
+      {
+        "date": "2026-05-04",
+        "eta": "2026-05-15"
+      },
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-14"
       }
     ]
   },
@@ -316,6 +372,14 @@
       {
         "date": "2026-05-05",
         "eta": "2026-05-14"
+      },
+      {
+        "date": "2026-05-04",
+        "eta": "2026-05-15"
+      },
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-14"
       }
     ]
   },
@@ -330,6 +394,14 @@
       {
         "date": "2026-05-02",
         "eta": "2026-05-20"
+      },
+      {
+        "date": "2026-05-04",
+        "eta": "2026-05-15"
+      },
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-14"
       },
       {
         "date": "2026-05-04",
@@ -394,6 +466,10 @@
       {
         "date": "2026-05-02",
         "eta": "2026-05-25"
+      },
+      {
+        "date": "2026-05-07",
+        "eta": "2026-05-26"
       }
     ]
   },
@@ -421,6 +497,14 @@
     "history": [
       {
         "date": "2026-05-02",
+        "eta": "2026-05-20"
+      },
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-25"
+      },
+      {
+        "date": "2026-05-04",
         "eta": "2026-05-20"
       },
       {
@@ -458,6 +542,14 @@
       {
         "date": "2026-05-05",
         "eta": "2026-05-14"
+      },
+      {
+        "date": "2026-05-04",
+        "eta": "2026-05-20"
+      },
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-14"
       }
     ]
   },
@@ -472,6 +564,10 @@
       {
         "date": "2026-05-02",
         "eta": "2026-06-01"
+      },
+      {
+        "date": "2026-05-07",
+        "eta": "2026-05-26"
       }
     ]
   },
@@ -494,6 +590,14 @@
       {
         "date": "2026-05-05",
         "eta": "2026-05-14"
+      },
+      {
+        "date": "2026-05-04",
+        "eta": "2026-05-15"
+      },
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-14"
       }
     ]
   },
@@ -508,6 +612,10 @@
       {
         "date": "2026-05-02",
         "eta": "2026-05-20"
+      },
+      {
+        "date": "2026-05-07",
+        "eta": "2026-05-15"
       }
     ]
   },
@@ -521,6 +629,14 @@
     "history": [
       {
         "date": "2026-05-02",
+        "eta": "2026-05-20"
+      },
+      {
+        "date": "2026-05-05",
+        "eta": "2026-05-14"
+      },
+      {
+        "date": "2026-05-04",
         "eta": "2026-05-20"
       },
       {
@@ -620,6 +736,10 @@
       {
         "date": "2026-05-05",
         "eta": "2026-05-22"
+      },
+      {
+        "date": "2026-05-08",
+        "eta": "2026-05-26"
       }
     ]
   },
@@ -802,6 +922,370 @@
       {
         "date": "2026-05-05",
         "eta": "2026-05-29"
+      }
+    ]
+  },
+  "3KPA25AD1ME404046_58737H8000": {
+    "partNo": "58737H8000",
+    "partName": "HOSE-REAR WHEEL LH",
+    "vin": "3KPA25AD1ME404046",
+    "roNumber": "",
+    "dealerOrder": "FC84576",
+    "orderDate": "2026-05-05",
+    "history": [
+      {
+        "date": "2026-05-06",
+        "eta": "2026-08-18"
+      }
+    ]
+  },
+  "5XYP5DGC4RG548873_69100S9500": {
+    "partNo": "69100S9500",
+    "partName": "PANEL ASSY-BACK",
+    "vin": "5XYP5DGC4RG548873",
+    "roNumber": "FC84517",
+    "dealerOrder": "FC84517",
+    "orderDate": "2026-05-05",
+    "history": [
+      {
+        "date": "2026-05-06",
+        "eta": "2026-05-12"
+      }
+    ]
+  },
+  "61153PE03R_76003H9000": {
+    "partNo": "76003H9000",
+    "partName": "PANEL ASSY-FRONT DOOR,LH",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0505",
+    "orderDate": "2026-05-05",
+    "history": [
+      {
+        "date": "2026-05-06",
+        "eta": "2026-05-14"
+      }
+    ]
+  },
+  "5XYP5DGC4RG548873_85770S9600WK": {
+    "partNo": "85770S9600WK",
+    "partName": "TRIM ASSY-RR TRANSVERSE",
+    "vin": "5XYP5DGC4RG548873",
+    "roNumber": "FC84517",
+    "dealerOrder": "FC84517",
+    "orderDate": "2026-05-05",
+    "history": [
+      {
+        "date": "2026-05-06",
+        "eta": "2026-06-04"
+      }
+    ]
+  },
+  "KNDPVCDF6T7434418_86531P1520BKL": {
+    "partNo": "86531P1520BKL",
+    "partName": "GRILLE-FRONT BUMPER",
+    "vin": "KNDPVCDF6T7434418",
+    "roNumber": "FC84501",
+    "dealerOrder": "FC84501",
+    "orderDate": "2026-05-05",
+    "history": [
+      {
+        "date": "2026-05-06",
+        "eta": "2026-05-26"
+      }
+    ]
+  },
+  "KNDPVCDF6T7434418_86577P1500": {
+    "partNo": "86577P1500",
+    "partName": "SKID PLATE-FR BUMPER",
+    "vin": "KNDPVCDF6T7434418",
+    "roNumber": "FC84501",
+    "dealerOrder": "FC84501",
+    "orderDate": "2026-05-05",
+    "history": [
+      {
+        "date": "2026-05-06",
+        "eta": "2026-05-12"
+      }
+    ]
+  },
+  "KNDPVCDF6T7434418_86596P1520BKL": {
+    "partNo": "86596P1520BKL",
+    "partName": "MOULDING-FRONT BUMPER,RH",
+    "vin": "KNDPVCDF6T7434418",
+    "roNumber": "FC84501",
+    "dealerOrder": "FC84501",
+    "orderDate": "2026-05-05",
+    "history": [
+      {
+        "date": "2026-05-06",
+        "eta": "2026-05-12"
+      }
+    ]
+  },
+  "KNDCR3L10S5137549_87712AT000": {
+    "partNo": "87712AT000",
+    "partName": "GARNISH ASSY-FNDR SIDE,RH",
+    "vin": "KNDCR3L10S5137549",
+    "roNumber": "FC84550",
+    "dealerOrder": "FC84550",
+    "orderDate": "2026-05-05",
+    "history": [
+      {
+        "date": "2026-05-06",
+        "eta": "2026-05-15"
+      }
+    ]
+  },
+  "5XYP5DGC4RG548873_92501S9000": {
+    "partNo": "92501S9000",
+    "partName": "LAMP ASSY-LICENSE PLATE,LH",
+    "vin": "5XYP5DGC4RG548873",
+    "roNumber": "FC84517",
+    "dealerOrder": "FC84517",
+    "orderDate": "2026-05-05",
+    "history": [
+      {
+        "date": "2026-05-06",
+        "eta": "2026-05-29"
+      }
+    ]
+  },
+  "61153PE03R_98110D4000": {
+    "partNo": "98110D4000",
+    "partName": "MOTOR ASSY-WINDSHIELD WIPER",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0505",
+    "orderDate": "2026-05-05",
+    "history": [
+      {
+        "date": "2026-05-06",
+        "eta": "2026-05-29"
+      }
+    ]
+  },
+  "3KPA25AB4KE168018_76003H9000": {
+    "partNo": "76003H9000",
+    "partName": "PANEL ASSY-FRONT DOOR,LH",
+    "vin": "3KPA25AB4KE168018",
+    "roNumber": "FC84592",
+    "dealerOrder": "FC84592",
+    "orderDate": "2026-05-06",
+    "history": [
+      {
+        "date": "2026-05-07",
+        "eta": "2026-05-14"
+      }
+    ]
+  },
+  "KNDCP3LE1R5128734_81710AT000WK": {
+    "partNo": "81710AT000WK",
+    "partName": "TRIM ASSY-TAIL GATE LWR",
+    "vin": "KNDCP3LE1R5128734",
+    "roNumber": "",
+    "dealerOrder": "FC84646",
+    "orderDate": "2026-05-06",
+    "history": [
+      {
+        "date": "2026-05-07",
+        "eta": "2026-05-15"
+      }
+    ]
+  },
+  "KNDPVDDG6T7296779_86512P1500BKL": {
+    "partNo": "86512P1500BKL",
+    "partName": "COVER-FR BUMPER,LWR",
+    "vin": "KNDPVDDG6T7296779",
+    "roNumber": "FC84628",
+    "dealerOrder": "FC84628",
+    "orderDate": "2026-05-06",
+    "history": [
+      {
+        "date": "2026-05-07",
+        "eta": "2026-05-29"
+      }
+    ]
+  },
+  "KNDPVDDG6T7296779_86531CH520BKL": {
+    "partNo": "86531CH520BKL",
+    "partName": "GRILLE-FRONT BUMPER",
+    "vin": "KNDPVDDG6T7296779",
+    "roNumber": "FC84628",
+    "dealerOrder": "FC84628",
+    "orderDate": "2026-05-06",
+    "history": [
+      {
+        "date": "2026-05-07",
+        "eta": "2026-05-15"
+      }
+    ]
+  },
+  "KNDPVDDG6T7296779_86577P1500": {
+    "partNo": "86577P1500",
+    "partName": "SKID PLATE-FR BUMPER",
+    "vin": "KNDPVDDG6T7296779",
+    "roNumber": "FC84628",
+    "dealerOrder": "FC84628",
+    "orderDate": "2026-05-06",
+    "history": [
+      {
+        "date": "2026-05-07",
+        "eta": "2026-05-12"
+      }
+    ]
+  },
+  "KNDC4DLC2R5229388_91240CV040": {
+    "partNo": "91240CV040",
+    "partName": "WIRING ASSY-FRT",
+    "vin": "KNDC4DLC2R5229388",
+    "roNumber": "FC84661",
+    "dealerOrder": "FC84661",
+    "orderDate": "2026-05-06",
+    "history": [
+      {
+        "date": "2026-05-07",
+        "eta": "2026-05-26"
+      }
+    ]
+  },
+  "5XYC4DJC6SG001233_96611CV600": {
+    "partNo": "96611CV600",
+    "partName": "HORN ASSY-LOW PITCH",
+    "vin": "5XYC4DJC6SG001233",
+    "roNumber": "CLDAYA02",
+    "dealerOrder": "CLDAYA02",
+    "orderDate": "2026-05-06",
+    "history": [
+      {
+        "date": "2026-05-07",
+        "eta": "2026-05-15"
+      }
+    ]
+  },
+  "5XYC4DJC6SG001233_96621CV500": {
+    "partNo": "96621CV500",
+    "partName": "HORN ASSY-HIGH PITCH",
+    "vin": "5XYC4DJC6SG001233",
+    "roNumber": "",
+    "dealerOrder": "CLDAYA02",
+    "orderDate": "2026-05-06",
+    "history": [
+      {
+        "date": "2026-05-07",
+        "eta": "2026-05-15"
+      }
+    ]
+  },
+  "61153PE06R_54625P2000": {
+    "partNo": "54625P2000",
+    "partName": "COVER-FR SUSPENSION STRUT DUST",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0507",
+    "orderDate": "2026-05-07",
+    "history": [
+      {
+        "date": "2026-05-08",
+        "eta": "2026-06-05"
+      }
+    ]
+  },
+  "61153PE06R_54633N9000": {
+    "partNo": "54633N9000",
+    "partName": "PAD-FRONT SPRING,LWR",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0507",
+    "orderDate": "2026-05-07",
+    "history": [
+      {
+        "date": "2026-05-08",
+        "eta": "2026-06-05"
+      }
+    ]
+  },
+  "61153PE06R_54831CV000": {
+    "partNo": "54831CV000",
+    "partName": "LINK ASSY-FRONT STABILIZER,RH",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0507",
+    "orderDate": "2026-05-07",
+    "history": [
+      {
+        "date": "2026-05-08",
+        "eta": "2026-05-29"
+      }
+    ]
+  },
+  "61153PE04R_58101J2A00SLHW": {
+    "partNo": "58101J2A00SLHW",
+    "partName": "REPLACEMENT HARDWARE - PADS",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "AUTO",
+    "orderDate": "2026-05-06",
+    "history": [
+      {
+        "date": "2026-05-08",
+        "eta": "2026-07-10"
+      }
+    ]
+  },
+  "61153PE06R_86811J2000": {
+    "partNo": "86811J2000",
+    "partName": "GUARD ASSY-FRONT WHEEL,LH",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0507",
+    "orderDate": "2026-05-07",
+    "history": [
+      {
+        "date": "2026-05-08",
+        "eta": "2026-05-29"
+      }
+    ]
+  },
+  "61153PE06R_86812CV000": {
+    "partNo": "86812CV000",
+    "partName": "GUARD ASSY-FRONT WHEEL,RH",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0507",
+    "orderDate": "2026-05-07",
+    "history": [
+      {
+        "date": "2026-05-08",
+        "eta": "2026-06-05"
+      }
+    ]
+  },
+  "61153PE06R_868421M500": {
+    "partNo": "868421M500",
+    "partName": "GUARD ASSY-RR WHEEL MUD RH",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0507",
+    "orderDate": "2026-05-07",
+    "history": [
+      {
+        "date": "2026-05-08",
+        "eta": "2026-08-05"
+      }
+    ]
+  },
+  "61153PE06R_92102P4100": {
+    "partNo": "92102P4100",
+    "partName": "LAMP ASSY-HEAD,RH",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0507",
+    "orderDate": "2026-05-07",
+    "history": [
+      {
+        "date": "2026-05-08",
+        "eta": "2026-07-20"
       }
     ]
   }

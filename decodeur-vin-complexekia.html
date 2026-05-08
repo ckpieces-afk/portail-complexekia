@@ -182,7 +182,7 @@ footer{text-align:center;padding:2.5rem 2rem;border-top:1px solid var(--border);
 }
 @media(max-width:600px){.grid-2{grid-template-columns:1fr;}.hero{padding:2.5rem 1rem 2rem;}.results-wrap{padding-left:1rem;padding-right:1rem;}.vehicle-hero{flex-direction:column;}.badges{flex-direction:row;flex-wrap:wrap;}header{padding:0 1rem;}.header-right{display:none;}}
 </style>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/4.1.1/tesseract.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7KWSBPV16"></script>
 <script>
@@ -910,16 +910,27 @@ var WIPER_DB = {
     "IONIQ 5":    { "2022-2024": { d: '26"', p: '18"' } },
     "VENUE":      { "2020-2024": { d: '22"', p: '16"' } }
   },
-  "TOYOTA": {
-    "CAMRY":      { "2018-2024": { d: '26"', p: '18"' }, "2012-2017": { d: '26"', p: '18"' } },
-    "COROLLA":    { "2020-2024": { d: '26"', p: '16"' }, "2014-2019": { d: '26"', p: '16"' } },
-    "RAV4":       { "2019-2024": { d: '26"', p: '16"', r: '12"' }, "2013-2018": { d: '26"', p: '16"', r: '12"' } },
-    "HIGHLANDER": { "2020-2024": { d: '26"', p: '22"', r: '14"' }, "2014-2019": { d: '26"', p: '22"', r: '16"' } },
-    "TACOMA":     { "2016-2024": { d: '24"', p: '18"', r: '12"' } },
-    "TUNDRA":     { "2022-2024": { d: '22"', p: '22"' }, "2007-2021": { d: '22"', p: '22"' } },
-    "SIENNA":     { "2021-2024": { d: '26"', p: '20"' } },
-    "4RUNNER":    { "2003-2024": { d: '22"', p: '18"', r: '12"' } },
-    "PRIUS":      { "2016-2024": { d: '26"', p: '16"', r: '12"' } }
+    "TOYOTA": {
+    "CAMRY":      { "2018-2025": { d: '26"', p: '20"' }, "2012-2017": { d: '26"', p: '18"' }, "2007-2011": { d: '24"', p: '20"' } },
+    "COROLLA":    { "2020-2025": { d: '26"', p: '16"' }, "2014-2019": { d: '26"', p: '16"' }, "2009-2013": { d: '24"', p: '18"' } },
+    "RAV4":       { "2019-2025": { d: '26"', p: '16"', r: '10"' }, "2013-2018": { d: '26"', p: '16"', r: '12"' }, "2006-2012": { d: '24"', p: '17"', r: '12"' } },
+    "HIGHLANDER": { "2024-2025": { d: '26"', p: '18"', r: '12"' }, "2020-2023": { d: '26"', p: '18"', r: '10"' }, "2008-2019": { d: '26"', p: '20"', r: '12"' } },
+    "TACOMA":     { "2016-2025": { d: '26"', p: '16"', r: '12"' }, "2005-2015": { d: '24"', p: '18"', r: '12"' } },
+    "TUNDRA":     { "2022-2025": { d: '22"', p: '22"' }, "2007-2021": { d: '22"', p: '22"' } },
+    "SIENNA":     { "2021-2025": { d: '26"', p: '20"', r: '12"' }, "2011-2020": { d: '26"', p: '20"', r: '16"' } },
+    "4RUNNER":    { "2003-2025": { d: '22"', p: '18"', r: '12"' } },
+    "PRIUS":      { "2019-2025": { d: '26"', p: '16"', r: '12"' }, "2016-2018": { d: '26"', p: '16"', r: '16"' }, "2010-2015": { d: '26"', p: '18"', r: '16"' } },
+    "PRIUS C":    { "2018-2019": { d: '28"', p: '14"', r: '8"' }, "2012-2017": { d: '28"', p: '13"', r: '8"' } },
+    "PRIUS PRIME":{ "2017-2025": { d: '26"', p: '16"', r: '14"' } },
+    "PRIUS V":    { "2012-2018": { d: '26"', p: '16"', r: '16"' } },
+    "SEQUOIA":    { "2023-2025": { d: '24"', p: '22"' }, "2008-2022": { d: '22"', p: '20"' } },
+    "VENZA":      { "2021-2025": { d: '26"', p: '20"', r: '12"' }, "2009-2016": { d: '26"', p: '20"' } },
+    "YARIS":      { "2015-2020": { d: '24"', p: '16"', r: '12"' }, "2007-2014": { d: '24"', p: '14"', r: '12"' } },
+    "C-HR":       { "2018-2022": { d: '26"', p: '16"', r: '14"' } },
+    "COROLLA CROSS": { "2022-2025": { d: '26"', p: '14"', r: '14"' } },
+    "RAV4 PRIME": { "2021-2025": { d: '26"', p: '16"', r: '10"' } },
+    "CROWN":      { "2023-2025": { d: '26"', p: '18"' } },
+    "BZ4X":       { "2023-2025": { d: '26"', p: '18"', r: '14"' } }
   },
   "HONDA": {
     "CIVIC":      { "2022-2024": { d: '26"', p: '16"' }, "2016-2021": { d: '26"', p: '18"' } },
@@ -1429,7 +1440,8 @@ function processImage(file) {
     barInner.style.width = '20%';
 
     // Run Tesseract OCR
-    Tesseract.recognize(e.target.result, 'eng', {
+    Tesseract.recognize(file, 'eng', {
+      workerPath: 'https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/worker.min.js',
       logger: function(m) {
         if (m.status === 'recognizing text') {
           var pct = Math.round(m.progress * 80) + 20;
