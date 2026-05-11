@@ -82,6 +82,10 @@
       {
         "date": "2026-05-02",
         "eta": "2026-05-25"
+      },
+      {
+        "date": "2026-05-11",
+        "eta": "2026-07-14"
       }
     ]
   },
@@ -190,6 +194,10 @@
       {
         "date": "2026-05-02",
         "eta": "2026-05-25"
+      },
+      {
+        "date": "2026-05-11",
+        "eta": "2026-05-26"
       }
     ]
   },
@@ -484,6 +492,10 @@
       {
         "date": "2026-05-02",
         "eta": "2026-05-15"
+      },
+      {
+        "date": "2026-05-11",
+        "eta": "2026-05-12"
       }
     ]
   },
@@ -950,6 +962,10 @@
       {
         "date": "2026-05-06",
         "eta": "2026-05-12"
+      },
+      {
+        "date": "2026-05-11",
+        "eta": "2026-05-15"
       }
     ]
   },
@@ -1034,6 +1050,10 @@
       {
         "date": "2026-05-06",
         "eta": "2026-05-15"
+      },
+      {
+        "date": "2026-05-11",
+        "eta": "2026-05-12"
       }
     ]
   },
@@ -1285,6 +1305,90 @@
     "history": [
       {
         "date": "2026-05-08",
+        "eta": "2026-07-20"
+      }
+    ]
+  },
+  "KNDC3DLC6N5083820_54625P2000": {
+    "partNo": "54625P2000",
+    "partName": "COVER-FR SUSPENSION STRUT DUST",
+    "vin": "KNDC3DLC6N5083820",
+    "roNumber": "FC84706",
+    "dealerOrder": "FC84706",
+    "orderDate": "2026-05-08",
+    "history": [
+      {
+        "date": "2026-05-11",
+        "eta": "2026-06-05"
+      }
+    ]
+  },
+  "KNDC3DLC6N5083820_54831CV000": {
+    "partNo": "54831CV000",
+    "partName": "LINK ASSY-FRONT STABILIZER,RH",
+    "vin": "KNDC3DLC6N5083820",
+    "roNumber": "FC84706",
+    "dealerOrder": "FC84706",
+    "orderDate": "2026-05-08",
+    "history": [
+      {
+        "date": "2026-05-11",
+        "eta": "2026-05-29"
+      }
+    ]
+  },
+  "KNDCP3LE3S5277636_86611AT001": {
+    "partNo": "86611AT001",
+    "partName": "COVER-RR BUMPER",
+    "vin": "KNDCP3LE3S5277636",
+    "roNumber": "FC84763",
+    "dealerOrder": "FC84763",
+    "orderDate": "2026-05-08",
+    "history": [
+      {
+        "date": "2026-05-11",
+        "eta": "2026-05-26"
+      }
+    ]
+  },
+  "KNDC3DLC6N5083820_86812CV000": {
+    "partNo": "86812CV000",
+    "partName": "GUARD ASSY-FRONT WHEEL,RH",
+    "vin": "KNDC3DLC6N5083820",
+    "roNumber": "FC84706",
+    "dealerOrder": "FC84706",
+    "orderDate": "2026-05-08",
+    "history": [
+      {
+        "date": "2026-05-11",
+        "eta": "2026-06-05"
+      }
+    ]
+  },
+  "KNAFT5A27C5517072_868421M500": {
+    "partNo": "868421M500",
+    "partName": "GUARD ASSY-RR WHEEL MUD RH",
+    "vin": "KNAFT5A27C5517072",
+    "roNumber": "FC84730",
+    "dealerOrder": "FC84730",
+    "orderDate": "2026-05-08",
+    "history": [
+      {
+        "date": "2026-05-11",
+        "eta": "2026-08-06"
+      }
+    ]
+  },
+  "KNDRMDLH1N5068239_92102P4100": {
+    "partNo": "92102P4100",
+    "partName": "LAMP ASSY-HEAD,RH",
+    "vin": "KNDRMDLH1N5068239",
+    "roNumber": "FC84636",
+    "dealerOrder": "FC84636",
+    "orderDate": "2026-05-08",
+    "history": [
+      {
+        "date": "2026-05-11",
         "eta": "2026-07-20"
       }
     ]
