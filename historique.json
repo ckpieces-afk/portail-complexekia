@@ -14,6 +14,10 @@
       {
         "date": "2026-05-07",
         "eta": "2026-06-24"
+      },
+      {
+        "date": "2026-05-13",
+        "eta": "2026-06-11"
       }
     ]
   },
@@ -178,6 +182,10 @@
       {
         "date": "2026-05-12",
         "eta": "2026-05-25"
+      },
+      {
+        "date": "2026-05-13",
+        "eta": "2026-07-24"
       }
     ]
   },
@@ -254,6 +262,10 @@
       {
         "date": "2026-05-12",
         "eta": "2026-05-29"
+      },
+      {
+        "date": "2026-05-13",
+        "eta": "2026-06-04"
       }
     ]
   },
@@ -350,6 +362,10 @@
       {
         "date": "2026-05-12",
         "eta": "2026-05-25"
+      },
+      {
+        "date": "2026-05-13",
+        "eta": "2026-05-26"
       }
     ]
   },
@@ -504,6 +520,10 @@
       {
         "date": "2026-05-12",
         "eta": "2026-07-10"
+      },
+      {
+        "date": "2026-05-13",
+        "eta": "2026-05-26"
       }
     ]
   },
@@ -836,6 +856,10 @@
       {
         "date": "2026-05-05",
         "eta": "2026-08-04"
+      },
+      {
+        "date": "2026-05-13",
+        "eta": "2026-06-11"
       }
     ]
   },
@@ -1030,6 +1054,10 @@
       {
         "date": "2026-05-12",
         "eta": "2026-05-19"
+      },
+      {
+        "date": "2026-05-13",
+        "eta": "2026-05-20"
       }
     ]
   },
@@ -1516,6 +1544,10 @@
       {
         "date": "2026-05-12",
         "eta": "2026-05-29"
+      },
+      {
+        "date": "2026-05-13",
+        "eta": "2026-05-26"
       }
     ]
   },
@@ -1642,6 +1674,118 @@
       {
         "date": "2026-05-12",
         "eta": "2026-08-10"
+      }
+    ]
+  },
+  "61153PE10R_55316A4000": {
+    "partNo": "55316A4000",
+    "partName": "COVER-RR SHOCK ABSORBER DUST",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0512",
+    "orderDate": "2026-05-12",
+    "history": [
+      {
+        "date": "2026-05-13",
+        "eta": "2026-05-29"
+      }
+    ]
+  },
+  "61153PE10R_82413P1000": {
+    "partNo": "82413P1000",
+    "partName": "GRIP-FRONT DOOR GLASS,LH",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0512",
+    "orderDate": "2026-05-12",
+    "history": [
+      {
+        "date": "2026-05-13",
+        "eta": "2026-08-18"
+      }
+    ]
+  },
+  "61153PE10R_82651C5710QQK": {
+    "partNo": "82651C5710QQK",
+    "partName": "HANDLE ASSY-DOOR OUTSIDE,LH",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0512",
+    "orderDate": "2026-05-12",
+    "history": [
+      {
+        "date": "2026-05-13",
+        "eta": "2026-07-20"
+      }
+    ]
+  },
+  "KNDEP2AA8S7699490_85730Q5500WK": {
+    "partNo": "85730Q5500WK",
+    "partName": "TRIM ASSY-LUGGAGE SIDE LH",
+    "vin": "KNDEP2AA8S7699490",
+    "roNumber": "FC84779",
+    "dealerOrder": "FC84779",
+    "orderDate": "2026-05-12",
+    "history": [
+      {
+        "date": "2026-05-13",
+        "eta": "2026-05-26"
+      }
+    ]
+  },
+  "KNDPU3DF0T7425281_86512P1500BKL": {
+    "partNo": "86512P1500BKL",
+    "partName": "COVER-FR BUMPER,LWR",
+    "vin": "KNDPU3DF0T7425281",
+    "roNumber": "FC84842",
+    "dealerOrder": "FC84842",
+    "orderDate": "2026-05-12",
+    "history": [
+      {
+        "date": "2026-05-13",
+        "eta": "2026-05-29"
+      }
+    ]
+  },
+  "5XYPGDA50LG635259_86560C6520": {
+    "partNo": "86560C6520",
+    "partName": "GRILLE-FRONT BUMPER",
+    "vin": "5XYPGDA50LG635259",
+    "roNumber": "FC84766",
+    "dealerOrder": "FC84766",
+    "orderDate": "2026-05-12",
+    "history": [
+      {
+        "date": "2026-05-13",
+        "eta": "2026-05-29"
+      }
+    ]
+  },
+  "61153PE10R_92453B0600QQK": {
+    "partNo": "92453B0600QQK",
+    "partName": "PAD-REAR COMB LAMP OUTSIDE,LH",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0512",
+    "orderDate": "2026-05-12",
+    "history": [
+      {
+        "date": "2026-05-13",
+        "eta": "2026-07-16"
+      }
+    ]
+  },
+  "5XYRHDJF7SG371647_99310L1810MLB": {
+    "partNo": "99310L1810MLB",
+    "partName": "UNIT ASSY-ULTRASONIC",
+    "vin": "5XYRHDJF7SG371647",
+    "roNumber": "FC84808",
+    "dealerOrder": "FC84808",
+    "orderDate": "2026-05-12",
+    "history": [
+      {
+        "date": "2026-05-13",
+        "eta": "2026-07-06"
       }
     ]
   }
