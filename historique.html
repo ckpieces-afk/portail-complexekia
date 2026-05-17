@@ -78,7 +78,41 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);font-si
 }
 .print-header { display:none; }
 .print-footer { display:none; }
+
+/* ── RESPONSIVE MOBILE ── */
+*{box-sizing:border-box;}
+body{overflow-x:hidden;}
+@media(max-width:768px){
+  .search-box{flex-wrap:wrap !important;}
+  .search-input{flex:1 1 100% !important;width:100% !important;}
+  .search-btn{flex:1 !important;}
+  .logo-sub{display:none !important;}
+  .logo-sep{display:none !important;}
+  .update-badge{display:none !important;}
+  .header-right{display:none !important;}
+  .header-contact{display:none !important;}
+}
+@media(max-width:560px){
+  header{padding:0 0.75rem !important;height:auto !important;min-height:52px !important;gap:8px !important;}
+  .logo img{height:30px !important;width:auto !important;}
+  .hero{padding:1.75rem 1rem 1.25rem !important;}
+  .hero h1{font-size:clamp(1.8rem,9vw,2.8rem) !important;}
+  .hero p,.hero-sub{font-size:0.82rem !important;}
+  .search-wrap{padding:0 !important;}
+  .search-box{gap:6px !important;}
+  .search-btn{font-size:0.8rem !important;padding:10px 12px !important;}
+  .camera-btn{padding:10px 11px !important;}
+  .warning-banner{font-size:0.72rem !important;padding:6px 10px !important;}
+  .modules-grid{grid-template-columns:1fr !important;gap:12px !important;}
+  .modules-section{padding:0 1rem 2.5rem !important;}
+  .card-grid{grid-template-columns:1fr !important;}
+  .results-section,.results-wrap,.results{padding-left:0.75rem !important;padding-right:0.75rem !important;}
+  .grid-2{grid-template-columns:1fr !important;}
+  .vehicle-hero{flex-direction:column !important;}
+}
+
 </style>
+
 
 
 
