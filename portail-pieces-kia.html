@@ -18,6 +18,7 @@
 <link rel="apple-touch-icon" href="icon-192.png">
 <title>Portail Pièces — Statut &amp; ETA</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<!-- BarcodeDetector natif - pas de librairie externe nécessaire -->
 <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
 <style>
 :root{--red:#C8102E;--dark:#0A0A0A;--card:#141414;--border:#222;--muted:#555;--text:#E8E8E8;--soft:#999;--green:#22C55E;--yellow:#FACC15;--orange:#F97316;}
@@ -199,13 +200,14 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);}
 </div>
 
 <input type="file" id="cameraInput" accept="image/*" capture="environment" style="display:none" />
+<canvas id="ocrCanvas" style="display:none;"></canvas>
 
 <div class="ocr-overlay" id="ocrOverlay" style="display:none;">
   <div style="width:100%;max-width:500px;display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
     <span style="font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--soft);">Scanner VIN</span>
     <button class="ocr-btn cancel" id="ocrCloseBtn" style="padding:6px 12px;font-size:0.75rem;">✕ Fermer</button>
   </div>
-  <img id="ocrPreview" class="ocr-preview" src="" alt="Aperçu" style="display:none;" />
+  <video id="ocrVideo" class="ocr-preview" autoplay playsinline muted style="display:none;"></video>
   <div class="ocr-scanning-bar" id="ocrBar" style="display:none;"><div class="ocr-scanning-bar-inner" id="ocrBarInner"></div></div>
   <div class="ocr-status" id="ocrStatus">Chargement...</div>
   <div class="ocr-vin-detected" id="ocrVinResult" style="display:none;"></div>
@@ -329,74 +331,126 @@ function doSearch() {
 
 // OCR
 var detectedVin = '';
+var _vinStream = null;
 
-function openCamera() { document.getElementById('cameraInput').click(); }
+function stopStream() {
+  if (_vinStream) { _vinStream.getTracks().forEach(function(t){t.stop();}); _vinStream = null; }
+}
+
 function closeOcr() {
+  stopStream();
   document.getElementById('ocrOverlay').style.display = 'none';
-  document.getElementById('ocrPreview').style.display = 'none';
+  document.getElementById('ocrVideo').style.display = 'none';
   document.getElementById('ocrBar').style.display = 'none';
   document.getElementById('ocrActions').style.display = 'none';
   document.getElementById('ocrVinResult').style.display = 'none';
   document.getElementById('ocrManualSection').style.display = 'none';
   document.getElementById('ocrConfirmBtn').style.display = 'inline-flex';
-  document.getElementById('ocrStatus').textContent = "Chargement...";
+  document.getElementById('ocrStatus').textContent = 'Chargement...';
   detectedVin = '';
+}
+
+function preprocessForOCR(file, callback) {
+  var img = new Image();
+  var url = URL.createObjectURL(file);
+  img.onload = function() {
+    var canvas = document.getElementById('ocrCanvas');
+    // Upscale pour meilleure lisibilité
+    var scale = Math.min(4, 2000 / Math.max(img.width, img.height));
+    canvas.width  = img.width  * scale;
+    canvas.height = img.height * scale;
+    var ctx = canvas.getContext('2d');
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    // Convertir en niveaux de gris + contraste élevé
+    var id = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    var d = id.data;
+    for (var i = 0; i < d.length; i += 4) {
+      var gray = 0.299*d[i] + 0.587*d[i+1] + 0.114*d[i+2];
+      // Contraste fort : binarisation autour de 128
+      var bw = gray < 140 ? 0 : 255;
+      d[i] = d[i+1] = d[i+2] = bw;
+    }
+    ctx.putImageData(id, 0, 0);
+    URL.revokeObjectURL(url);
+    canvas.toBlob(callback, 'image/png');
+  };
+  img.src = url;
+}
+
+function openCamera() {
+  var overlay = document.getElementById('ocrOverlay');
+  overlay.style.display = 'flex';
+  document.getElementById('ocrVideo').style.display = 'none';
+  document.getElementById('ocrBar').style.display = 'none';
+  document.getElementById('ocrActions').style.display = 'none';
+  document.getElementById('ocrVinResult').style.display = 'none';
+  document.getElementById('ocrManualSection').style.display = 'none';
+  document.getElementById('ocrConfirmBtn').style.display = 'inline-flex';
+  detectedVin = '';
+  document.getElementById('ocrStatus').textContent = '📷 Pointez vers le VIN et prenez une photo rapprochée';
+  document.getElementById('cameraInput').value = '';
+  document.getElementById('cameraInput').click();
 }
 
 function processImage(file) {
   if (!file) return;
-  var overlay = document.getElementById('ocrOverlay');
-  var preview = document.getElementById('ocrPreview');
-  var status = document.getElementById('ocrStatus');
-  var bar = document.getElementById('ocrBar');
+  var status   = document.getElementById('ocrStatus');
+  var bar      = document.getElementById('ocrBar');
   var barInner = document.getElementById('ocrBarInner');
-  overlay.style.display = 'flex';
+  var video    = document.getElementById('ocrVideo');
+
+  // Afficher aperçu dans la vidéo (réutiliser l'élément)
+  var previewURL = URL.createObjectURL(file);
+  video.src = previewURL;
+  video.style.display = 'block';
+
+  status.textContent = 'Prétraitement de l\'image...';
   bar.style.display = 'block';
-  barInner.style.width = '10%';
+  barInner.style.width = '15%';
   document.getElementById('ocrActions').style.display = 'none';
   document.getElementById('ocrVinResult').style.display = 'none';
   document.getElementById('ocrManualSection').style.display = 'none';
 
-  var reader = new FileReader();
-  reader.onload = function(e) {
-    preview.src = e.target.result;
-    preview.style.display = 'block';
-    status.textContent = 'Analyse en cours...';
-    barInner.style.width = '20%';
-    Tesseract.recognize(file, 'eng', {
+  preprocessForOCR(file, function(processedBlob) {
+    barInner.style.width = '30%';
+    status.textContent = 'Lecture du VIN en cours...';
+    Tesseract.recognize(processedBlob, 'eng', {
       workerPath: 'https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/worker.min.js',
       logger: function(m) {
         if (m.status === 'recognizing text') {
-          barInner.style.width = (Math.round(m.progress * 80) + 20) + '%';
+          barInner.style.width = (30 + Math.round(m.progress * 65)) + '%';
         }
-      }
+      },
+      tessedit_char_whitelist: 'ABCDEFGHJKLMNPRSTUVWXYZ0123456789',
+      tessedit_pageseg_mode: '6'
     }).then(function(result) {
       barInner.style.width = '100%';
-      var text = result.data.text.toUpperCase();
-      var vinMatch = text.match(/[A-HJ-NPR-Z0-9]{17}/g);
-      var foundVin = vinMatch ? vinMatch[0] : null;
       bar.style.display = 'none';
-      if (foundVin) {
-        detectedVin = foundVin;
+      URL.revokeObjectURL(previewURL);
+      // Chercher séquence VIN de 17 caractères
+      var text = result.data.text.toUpperCase().replace(/[^A-HJ-NPR-Z0-9]/g, '');
+      var match = text.match(/[A-HJ-NPR-Z0-9]{17}/);
+      if (match) {
+        detectedVin = match[0];
         status.textContent = 'VIN détecté!';
-        document.getElementById('ocrVinResult').textContent = foundVin;
+        document.getElementById('ocrVinResult').textContent = detectedVin;
         document.getElementById('ocrVinResult').style.display = 'block';
         document.getElementById('ocrActions').style.display = 'flex';
       } else {
-        status.textContent = 'VIN non détecté. Entrez-le manuellement.';
+        status.textContent = 'VIN non détecté — prenez la photo plus près du texte VIN, bien éclairé.';
         document.getElementById('ocrManualSection').style.display = 'block';
         document.getElementById('ocrActions').style.display = 'flex';
         document.getElementById('ocrConfirmBtn').style.display = 'none';
       }
     }).catch(function() {
       bar.style.display = 'none';
+      URL.revokeObjectURL(previewURL);
       status.textContent = 'Erreur. Entrez le VIN manuellement.';
       document.getElementById('ocrManualSection').style.display = 'block';
       document.getElementById('ocrActions').style.display = 'flex';
       document.getElementById('ocrConfirmBtn').style.display = 'none';
     });
-  };
-  reader.readAsDataURL(file);
+  });
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -420,7 +474,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   document.getElementById('ocrRetryBtn').addEventListener('click', function() {
     document.getElementById('cameraInput').value = '';
-    document.getElementById('cameraInput').click();
+    openCamera();
   });
   document.getElementById('ocrManualBtn').addEventListener('click', function() {
     var manual = document.getElementById('ocrManualInput').value.trim().toUpperCase();
