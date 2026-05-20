@@ -106,6 +106,10 @@
       {
         "date": "2026-05-15",
         "eta": "2026-05-29"
+      },
+      {
+        "date": "2026-05-20",
+        "eta": "2026-06-01"
       }
     ]
   },
@@ -202,6 +206,10 @@
       {
         "date": "2026-05-16",
         "eta": "2026-07-24"
+      },
+      {
+        "date": "2026-05-20",
+        "eta": "2026-08-24"
       }
     ]
   },
@@ -1138,6 +1146,10 @@
       {
         "date": "2026-05-06",
         "eta": "2026-06-04"
+      },
+      {
+        "date": "2026-05-20",
+        "eta": "2026-05-26"
       }
     ]
   },
@@ -1890,6 +1902,10 @@
       {
         "date": "2026-05-17",
         "eta": "2026-07-10"
+      },
+      {
+        "date": "2026-05-20",
+        "eta": "2026-05-26"
       }
     ]
   },
@@ -2163,6 +2179,146 @@
       },
       {
         "date": "2026-05-19",
+        "eta": "2026-06-09"
+      }
+    ]
+  },
+  "61153PE14R_1140412756P": {
+    "partNo": "1140412756P",
+    "partName": "BOLT-FLANGE",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0519",
+    "orderDate": "2026-05-19",
+    "history": [
+      {
+        "date": "2026-05-20",
+        "eta": "2026-05-29"
+      }
+    ]
+  },
+  "KNDPXDDG4T7264892_1879005997AS": {
+    "partNo": "1879005997AS",
+    "partName": "KUM_025110WP_16F_HYBRID",
+    "vin": "KNDPXDDG4T7264892",
+    "roNumber": "BR10685",
+    "dealerOrder": "BR10685",
+    "orderDate": "2026-05-19",
+    "history": [
+      {
+        "date": "2026-05-20",
+        "eta": "2026-06-09"
+      }
+    ]
+  },
+  "KNDETCA27N7311423_1898009620": {
+    "partNo": "1898009620",
+    "partName": "MULTI FUSE",
+    "vin": "KNDETCA27N7311423",
+    "roNumber": "U2712",
+    "dealerOrder": "U2712",
+    "orderDate": "2026-05-19",
+    "history": [
+      {
+        "date": "2026-05-20",
+        "eta": "2026-05-29"
+      }
+    ]
+  },
+  "61153PE14R_29110M6200": {
+    "partNo": "29110M6200",
+    "partName": "PANEL ASSY-UNDER COVER",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0519",
+    "orderDate": "2026-05-19",
+    "history": [
+      {
+        "date": "2026-05-20",
+        "eta": "2026-05-29"
+      }
+    ]
+  },
+  "61153PE14R_54530F2000": {
+    "partNo": "54530F2000",
+    "partName": "BALL JOINT ASSY,LH",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0519",
+    "orderDate": "2026-05-19",
+    "history": [
+      {
+        "date": "2026-05-20",
+        "eta": "2026-05-26"
+      }
+    ]
+  },
+  "61153PE14R_54559D1000QQK": {
+    "partNo": "54559D1000QQK",
+    "partName": "FLANGE NUT-SELF LOCKING",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0519",
+    "orderDate": "2026-05-19",
+    "history": [
+      {
+        "date": "2026-05-20",
+        "eta": "2026-05-28"
+      }
+    ]
+  },
+  "61153PE14R_54830AA000": {
+    "partNo": "54830AA000",
+    "partName": "LINK ASSY-FRONT STABILIZER",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0519",
+    "orderDate": "2026-05-19",
+    "history": [
+      {
+        "date": "2026-05-20",
+        "eta": "2026-06-02"
+      }
+    ]
+  },
+  "61153PE14R_55530AAAA0": {
+    "partNo": "55530AAAA0",
+    "partName": "LINK ASSY-REAR STABILIZER",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0519",
+    "orderDate": "2026-05-19",
+    "history": [
+      {
+        "date": "2026-05-20",
+        "eta": "2026-05-29"
+      }
+    ]
+  },
+  "KNDC34LA8R5618926_56400CV500": {
+    "partNo": "56400CV500",
+    "partName": "JOINT ASSY-STRG",
+    "vin": "KNDC34LA8R5618926",
+    "roNumber": "",
+    "dealerOrder": "BR09949",
+    "orderDate": "2026-05-19",
+    "history": [
+      {
+        "date": "2026-05-20",
+        "eta": "2026-06-02"
+      }
+    ]
+  },
+  "61153PE14R_56820DO000": {
+    "partNo": "56820DO000",
+    "partName": "END ASSY-TIE ROD",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0519",
+    "orderDate": "2026-05-19",
+    "history": [
+      {
+        "date": "2026-05-20",
         "eta": "2026-06-09"
       }
     ]
