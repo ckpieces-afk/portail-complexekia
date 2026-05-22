@@ -664,6 +664,10 @@
       {
         "date": "2026-05-02",
         "eta": "2026-06-19"
+      },
+      {
+        "date": "2026-05-22",
+        "eta": "2026-07-14"
       }
     ]
   },
@@ -2398,6 +2402,10 @@
       {
         "date": "2026-05-21",
         "eta": "2026-06-16"
+      },
+      {
+        "date": "2026-05-22",
+        "eta": "2026-06-22"
       }
     ]
   },
@@ -2412,6 +2420,52 @@
       {
         "date": "2026-05-21",
         "eta": "2026-07-28"
+      },
+      {
+        "date": "2026-05-22",
+        "eta": "2026-06-22"
+      }
+    ]
+  },
+  "KNDPUCDF6T7470161_52960R2710": {
+    "partNo": "52960R2710",
+    "partName": "CAP ASSY-WHEEL HUB",
+    "vin": "KNDPUCDF6T7470161",
+    "roNumber": "FC85194",
+    "dealerOrder": "FC85194",
+    "orderDate": "2026-05-21",
+    "history": [
+      {
+        "date": "2026-05-22",
+        "eta": "2026-06-11"
+      }
+    ]
+  },
+  "KNDNB5K30S6495028_83908R0000": {
+    "partNo": "83908R0000",
+    "partName": "COVER ASSY-CTR RAIL,RH",
+    "vin": "KNDNB5K30S6495028",
+    "roNumber": "",
+    "dealerOrder": "FC85186",
+    "orderDate": "2026-05-21",
+    "history": [
+      {
+        "date": "2026-05-22",
+        "eta": "2026-05-26"
+      }
+    ]
+  },
+  "3KPFT5DE5TE292387_87742GG500BKL": {
+    "partNo": "87742GG500BKL",
+    "partName": "GARNISH ASSY-QTR SIDE,RH",
+    "vin": "3KPFT5DE5TE292387",
+    "roNumber": "FC85041",
+    "dealerOrder": "FC85041",
+    "orderDate": "2026-05-21",
+    "history": [
+      {
+        "date": "2026-05-22",
+        "eta": "2026-07-14"
       }
     ]
   }
