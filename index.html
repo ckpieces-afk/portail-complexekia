@@ -228,15 +228,37 @@ footer{
 }
 
 
+/* ── RESPONSIVE MOBILE v2 ── */
+*{box-sizing:border-box;}
+body{overflow-x:hidden;}
+@media(max-width:768px){
+  .search-box{flex-wrap:wrap !important;}
+  .search-input{flex:1 1 100% !important;width:100% !important;}
+  .search-btn{flex:1 !important;}
+  .logo-sub{display:none !important;}
+  .update-badge{display:none !important;}
+  .header-right{display:none !important;}
+  .logo-sep{display:none !important;}
+}
+@media(max-width:560px){
+  header{padding:0 0.75rem !important;height:auto !important;min-height:52px !important;gap:8px !important;}
+  .logo img{height:30px !important;width:auto !important;}
+  .hero{padding:1.75rem 1rem 1.25rem !important;}
+  .hero h1{font-size:clamp(1.8rem,9vw,2.8rem) !important;letter-spacing:1px !important;}
+  .hero p,.hero-sub{font-size:0.82rem !important;}
+  .search-wrap{padding:0 !important;}
+  .search-box{gap:6px !important;}
+  .search-btn{font-size:0.8rem !important;padding:10px 12px !important;}
+  .camera-btn{padding:10px 11px !important;}
+  .warning-banner{font-size:0.72rem !important;padding:6px 10px !important;}
+}
 
-
-
-
-
-
-
-
-
+@media(max-width:640px){
+  .modules-grid{grid-template-columns:1fr !important;gap:12px !important;}
+  .modules-section{padding:0 1rem 2.5rem !important;}
+  .module-card{padding:1.2rem !important;}
+  .header-contact{display:none !important;}
+}
 
 
 /* ── RESPONSIVE MOBILE ── */
@@ -280,29 +302,6 @@ body{overflow-x:hidden;}
   gtag('js', new Date());
   gtag('config', 'G-B7KWSBPV16');
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <script>fetch('version.json?t='+Date.now()).then(r=>r.json()).then(d=>{if(d.v!=='2026-05-26')location.reload(true);}).catch(()=>{});</script>
 </head>
 <body>
@@ -377,6 +376,21 @@ body{overflow-x:hidden;}
       </div>
       <div class="module-cta">
         <span class="cta-btn">Consulter →</span>
+      </div>
+
+    <!-- MODULE : Demande réparation carrosserie -->
+    <a class="module-card" href="carrossier.html">
+      <span class="module-tag active">En ligne</span>
+      <div class="module-icon">🔧</div>
+      <div class="module-title">Demande de réparation</div>
+      <p class="module-desc">Pièce neuve endommagée? Soumettez votre demande de réparation carrosserie avec photos directement à notre équipe.</p>
+      <div class="module-features">
+        <div class="module-feature">Soumettre des photos</div>
+        <div class="module-feature">No. facture & bon de commande</div>
+        <div class="module-feature">Réponse rapide de notre équipe</div>
+      </div>
+      <div class="module-cta">
+        <span class="cta-btn">Soumettre →</span>
       </div>
     </a>
 
