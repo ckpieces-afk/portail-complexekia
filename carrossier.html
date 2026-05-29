@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Demande de Réparation — Complexe Kia Montréal</title>
+  <title>Commande Carrosserie — Complexe Kia Montréal</title>
   <link rel="icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
@@ -78,20 +78,20 @@
 
 <div class="hero">
   <div class="hero-eyebrow">Département des pièces</div>
-  <h1>Demande de <span style="color:var(--red)">Réparation</span></h1>
-  <p class="hero-sub">Vous avez reçu une pièce neuve endommagée? Soumettez votre demande de réparation avec photos — notre équipe en prendra charge rapidement.</p>
+  <h1>Commande <span style="color:var(--red)">Carrosserie</span></h1>
+  <p class="hero-sub">Soumettez votre demande de pièces avec les détails et photos — nous traitons votre commande rapidement.</p>
 </div>
 
 <div class="form-wrap">
   <p class="required-note">Les champs marqués <span style="color:var(--red)">*</span> sont obligatoires.</p>
 
-  <form id="carrossierForm" action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+  <form id="carrossierForm" action="https://formsubmit.co/ck.pieces@complexekia.com" method="POST" enctype="multipart/form-data">
     
-    <!-- Config Web3Forms -->
-    <input type="hidden" name="access_key" value="9e0f1d42-9a9b-4496-8c1b-13357ff9234f">
-    <input type="hidden" name="subject" value="🔧 Nouvelle demande de réparation carrosserie — Complexe Kia">
-    <input type="hidden" name="from_name" value="Portail Complexe Kia">
-    <input type="hidden" name="redirect" value="https://portailcomplexekia.com/carrossier.html?sent=1">
+    <!-- Config Formsubmit -->
+    <input type="hidden" name="_subject" value="🔧 Nouvelle commande carrosserie — Complexe Kia">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://portailcomplexekia.com/carrossier.html?sent=1">
     
     <!-- Coordonnées -->
     <div class="form-section">
@@ -120,7 +120,7 @@
 
     <!-- Détails commande -->
     <div class="form-section">
-      <div class="form-section-title">Détails de la demande</div>
+      <div class="form-section-title">Détails de la commande</div>
       <div class="form-row">
         <div class="form-group">
           <label>No. de facture d'achat <span>*</span></label>
@@ -136,29 +136,14 @@
         <input type="text" name="VIN" maxlength="17" placeholder="Ex: KNDPU3DF1R7261421" style="text-transform:uppercase;font-family:'Courier New',monospace;letter-spacing:2px;">
       </div>
       <div class="form-group">
-        <label>Pièces endommagées <span>*</span></label>
-        <textarea name="Pièces endommagées" required placeholder="Décrivez les pièces endommagées&#10;Ex: Pare-chocs avant&#10;     Phare gauche&#10;     Garde-boue droit"></textarea>
+        <label>Pièces requises <span>*</span></label>
+        <textarea name="Pièces requises" required placeholder="Décrivez les pièces nécessaires&#10;Ex: Pare-chocs avant — code couleur ABP&#10;     Phare gauche&#10;     Garde-boue droit"></textarea>
       </div>
       <div class="form-group">
         <label>Notes / commentaires</label>
         <textarea name="Notes" placeholder="Informations supplémentaires, urgence, etc." style="min-height:70px;"></textarea>
       </div>
     </div>
-
-      <div class="form-row">
-        <div class="form-group">
-          <label>Nombre d'heures demandé <span>*</span></label>
-          <input type="number" name="Heures demandées" required min="0.5" max="99" step="0.5" placeholder="Ex: 3.5">
-        </div>
-        <div class="form-group">
-          <label>Taux horaire <span>*</span></label>
-          <div style="position:relative;">
-            <input type="number" name="Taux horaire ($/h)" required min="1" max="50" step="1" placeholder="Max 50$/h" style="padding-left:28px;">
-            <span style="position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--soft);font-size:0.85rem;">$</span>
-          </div>
-          <div style="font-size:0.68rem;color:var(--muted);margin-top:5px;">Maximum 50$/heure</div>
-        </div>
-      </div>
 
     <!-- Photos -->
     <div class="form-section">
@@ -175,30 +160,13 @@
       <div id="preview-count" class="preview-count"></div>
     </div>
 
-    <!-- Notice approbation -->
-    <div style="margin-bottom:1.25rem;background:#0a1a2a;border:1px solid #1a3a5a;border-radius:10px;padding:1rem 1.25rem;display:flex;align-items:flex-start;gap:10px;">
-      <span style="font-size:1.2rem;flex-shrink:0;">🛑</span>
-      <div style="font-size:0.82rem;line-height:1.65;color:#7ab8e8;">
-        <strong style="color:#a0d0f0;">S.V.P. attendre l'approbation</strong> avant de procéder aux réparations. Aucun travail ne doit débuter avant d'avoir reçu une confirmation écrite de notre part.
-      </div>
-    </div>
-
-    <!-- Note Progi -->
-    <div style="margin-bottom:1.25rem;background:#1a1200;border:1px solid #4a3500;border-radius:10px;padding:1rem 1.25rem;display:flex;align-items:flex-start;gap:10px;">
-      <span style="font-size:1.2rem;flex-shrink:0;">⚠️</span>
-      <div style="font-size:0.8rem;line-height:1.65;color:#c8a44a;">
-        <strong style="color:#f0c060;">Dossier Progi?</strong><br>
-        Si votre demande de réparation est liée à un dossier <strong>Progi</strong>, vous devez soumettre votre demande <strong>directement via Progi</strong>. Ce formulaire est réservé aux demandes hors Progi uniquement.
-      </div>
-    </div>
-
-        <button type="submit" class="submit-btn" id="submitBtn">Envoyer la demande →</button>
+    <button type="submit" class="submit-btn" id="submitBtn">Envoyer la commande →</button>
   </form>
 
   <div class="success-msg" id="successMsg">
     <div class="check">✅</div>
-    <h3>Demande envoyée!</h3>
-    <p>Notre équipe va traiter votre demande de réparation rapidement.<br>
+    <h3>Commande envoyée!</h3>
+    <p>Notre équipe va traiter votre demande rapidement.<br>
     Pour toute question : <strong>514 645-2277 poste 602</strong></p>
   </div>
 </div>

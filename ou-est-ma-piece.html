@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Où est ma pièce ? — Complexe Kia</title>
+<style>
+:root {
+  --bg:#0a0a0a; --card:#111; --border:#1e1e1e; --border2:#2a2a2a;
+  --text:#e8e8e8; --soft:#aaa; --muted:#555;
+  --red:#e53935; --green:#22c55e; --yellow:#f59e0b;
+  --blue:#3b82f6; --purple:#a855f7; --orange:#f97316;
+  --green-bg:#0a1a0a; --yellow-bg:#1a1400; --blue-bg:#0a0f1a; --red-bg:#1a0505;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;min-height:100vh}
+
+/* NAV */
+.nav{background:#0d0d0d;border-bottom:1px solid var(--border);padding:0 1.5rem;height:52px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
+.nav-brand{font-size:0.75rem;letter-spacing:3px;font-weight:700;color:var(--text)}
+.nav-brand span{color:var(--red)}
+.nav-links{display:flex;gap:1.5rem}
+.nav-links a{font-size:0.72rem;letter-spacing:1px;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--text)}
+.admin-badge{font-size:0.6rem;padding:2px 8px;border-radius:10px;background:#1a0505;color:var(--red);border:1px solid #2a0808;letter-spacing:1px;cursor:pointer;transition:all .2s}
+.admin-badge:hover{background:#2a0808}
+
+/* HERO */
+.hero{padding:3rem 1.5rem 2rem;text-align:center;border-bottom:1px solid var(--border)}
+.hero-label{font-size:0.6rem;letter-spacing:4px;text-transform:uppercase;color:var(--muted);margin-bottom:0.75rem}
+.hero-title{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:700;letter-spacing:-0.5px;margin-bottom:0.5rem}
+.hero-title span{color:var(--red)}
+.hero-sub{font-size:0.82rem;color:var(--soft);max-width:420px;margin:0 auto}
+
+/* SEARCH */
+.search-wrap{padding:2rem 1.5rem;max-width:600px;margin:0 auto}
+.search-box{display:flex;gap:0;border:1px solid var(--border2);border-radius:12px;overflow:hidden;transition:border-color .2s}
+.search-box:focus-within{border-color:#444}
+.search-box input{flex:1;background:#0d0d0d;border:none;padding:0.9rem 1.2rem;color:var(--text);font-size:1rem;font-family:monospace;letter-spacing:2px;outline:none}
+.search-box input::placeholder{color:var(--muted);letter-spacing:0;font-family:'Segoe UI',sans-serif;font-size:0.85rem}
+.search-box button{background:var(--red);border:none;padding:0 1.5rem;color:#fff;font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;font-weight:600;cursor:pointer;transition:background .2s}
+.search-box button:hover{background:#c62828}
+.search-hint{text-align:center;font-size:0.72rem;color:var(--muted);margin-top:0.75rem}
+
+/* RESULTS */
+.results{max-width:700px;margin:0 auto;padding:0 1.5rem 3rem}
+
+.order-card{background:var(--card);border:1px solid var(--border);border-radius:12px;margin-bottom:1rem;overflow:hidden}
+.order-header{padding:1rem 1.25rem;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem}
+.order-title{font-size:0.78rem;font-weight:600;color:var(--text)}
+.order-meta{font-size:0.7rem;color:var(--muted);margin-top:2px}
+.order-badge{font-size:0.62rem;padding:3px 10px;border-radius:20px;letter-spacing:1px;border:1px solid}
+
+.part-row{display:flex;align-items:center;gap:1rem;padding:0.85rem 1.25rem;border-bottom:1px solid var(--border);flex-wrap:wrap}
+.part-row:last-child{border-bottom:none}
+.part-info{flex:1;min-width:0}
+.part-num{font-family:monospace;font-size:0.8rem;font-weight:600;color:var(--text)}
+.part-name{font-size:0.72rem;color:var(--soft);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.part-status{display:flex;flex-direction:column;align-items:flex-end;gap:2px;text-align:right;flex-shrink:0}
+.status-chip{font-size:0.68rem;padding:3px 10px;border-radius:20px;font-weight:600;letter-spacing:0.5px;border:1px solid;white-space:nowrap}
+.status-eta{font-size:0.62rem;color:var(--muted)}
+
+/* Status colours */
+.s-inventaire{background:#0a1a0a;color:var(--green);border-color:#1a3a1a}
+.s-mp1{background:var(--blue-bg);color:var(--blue);border-color:#1a2a3a}
+.s-mp3{background:#0a0a1a;color:#818cf8;border-color:#1a1a3a}
+.s-backorder{background:var(--yellow-bg);color:var(--yellow);border-color:#2a2000}
+.s-expedie{background:#0a1a0a;color:#86efac;border-color:#1a4a2a}
+.s-annule{background:var(--red-bg);color:var(--red);border-color:#2a0808}
+.s-traitement{background:#111;color:var(--muted);border-color:var(--border2)}
+
+/* ADMIN SECTION */
+.admin-section{max-width:800px;margin:0 auto;padding:1.5rem;display:none}
+.admin-section.open{display:block}
+.admin-title{font-size:0.6rem;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:1rem;padding-bottom:0.75rem;border-bottom:1px solid var(--border)}
+.admin-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-bottom:1rem}
+.upload-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1rem}
+.upload-card-title{font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--soft);margin-bottom:0.4rem}
+.upload-card-sub{font-size:0.7rem;color:var(--muted);margin-bottom:0.75rem;line-height:1.4}
+.upload-btn{display:block;width:100%;text-align:center;padding:7px;background:transparent;border:1px solid var(--border2);border-radius:7px;color:var(--soft);font-size:0.72rem;cursor:pointer;transition:all .2s}
+.upload-btn:hover{border-color:#444;color:var(--text);background:#0d0d0d}
+.upload-status{font-size:0.68rem;color:var(--muted);margin-top:0.5rem;min-height:1.2em;display:flex;align-items:center;gap:5px}
+.upload-status.ok{color:var(--green)}
+.upload-status.err{color:var(--red)}
+.upload-status.loading{color:var(--yellow)}
+input[type=file]{display:none}
+
+.admin-stats{display:flex;gap:1rem;flex-wrap:wrap;padding:0.75rem 1rem;background:#0d0d0d;border:1px solid var(--border);border-radius:8px;font-size:0.7rem;color:var(--muted)}
+.admin-stats span strong{color:var(--text)}
+
+/* OCR progress */
+.ocr-progress{background:var(--card);border:1px solid var(--border2);border-radius:8px;padding:0.75rem 1rem;margin-top:0.75rem;font-size:0.72rem;color:var(--soft);display:none}
+.ocr-progress.show{display:block}
+.progress-bar{height:3px;background:var(--border2);border-radius:2px;margin-top:0.5rem;overflow:hidden}
+.progress-fill{height:100%;background:var(--red);border-radius:2px;transition:width .3s;width:0%}
+
+/* NOT FOUND */
+.not-found{text-align:center;padding:3rem 1rem;color:var(--muted)}
+.not-found-icon{font-size:2.5rem;margin-bottom:1rem}
+.not-found-title{font-size:0.95rem;color:var(--soft);margin-bottom:0.5rem}
+.not-found-sub{font-size:0.78rem;line-height:1.5}
+
+/* Spinner */
+.spinner{display:inline-block;width:10px;height:10px;border:2px solid currentColor;border-top-color:transparent;border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* Fade in */
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.fade-in{animation:fadeUp .3s ease both}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-brand"><span>CK</span> PORTAIL CARROSSIER</div>
+  <div style="display:flex;align-items:center;gap:1.5rem">
+    <div class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="ou-est-ma-piece.html" class="active">Où est ma pièce ?</a>
+      <a href="vin-decoder.html">Décodeur VIN</a>
+    </div>
+    <span class="admin-badge" id="adminToggle" onclick="toggleAdmin()">⚙ ADMIN</span>
+  </div>
+</nav>
+
+<!-- ADMIN SECTION -->
+<div class="admin-section" id="adminSection">
+  <div class="admin-title">DONNÉES — MISE À JOUR QUOTIDIENNE</div>
+  <div class="admin-grid">
+
+    <div class="upload-card">
+      <div class="upload-card-title">📦 DS012A — Commandes actives</div>
+      <div class="upload-card-sub">Fichier Mobis WebDCS du jour. Contient le statut de chaque pièce commandée.</div>
+      <label class="upload-btn" for="ds012aInput">↑ Charger DS012A_YYYYMMDD.xlsx</label>
+      <input type="file" id="ds012aInput" accept=".xlsx,.xls" onchange="loadDS012A(this)">
+      <div class="upload-status" id="ds012aStatus">—</div>
+    </div>
+
+    <div class="upload-card">
+      <div class="upload-card-title">🔄 DS014A — Backorders Corée</div>
+      <div class="upload-card-sub">Fichier backorders Korea Mobis. Contient les ETAs longues distances.</div>
+      <label class="upload-btn" for="ds014aInput">↑ Charger DS014A_YYYYMMDD.xlsx</label>
+      <input type="file" id="ds014aInput" accept=".xlsx,.xls" onchange="loadDS014A(this)">
+      <div class="upload-status" id="ds014aStatus">—</div>
+    </div>
+
+    <div class="upload-card">
+      <div class="upload-card-title">📋 Liste Pick — Lien VIN ↔ FC</div>
+      <div class="upload-card-sub">Scan PDF de la Liste Pick PROG25. Lecture OCR automatique. Plusieurs pages acceptées.</div>
+      <label class="upload-btn" for="pickInput">↑ Charger scan Liste Pick (PDF)</label>
+      <input type="file" id="pickInput" accept=".pdf" multiple onchange="loadPickList(this)">
+      <div class="upload-status" id="pickStatus">—</div>
+    </div>
+
+  </div>
+
+  <div class="ocr-progress" id="ocrProgress">
+    <span id="ocrMsg">Lecture OCR en cours...</span>
+    <div class="progress-bar"><div class="progress-fill" id="ocrFill"></div></div>
+  </div>
+
+  <div class="admin-stats" id="adminStats">
+    <span>DS012A : <strong id="statDS012A">—</strong></span>
+    <span>DS014A : <strong id="statDS014A">—</strong></span>
+    <span>Liste Pick : <strong id="statPick">—</strong></span>
+    <span>Dernière mise à jour : <strong id="statDate">—</strong></span>
+  </div>
+</div>
+
+<!-- HERO + SEARCH -->
+<div class="hero">
+  <div class="hero-label">Complexe Kia — Département des pièces</div>
+  <h1 class="hero-title">Où est <span>ma pièce</span> ?</h1>
+  <p class="hero-sub">Entrez votre NIV pour voir l'état complet de votre commande en temps réel.</p>
+</div>
+
+<div class="search-wrap">
+  <div class="search-box">
+    <input type="text" id="vinInput" placeholder="Entrez votre NIV (17 caractères)" maxlength="17"
+      oninput="this.value=this.value.toUpperCase().replace(/[^A-HJ-NPR-Z0-9]/g,'')"
+      onkeydown="if(event.key==='Enter')searchVIN()">
+    <button onclick="searchVIN()">RECHERCHER</button>
+  </div>
+  <p class="search-hint" id="searchHint">Les informations sont mises à jour quotidiennement par votre conseiller pièces.</p>
+</div>
+
+<div class="results" id="results"></div>
+
+<!-- External libs -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>
+// ── Config pdf.js ──
+if (typeof pdfjsLib !== 'undefined') {
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+}
+
+// ── Storage keys ──
+var KEYS = { ds012a:'ck_ds012a_v2', ds014a:'ck_ds014a_v2', pick:'ck_picklist_v2', meta:'ck_meta_v2' };
+
+// ── Warehouse labels ──
+var PDC = {
+  'MP1':'MP1 Markham',
+  'MT1':'MT1 Markham',
+  'MP3':'MP3 Calgary'
+};
+var PDC_DELAY = {
+  'MP1':'24-48h',
+  'MT1':'24-48h',
+  'MP3':'~15 jours ouvrables'
+};
+
+// ── Date conversion Excel serial → DD/MM/YYYY ──
+function excelDate(serial) {
+  if (!serial || isNaN(serial)) return null;
+  var s = Math.floor(parseFloat(serial));
+  if (s < 40000 || s > 60000) return null;
+  var d = new Date((s - 25569) * 86400000);
+  var day = ('0'+d.getUTCDate()).slice(-2);
+  var mon = ('0'+(d.getUTCMonth()+1)).slice(-2);
+  var yr = d.getUTCFullYear();
+  return day+'/'+mon+'/'+yr;
+}
+
+// ── Parse DS012A Excel ──
+function loadDS012A(input) {
+  var file = input.files[0];
+  if (!file) return;
+  var st = document.getElementById('ds012aStatus');
+  st.className = 'upload-status loading';
+  st.innerHTML = '<span class="spinner"></span> Lecture...';
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    try {
+      var wb = XLSX.read(e.target.result, {type:'array'});
+      var ws = wb.Sheets[wb.SheetNames[0]];
+      var rows = XLSX.utils.sheet_to_json(ws, {header:1, defval:''});
+      var data = [];
+      for (var i = 2; i < rows.length; i++) {
+        var r = rows[i];
+        var dealerNo = String(r[3]||'').trim();
+        var partNo = String(r[4]||'').trim().replace(/\s+/g,'');
+        if (!partNo) continue;
+        data.push({
+          dealerOrderNo: dealerNo,
+          partNo: partNo,
+          partName: String(r[6]||'').trim(),
+          detailStatus: String(r[11]||'').trim().replace(/ /g,''),
+          pdc: String(r[12]||'').trim(),
+          qtyBO: parseInt(r[16])||0,
+          qtyPicked: parseInt(r[18])||0,
+          qtyPacked: parseInt(r[19])||0,
+          qtyTransferring: parseInt(r[20])||0,
+          qtyShipped: parseInt(r[21])||0,
+          dateShipped: excelDate(r[29]),
+          etaQty: parseInt(r[31])||0,
+          etaDate: excelDate(r[32])
+        });
+      }
+      localStorage.setItem(KEYS.ds012a, JSON.stringify(data));
+      saveMeta();
+      st.className = 'upload-status ok';
+      st.innerHTML = '✓ ' + data.length + ' lignes chargées';
+      updateStats();
+    } catch(err) {
+      st.className = 'upload-status err';
+      st.innerHTML = '✗ Erreur: ' + err.message;
+    }
+  };
+  reader.readAsArrayBuffer(file);
+}
+
+// ── Parse DS014A (backorders Corée) ──
+function loadDS014A(input) {
+  var file = input.files[0];
+  if (!file) return;
+  var st = document.getElementById('ds014aStatus');
+  st.className = 'upload-status loading';
+  st.innerHTML = '<span class="spinner"></span> Lecture...';
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    try {
+      var wb = XLSX.read(e.target.result, {type:'array'});
+      var ws = wb.Sheets[wb.SheetNames[0]];
+      var rows = XLSX.utils.sheet_to_json(ws, {header:1, defval:''});
+      // DS014A: chercher colonnes VIN + Part# + ETA par pattern
+      var data = parseDS014A(rows);
+      localStorage.setItem(KEYS.ds014a, JSON.stringify(data));
+      saveMeta();
+      st.className = 'upload-status ok';
+      st.innerHTML = '✓ ' + data.length + ' backorders chargés';
+      updateStats();
+    } catch(err) {
+      st.className = 'upload-status err';
+      st.innerHTML = '✗ Erreur: ' + err.message;
+    }
+  };
+  reader.readAsArrayBuffer(file);
+}
+
+function parseDS014A(rows) {
+  var data = [];
+  var vinCol=-1, partCol=-1, etaCol=-1, statusCol=-1;
+  // Chercher les colonnes par header ou par pattern
+  for (var i = 0; i < Math.min(rows.length, 10); i++) {
+    var r = rows[i];
+    for (var j = 0; j < r.length; j++) {
+      var h = String(r[j]||'').toLowerCase();
+      if (vinCol<0 && (h.includes('vin')||h.includes('niv'))) vinCol=j;
+      if (partCol<0 && (h.includes('part') && !h.includes('partial'))) partCol=j;
+      if (etaCol<0 && h.includes('eta')) etaCol=j;
+      if (statusCol<0 && h.includes('status')) statusCol=j;
+    }
+    if (vinCol>=0 && partCol>=0) break;
+  }
+  // Fallback: détecter par pattern dans les données
+  if (vinCol<0 || partCol<0) {
+    for (var i=0; i<rows.length; i++) {
+      var r=rows[i];
+      for (var j=0; j<r.length; j++) {
+        var v=String(r[j]||'');
+        if (vinCol<0 && /^[A-HJ-NPR-Z0-9]{17}$/.test(v)) vinCol=j;
+        if (partCol<0 && j!==vinCol && /^[A-Z0-9]{6,15}$/.test(v) && v.length<17) partCol=j;
+      }
+      if (vinCol>=0 && partCol>=0) break;
+    }
+  }
+  if (vinCol<0 || partCol<0) return data;
+  for (var i=0; i<rows.length; i++) {
+    var r=rows[i];
+    var vin=String(r[vinCol]||'').trim();
+    var part=String(r[partCol]||'').trim().replace(/\s+/g,'');
+    if (!/^[A-HJ-NPR-Z0-9]{17}$/.test(vin) || !part) continue;
+    var eta = etaCol>=0 ? (excelDate(r[etaCol]) || String(r[etaCol]||'')) : null;
+    data.push({vin:vin, partNo:part, eta:eta});
+  }
+  return data;
+}
+
+// ── OCR Liste Pick PDF ──
+async function loadPickList(input) {
+  var files = Array.from(input.files);
+  if (!files.length) return;
+  var st = document.getElementById('pickStatus');
+  var prog = document.getElementById('ocrProgress');
+  var msg = document.getElementById('ocrMsg');
+  var fill = document.getElementById('ocrFill');
+  st.className = 'upload-status loading';
+  st.innerHTML = '<span class="spinner"></span> Traitement OCR...';
+  prog.classList.add('show');
+  var allOrders = JSON.parse(localStorage.getItem(KEYS.pick)||'[]');
+  // Remove orders from today (re-upload)
+  var today = new Date().toISOString().slice(0,10);
+  allOrders = allOrders.filter(function(o){ return (o.uploadDate||'') !== today; });
+  var totalPages = 0, processed = 0;
+  // Load Tesseract if needed
+  if (typeof Tesseract === 'undefined') {
+    await loadScript('https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/4.1.1/tesseract.min.js');
+  }
+  try {
+    for (var fi = 0; fi < files.length; fi++) {
+      var file = files[fi];
+      var ab = await file.arrayBuffer();
+      var pdf = await pdfjsLib.getDocument({data: ab}).promise;
+      totalPages += pdf.numPages;
+      for (var p = 1; p <= pdf.numPages; p++) {
+        msg.textContent = 'Lecture page '+(processed+1)+' / '+totalPages+'...';
+        fill.style.width = Math.round((processed/totalPages)*100)+'%';
+        var page = await pdf.getPage(p);
+        var viewport = page.getViewport({scale:2.5});
+        var canvas = document.createElement('canvas');
+        canvas.width = viewport.width;
+        canvas.height = viewport.height;
+        var ctx = canvas.getContext('2d');
+        await page.render({canvasContext:ctx, viewport:viewport}).promise;
+        var imageData = canvas.toDataURL('image/png');
+        // OCR
+        var result = await Tesseract.recognize(imageData, 'fra+eng', {
+          tessedit_char_whitelist:'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,$*:#/-+() \n'
+        });
+        var text = result.data.text;
+        var order = parsePickPage(text);
+        if (order && order.vin) {
+          order.uploadDate = today;
+          // Remplacer si même FC# déjà présent
+          allOrders = allOrders.filter(function(o){ return o.invoiceNo !== order.invoiceNo; });
+          allOrders.push(order);
+        }
+        processed++;
+      }
+    }
+    localStorage.setItem(KEYS.pick, JSON.stringify(allOrders));
+    saveMeta();
+    fill.style.width = '100%';
+    var vinCount = allOrders.length;
+    st.className = 'upload-status ok';
+    st.innerHTML = '✓ ' + vinCount + ' commande(s) — ' + processed + ' page(s) traitée(s)';
+    setTimeout(function(){ prog.classList.remove('show'); }, 2000);
+    updateStats();
+  } catch(err) {
+    st.className = 'upload-status err';
+    st.innerHTML = '✗ Erreur OCR: ' + err.message;
+    prog.classList.remove('show');
+  }
+}
+
+// ── Parser OCR Liste Pick ──
+function parsePickPage(text) {
+  var order = { vin:'', invoiceNo:'', bcNo:'', customer:'', phone:'', date:'', parts:[], uploadDate:'' };
+  var lines = text.split('\n').map(function(l){ return l.trim(); }).filter(Boolean);
+  // VIN: 17 chars KN...
+  var vinMatch = text.match(/\b(KN[A-HJ-NPR-Z0-9]{15})\b/);
+  if (!vinMatch) vinMatch = text.match(/\b([A-HJ-NPR-Z0-9]{17})\b/);
+  if (vinMatch) order.vin = vinMatch[1];
+  // Invoice FC#
+  var fcMatch = text.match(/FC\s*(\d{4,6})/i);
+  if (fcMatch) order.invoiceNo = 'FC' + fcMatch[1];
+  // BC#
+  var bcMatch = text.match(/#BC[:\s]+([A-Z0-9]+)/i);
+  if (bcMatch) order.bcNo = bcMatch[1];
+  // Date
+  var dateMatch = text.match(/Date\s+(\d{2}\/\d{2}\/\d{2})/i);
+  if (dateMatch) order.date = dateMatch[1];
+  // Customer name (line after VIN or FIX/CARSTAR/PROCOLOR pattern)
+  var custMatch = text.match(/(FIX\s+\w[\w\s]*|CARSTAR\s+[\w\s]+|PROCOLOR\s+[\w\s]+|CARROSSERIE\s+[\w\s]+)/i);
+  if (custMatch) order.customer = custMatch[1].trim().substring(0,40);
+  // Phone
+  var phoneMatch = text.match(/(\d{3}[-.\s]\d{3}[-.\s]\d{4})/);
+  if (phoneMatch) order.phone = phoneMatch[1];
+  // Parts: look for KIA XXXXXXXXX pattern
+  var partRe = /KIA\s+([A-Z0-9]{7,15})/g;
+  var pm;
+  while ((pm = partRe.exec(text)) !== null) {
+    var partNo = pm[1];
+    var afterPart = text.slice(pm.index, pm.index + 200);
+    var inStock = false;
+    var price = 0;
+    var desc = '';
+    // EN COMM check
+    var enComm = /\*EN\s*COMM\*/i.test(afterPart.slice(0,80));
+    if (!enComm) {
+      // Look for price (digits.digits)
+      var priceMatch = afterPart.match(/(\d+\.\d{2})/);
+      if (priceMatch) { inStock = true; price = parseFloat(priceMatch[1]); }
+    }
+    // Description: line after part number
+    var descMatch = afterPart.match(/\n([A-Z][A-Z\s\-\/,]{5,40})/);
+    if (descMatch) desc = descMatch[1].trim().substring(0,40);
+    if (!order.parts.find(function(p){ return p.partNo===partNo; })) {
+      order.parts.push({ partNo:partNo, desc:desc, qty:1, inStock:inStock, price:price });
+    }
+  }
+  return order.vin ? order : null;
+}
+
+// ── VIN SEARCH ──
+function searchVIN() {
+  var vin = document.getElementById('vinInput').value.trim().toUpperCase();
+  var results = document.getElementById('results');
+  if (vin.length < 17) {
+    results.innerHTML = '<div class="not-found"><div class="not-found-icon">🔍</div><div class="not-found-title">NIV incomplet</div><div class="not-found-sub">Le NIV doit comporter 17 caractères.</div></div>';
+    return;
+  }
+  results.innerHTML = '<div style="text-align:center;padding:2rem;color:var(--muted);"><span class="spinner"></span> Recherche...</div>';
+  var picks = JSON.parse(localStorage.getItem(KEYS.pick)||'[]');
+  var ds012a = JSON.parse(localStorage.getItem(KEYS.ds012a)||'[]');
+  var ds014a = JSON.parse(localStorage.getItem(KEYS.ds014a)||'[]');
+  // Find orders for this VIN
+  var orders = picks.filter(function(o){ return o.vin === vin; });
+  if (!orders.length) {
+    // Fallback: DS014A only (Korea backorders)
+    var koreaItems = ds014a.filter(function(r){ return r.vin === vin; });
+    if (koreaItems.length) {
+      results.innerHTML = renderFallbackKorea(vin, koreaItems);
+    } else {
+      results.innerHTML = renderNotFound(vin);
+    }
+    return;
+  }
+  var html = '';
+  orders.forEach(function(order) {
+    html += renderOrder(order, ds012a, ds014a);
+  });
+  results.innerHTML = '<div class="fade-in">' + html + '</div>';
+}
+
+// ── Render order card ──
+function renderOrder(order, ds012a, ds014a) {
+  var header = '<div class="order-card">' +
+    '<div class="order-header">' +
+      '<div><div class="order-title">Commande ' + esc(order.invoiceNo||'—') + '</div>' +
+      '<div class="order-meta">' + esc(order.customer||'') + (order.date?' &nbsp;·&nbsp; '+esc(order.date):'') + '</div></div>' +
+      '<span class="order-badge" style="background:#0a0f1a;color:var(--blue);border-color:#1a2a3a;">' + order.parts.length + ' pièce(s)</span>' +
+    '</div>';
+  var rows = order.parts.map(function(part) {
+    var status = getPartStatus(part, order, ds012a, ds014a);
+    return '<div class="part-row">' +
+      '<div class="part-info">' +
+        '<div class="part-num">' + esc(part.partNo) + '</div>' +
+        (part.desc ? '<div class="part-name">' + esc(part.desc) + '</div>' : '') +
+      '</div>' +
+      '<div class="part-status">' +
+        '<span class="status-chip ' + status.cls + '">' + status.label + '</span>' +
+        (status.eta ? '<span class="status-eta">Date prévue aprox. ' + status.eta + '</span>' : '') +
+      '</div>' +
+    '</div>';
+  }).join('');
+  return header + rows + '</div>';
+}
+
+// ── Déterminer statut d'une pièce ──
+function getPartStatus(part, order, ds012a, ds014a) {
+  if (part.inStock) return { label:'EN INVENTAIRE', cls:'s-inventaire', eta:null };
+  // Chercher dans DS012A par FC# + partNo
+  var match = null;
+  if (order.invoiceNo) {
+    match = ds012a.find(function(r){ return r.dealerOrderNo === order.invoiceNo && r.partNo === part.partNo; });
+    // Fallback: BC# si FC# pas trouvé
+    if (!match && order.bcNo) {
+      match = ds012a.find(function(r){ return r.dealerOrderNo === order.bcNo && r.partNo === part.partNo; });
+    }
+    // Fallback: partNo seul (moins précis)
+    if (!match) {
+      match = ds012a.find(function(r){ return r.partNo === part.partNo; });
+    }
+  }
+  if (match) {
+    var status = match.detailStatus;
+    if (status === 'Finished' || match.qtyShipped > 0) {
+      return { label:'Expédié', cls:'s-expedie', eta: match.dateShipped };
+    }
+    if (status === 'Canceled') {
+      return { label:'Annulé', cls:'s-annule', eta:null };
+    }
+    if (match.qtyBO > 0) {
+      // B/O → vérifier DS014A pour ETA Corée
+      var korea = ds014a.find(function(r){ return r.partNo === part.partNo; });
+      return { label:'Backorder Corée', cls:'s-backorder', eta: korea ? korea.eta : match.etaDate };
+    }
+    if (match.qtyTransferring > 0 || match.qtyPacked > 0) {
+      return { label:'En transit', cls:'s-mp1', eta: match.etaDate };
+    }
+    var pdc = match.pdc || 'MP1';
+    var pdcLabel = (PDC[pdc]||pdc) + ' — ' + (PDC_DELAY[pdc]||'');
+    return { label: pdcLabel, cls: pdc==='MP3' ? 's-mp3' : 's-mp1', eta: match.etaDate };
+  }
+  // Chercher dans DS014A (Corée)
+  var korea = ds014a.find(function(r){ return r.vin===order.vin && r.partNo===part.partNo; });
+  if (korea) return { label:'Backorder Corée', cls:'s-backorder', eta:korea.eta };
+  // Non trouvé
+  return { label:'En traitement', cls:'s-traitement', eta:null };
+}
+
+// ── Fallback Korea only ──
+function renderFallbackKorea(vin, items) {
+  var rows = items.map(function(item) {
+    return '<div class="part-row">' +
+      '<div class="part-info"><div class="part-num">'+esc(item.partNo)+'</div></div>' +
+      '<div class="part-status"><span class="status-chip s-backorder">Backorder Corée</span>' +
+      (item.eta?'<span class="status-eta">Date prévue aprox. '+esc(item.eta)+'</span>':'') +
+      '</div></div>';
+  }).join('');
+  return '<div class="fade-in"><div class="order-card">'+
+    '<div class="order-header"><div><div class="order-title">'+esc(vin)+'</div>'+
+    '<div class="order-meta">Backorders Corée (DS014A)</div></div></div>'+rows+'</div></div>';
+}
+
+// ── Not found ──
+function renderNotFound(vin) {
+  return '<div class="not-found fade-in"><div class="not-found-icon">📭</div>'+
+    '<div class="not-found-title">Aucune commande trouvée pour ce NIV</div>'+
+    '<div class="not-found-sub">Votre commande n\'est peut-être pas encore traitée.<br>'+
+    'Vérifiez avec votre conseiller : <strong style="color:var(--soft)">514 645-2277 poste 602</strong><br><br>'+
+    '<span style="font-size:0.68rem;color:var(--muted)">NIV recherché : '+esc(vin)+'</span></div></div>';
+}
+
+// ── Admin toggle ──
+function toggleAdmin() {
+  var s = document.getElementById('adminSection');
+  var open = s.classList.toggle('open');
+  document.getElementById('adminToggle').style.background = open ? '#1a0505' : '';
+  if (open) updateStats();
+}
+
+function updateStats() {
+  var ds012a = JSON.parse(localStorage.getItem(KEYS.ds012a)||'[]');
+  var ds014a = JSON.parse(localStorage.getItem(KEYS.ds014a)||'[]');
+  var pick = JSON.parse(localStorage.getItem(KEYS.pick)||'[]');
+  var meta = JSON.parse(localStorage.getItem(KEYS.meta)||'{}');
+  document.getElementById('statDS012A').textContent = ds012a.length + ' lignes';
+  document.getElementById('statDS014A').textContent = ds014a.length + ' backorders';
+  document.getElementById('statPick').textContent = pick.length + ' commandes / ' + pick.reduce(function(a,o){return a+o.parts.length;},0) + ' pièces';
+  document.getElementById('statDate').textContent = meta.date || '—';
+}
+
+function saveMeta() {
+  localStorage.setItem(KEYS.meta, JSON.stringify({ date: new Date().toLocaleString('fr-CA') }));
+}
+
+function loadScript(src) {
+  return new Promise(function(res, rej) {
+    var s = document.createElement('script');
+    s.src = src; s.onload = res; s.onerror = rej;
+    document.head.appendChild(s);
+  });
+}
+
+function esc(str) {
+  return String(str||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ── Init ──
+updateStats();
+</script>
+</body>
+</html>
