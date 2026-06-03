@@ -1866,6 +1866,10 @@
       {
         "date": "2026-06-01",
         "eta": "2026-06-12"
+      },
+      {
+        "date": "2026-06-03",
+        "eta": "2026-06-15"
       }
     ]
   },
@@ -2044,6 +2048,10 @@
       {
         "date": "2026-05-29",
         "eta": "2026-06-12"
+      },
+      {
+        "date": "2026-06-03",
+        "eta": "2026-06-15"
       }
     ]
   },
@@ -2252,6 +2260,10 @@
       {
         "date": "2026-06-02",
         "eta": "2026-06-08"
+      },
+      {
+        "date": "2026-06-03",
+        "eta": "2026-06-09"
       }
     ]
   },
@@ -2278,6 +2290,10 @@
       {
         "date": "2026-06-02",
         "eta": "2026-06-08"
+      },
+      {
+        "date": "2026-06-03",
+        "eta": "2026-06-09"
       }
     ]
   },
@@ -2540,6 +2556,10 @@
       {
         "date": "2026-06-01",
         "eta": "2026-06-12"
+      },
+      {
+        "date": "2026-06-03",
+        "eta": "2026-06-23"
       }
     ]
   },
@@ -3616,6 +3636,10 @@
       {
         "date": "2026-06-02",
         "eta": "2026-06-08"
+      },
+      {
+        "date": "2026-06-03",
+        "eta": "2026-06-09"
       }
     ]
   },
@@ -3750,6 +3774,122 @@
       {
         "date": "2026-06-02",
         "eta": "2026-07-13"
+      },
+      {
+        "date": "2026-06-03",
+        "eta": "2026-07-03"
+      }
+    ]
+  },
+  "KNDJP3A52J7578346_211012EG03FFFR": {
+    "partNo": "211012EG03FFFR",
+    "partName": "ENGINE ASSY-SUB",
+    "vin": "KNDJP3A52J7578346",
+    "roNumber": "BR11012",
+    "dealerOrder": "BR11012",
+    "orderDate": "2026-06-02",
+    "history": [
+      {
+        "date": "2026-06-03",
+        "eta": "2026-06-19"
+      }
+    ]
+  },
+  "KNDJP3A52J7578346_211112EG01FFF": {
+    "partNo": "211112EG01FFF",
+    "partName": "SERVICE KIT",
+    "vin": "KNDJP3A52J7578346",
+    "roNumber": "BR11012",
+    "dealerOrder": "BR11012",
+    "orderDate": "2026-06-02",
+    "history": [
+      {
+        "date": "2026-06-03",
+        "eta": "2026-06-11"
+      }
+    ]
+  },
+  "61153PF03D_54551GI000": {
+    "partNo": "54551GI000",
+    "partName": "BUSH-FR LWR ARM\"A\"",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "D06021",
+    "orderDate": "2026-06-02",
+    "history": [
+      {
+        "date": "2026-06-03",
+        "eta": "2026-06-23"
+      }
+    ]
+  },
+  "61153PF04R_58738H8000": {
+    "partNo": "58738H8000",
+    "partName": "HOSE-REAR WHEEL RH",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0602",
+    "orderDate": "2026-06-02",
+    "history": [
+      {
+        "date": "2026-06-03",
+        "eta": "2026-06-23"
+      }
+    ]
+  },
+  "61153PF03D_81590GG000": {
+    "partNo": "81590GG000",
+    "partName": "CATCH & CABLE ASSY-FUEL FILLER",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "D06021",
+    "orderDate": "2026-06-02",
+    "history": [
+      {
+        "date": "2026-06-03",
+        "eta": "2026-07-28"
+      }
+    ]
+  },
+  "61153PF04R_81590GG000": {
+    "partNo": "81590GG000",
+    "partName": "CATCH & CABLE ASSY-FUEL FILLER",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0602",
+    "orderDate": "2026-06-02",
+    "history": [
+      {
+        "date": "2026-06-03",
+        "eta": "2026-07-28"
+      }
+    ]
+  },
+  "3KPF24ADXME394309_86530M7000": {
+    "partNo": "86530M7000",
+    "partName": "GRILLE-FRONT BUMPER",
+    "vin": "3KPF24ADXME394309",
+    "roNumber": "FC85514",
+    "dealerOrder": "FC85514",
+    "orderDate": "2026-06-02",
+    "history": [
+      {
+        "date": "2026-06-03",
+        "eta": "2026-07-17"
+      }
+    ]
+  },
+  "KNDNE5K36S6494490_87310R0530": {
+    "partNo": "87310R0530",
+    "partName": "GARNISH ASSY-TAIL GATE",
+    "vin": "KNDNE5K36S6494490",
+    "roNumber": "FC85606",
+    "dealerOrder": "FC85606",
+    "orderDate": "2026-06-02",
+    "history": [
+      {
+        "date": "2026-06-03",
+        "eta": "2026-08-18"
       }
     ]
   }
