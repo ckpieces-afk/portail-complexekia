@@ -1954,6 +1954,10 @@
       {
         "date": "2026-06-05",
         "eta": "2026-06-19"
+      },
+      {
+        "date": "2026-06-10",
+        "eta": "2026-06-22"
       }
     ]
   },
@@ -2422,6 +2426,10 @@
       {
         "date": "2026-06-09",
         "eta": "2026-06-15"
+      },
+      {
+        "date": "2026-06-10",
+        "eta": "2026-06-16"
       }
     ]
   },
@@ -2448,6 +2456,10 @@
       {
         "date": "2026-06-08",
         "eta": "2026-07-07"
+      },
+      {
+        "date": "2026-06-10",
+        "eta": "2026-06-16"
       }
     ]
   },
@@ -2720,6 +2732,10 @@
       {
         "date": "2026-06-09",
         "eta": "2026-06-23"
+      },
+      {
+        "date": "2026-06-10",
+        "eta": "2026-06-19"
       }
     ]
   },
@@ -3234,6 +3250,10 @@
       {
         "date": "2026-06-09",
         "eta": "2026-06-25"
+      },
+      {
+        "date": "2026-06-10",
+        "eta": "2026-06-19"
       }
     ]
   },
@@ -3786,6 +3806,10 @@
       {
         "date": "2026-05-29",
         "eta": "2026-06-29"
+      },
+      {
+        "date": "2026-06-10",
+        "eta": "2026-06-30"
       }
     ]
   },
@@ -4554,6 +4578,10 @@
       {
         "date": "2026-06-08",
         "eta": "2026-06-29"
+      },
+      {
+        "date": "2026-06-10",
+        "eta": "2026-06-30"
       }
     ]
   },
@@ -4610,6 +4638,10 @@
       {
         "date": "2026-06-09",
         "eta": "2026-07-20"
+      },
+      {
+        "date": "2026-06-10",
+        "eta": "2026-07-09"
       }
     ]
   },
@@ -4638,6 +4670,216 @@
       {
         "date": "2026-06-09",
         "eta": "2026-06-16"
+      }
+    ]
+  },
+  "KNDC34LA4R5621676_1898007348AS": {
+    "partNo": "1898007348AS",
+    "partName": "KET_090IIWPWP_3F_W_090",
+    "vin": "KNDC34LA4R5621676",
+    "roNumber": "",
+    "dealerOrder": "BR11443",
+    "orderDate": "2026-06-09",
+    "history": [
+      {
+        "date": "2026-06-10",
+        "eta": "2026-06-12"
+      }
+    ]
+  },
+  "KNDADFS50S6056489_25445DO000": {
+    "partNo": "25445DO000",
+    "partName": "PIPE",
+    "vin": "KNDADFS50S6056489",
+    "roNumber": "BR11404A",
+    "dealerOrder": "BR11404A",
+    "orderDate": "2026-06-09",
+    "history": [
+      {
+        "date": "2026-06-10",
+        "eta": "2026-07-07"
+      }
+    ]
+  },
+  "KNDC34LA4R5621676_25660CV600": {
+    "partNo": "25660CV600",
+    "partName": "3WAY VALVE ASSY-COOLANT",
+    "vin": "KNDC34LA4R5621676",
+    "roNumber": "",
+    "dealerOrder": "BR11443",
+    "orderDate": "2026-06-09",
+    "history": [
+      {
+        "date": "2026-06-10",
+        "eta": "2026-06-16"
+      }
+    ]
+  },
+  "61153PF09R_283103L100": {
+    "partNo": "283103L100",
+    "partName": "MANIFOLD ASSY-INTAKE",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0609",
+    "orderDate": "2026-06-09",
+    "history": [
+      {
+        "date": "2026-06-10",
+        "eta": "2026-06-16"
+      }
+    ]
+  },
+  "61153PF09R_51712C1000SL": {
+    "partNo": "51712C1000SL",
+    "partName": "DISC-FRONT WHEEL BRAKE",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0609",
+    "orderDate": "2026-06-09",
+    "history": [
+      {
+        "date": "2026-06-10",
+        "eta": "2026-06-18"
+      }
+    ]
+  },
+  "KNDRJDJH2S5393005_83240P2001": {
+    "partNo": "83240P2001",
+    "partName": "W/STRIP-RR DR BELT I/S RH",
+    "vin": "KNDRJDJH2S5393005",
+    "roNumber": "FC85755",
+    "dealerOrder": "FC85755",
+    "orderDate": "2026-06-09",
+    "history": [
+      {
+        "date": "2026-06-10",
+        "eta": "2026-09-08"
+      }
+    ]
+  },
+  "61153PF09R_83665R0700": {
+    "partNo": "83665R0700",
+    "partName": "BASE ASSY-RR DR O/S HDL,RH",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0609",
+    "orderDate": "2026-06-09",
+    "history": [
+      {
+        "date": "2026-06-10",
+        "eta": "2026-07-07"
+      }
+    ]
+  },
+  "61153PF09R_86530K0BA0": {
+    "partNo": "86530K0BA0",
+    "partName": "GRILLE-FRONT BUMPER",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0609",
+    "orderDate": "2026-06-09",
+    "history": [
+      {
+        "date": "2026-06-10",
+        "eta": "2026-06-16"
+      }
+    ]
+  },
+  "KNDADFS50S6056489_976R2DO500": {
+    "partNo": "976R2DO500",
+    "partName": "2WAY VALVE ASSY-REFRIGERANT",
+    "vin": "KNDADFS50S6056489",
+    "roNumber": "BR11404A",
+    "dealerOrder": "BR11404A",
+    "orderDate": "2026-06-09",
+    "history": [
+      {
+        "date": "2026-06-10",
+        "eta": "2026-06-26"
+      }
+    ]
+  },
+  "KNDCR3L13P5054267_97626AO100": {
+    "partNo": "97626AO100",
+    "partName": "VALVE-EXPANSION",
+    "vin": "KNDCR3L13P5054267",
+    "roNumber": "BR11458",
+    "dealerOrder": "BR11458",
+    "orderDate": "2026-06-09",
+    "history": [
+      {
+        "date": "2026-06-10",
+        "eta": "2026-06-12"
+      }
+    ]
+  },
+  "KNDC34LA4R5621676_97626CV300": {
+    "partNo": "97626CV300",
+    "partName": "VALVE-SOLENOID",
+    "vin": "KNDC34LA4R5621676",
+    "roNumber": "",
+    "dealerOrder": "BR11443",
+    "orderDate": "2026-06-09",
+    "history": [
+      {
+        "date": "2026-06-10",
+        "eta": "2026-07-03"
+      }
+    ]
+  },
+  "KNDADFS50S6056489_97761DO000": {
+    "partNo": "97761DO000",
+    "partName": "PIPE & TUBE ASSY",
+    "vin": "KNDADFS50S6056489",
+    "roNumber": "BR11404B",
+    "dealerOrder": "BR11404B",
+    "orderDate": "2026-06-09",
+    "history": [
+      {
+        "date": "2026-06-10",
+        "eta": "2026-06-30"
+      }
+    ]
+  },
+  "KNDADFS50S6056489_97770DO000": {
+    "partNo": "97770DO000",
+    "partName": "PIPE ASSY-SUCTION & LIQUID,RR",
+    "vin": "KNDADFS50S6056489",
+    "roNumber": "BR11404A",
+    "dealerOrder": "BR11404A",
+    "orderDate": "2026-06-09",
+    "history": [
+      {
+        "date": "2026-06-10",
+        "eta": "2026-07-03"
+      }
+    ]
+  },
+  "KNDADFS50S6056489_97770DO100": {
+    "partNo": "97770DO100",
+    "partName": "PIPE ASSY-SUCTION & LIQUID",
+    "vin": "KNDADFS50S6056489",
+    "roNumber": "BR11404A",
+    "dealerOrder": "BR11404A",
+    "orderDate": "2026-06-09",
+    "history": [
+      {
+        "date": "2026-06-10",
+        "eta": "2026-07-09"
+      }
+    ]
+  },
+  "KNDADFS50S6056489_97774DO600": {
+    "partNo": "97774DO600",
+    "partName": "PIPE ASSY-LIQUID \"F\"",
+    "vin": "KNDADFS50S6056489",
+    "roNumber": "BR11404A",
+    "dealerOrder": "BR11404A",
+    "orderDate": "2026-06-09",
+    "history": [
+      {
+        "date": "2026-06-10",
+        "eta": "2026-07-09"
       }
     ]
   }
