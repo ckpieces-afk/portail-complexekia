@@ -2960,6 +2960,10 @@
       {
         "date": "2026-06-15",
         "eta": "2026-06-29"
+      },
+      {
+        "date": "2026-06-16",
+        "eta": "2026-06-25"
       }
     ]
   },
@@ -3296,6 +3300,10 @@
       {
         "date": "2026-06-15",
         "eta": "2026-06-29"
+      },
+      {
+        "date": "2026-06-16",
+        "eta": "2026-06-25"
       }
     ]
   },
@@ -3790,6 +3798,10 @@
       {
         "date": "2026-06-15",
         "eta": "2026-06-29"
+      },
+      {
+        "date": "2026-06-16",
+        "eta": "2026-06-25"
       }
     ]
   },
@@ -4346,6 +4358,10 @@
       {
         "date": "2026-06-03",
         "eta": "2026-07-28"
+      },
+      {
+        "date": "2026-06-16",
+        "eta": "2026-07-03"
       }
     ]
   },
@@ -4434,6 +4450,10 @@
       {
         "date": "2026-06-05",
         "eta": "2026-07-28"
+      },
+      {
+        "date": "2026-06-16",
+        "eta": "2026-07-03"
       }
     ]
   },
@@ -4492,6 +4512,10 @@
       {
         "date": "2026-06-05",
         "eta": "2026-06-30"
+      },
+      {
+        "date": "2026-06-16",
+        "eta": "2026-07-07"
       }
     ]
   },
@@ -4544,6 +4568,10 @@
       {
         "date": "2026-06-15",
         "eta": "2026-06-22"
+      },
+      {
+        "date": "2026-06-16",
+        "eta": "2026-06-23"
       }
     ]
   },
@@ -4602,6 +4630,10 @@
       {
         "date": "2026-06-12",
         "eta": "2026-06-30"
+      },
+      {
+        "date": "2026-06-16",
+        "eta": "2026-07-03"
       }
     ]
   },
@@ -4710,6 +4742,10 @@
       {
         "date": "2026-06-15",
         "eta": "2026-06-22"
+      },
+      {
+        "date": "2026-06-16",
+        "eta": "2026-06-23"
       }
     ]
   },
@@ -4876,6 +4912,10 @@
       {
         "date": "2026-06-15",
         "eta": "2026-06-22"
+      },
+      {
+        "date": "2026-06-16",
+        "eta": "2026-06-23"
       }
     ]
   },
@@ -4898,6 +4938,10 @@
       {
         "date": "2026-06-15",
         "eta": "2026-06-22"
+      },
+      {
+        "date": "2026-06-16",
+        "eta": "2026-06-23"
       }
     ]
   },
@@ -4948,6 +4992,10 @@
       {
         "date": "2026-06-15",
         "eta": "2026-06-22"
+      },
+      {
+        "date": "2026-06-16",
+        "eta": "2026-06-23"
       }
     ]
   },
@@ -5178,6 +5226,10 @@
       {
         "date": "2026-06-15",
         "eta": "2026-06-29"
+      },
+      {
+        "date": "2026-06-16",
+        "eta": "2026-06-25"
       }
     ]
   },
@@ -5332,6 +5384,10 @@
       {
         "date": "2026-06-15",
         "eta": "2026-06-29"
+      },
+      {
+        "date": "2026-06-16",
+        "eta": "2026-06-25"
       }
     ]
   },
@@ -5359,6 +5415,188 @@
     "history": [
       {
         "date": "2026-06-15",
+        "eta": "2026-06-29"
+      }
+    ]
+  },
+  "61153PF15R_DWH13AP100": {
+    "partNo": "DWH13AP100",
+    "partName": "ALL WEATHER RUBBER MATS (HEV)",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0615",
+    "orderDate": "2026-06-15",
+    "history": [
+      {
+        "date": "2026-06-16",
+        "eta": "2026-06-30"
+      }
+    ]
+  },
+  "61153PF15R_54612C1000QQK": {
+    "partNo": "54612C1000QQK",
+    "partName": "BEARING-STRUT",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0615",
+    "orderDate": "2026-06-15",
+    "history": [
+      {
+        "date": "2026-06-16",
+        "eta": "2026-06-25"
+      }
+    ]
+  },
+  "61153PF15R_55530AAAA0": {
+    "partNo": "55530AAAA0",
+    "partName": "LINK ASSY-REAR STABILIZER",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0615",
+    "orderDate": "2026-06-15",
+    "history": [
+      {
+        "date": "2026-06-16",
+        "eta": "2026-06-23"
+      }
+    ]
+  },
+  "61153PF15R_56500AT000": {
+    "partNo": "56500AT000",
+    "partName": "GEAR ASSY-STEERING",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0615",
+    "orderDate": "2026-06-15",
+    "history": [
+      {
+        "date": "2026-06-16",
+        "eta": "2026-09-14"
+      }
+    ]
+  },
+  "3KPFT5DE2TE292525_77121GG000": {
+    "partNo": "77121GG000",
+    "partName": "PANEL-REAR DOOR OUTER,RH",
+    "vin": "3KPFT5DE2TE292525",
+    "roNumber": "FC86006",
+    "dealerOrder": "FC86006",
+    "orderDate": "2026-06-15",
+    "history": [
+      {
+        "date": "2026-06-16",
+        "eta": "2026-07-17"
+      }
+    ]
+  },
+  "KNADN4A3XD6259422_866121W011": {
+    "partNo": "866121W011",
+    "partName": "COVER-RR BUMPER LWR",
+    "vin": "KNADN4A3XD6259422",
+    "roNumber": "FC86040",
+    "dealerOrder": "FC86040",
+    "orderDate": "2026-06-15",
+    "history": [
+      {
+        "date": "2026-06-16",
+        "eta": "2026-06-23"
+      }
+    ]
+  },
+  "3KPA25AD7PE570124_91650H9580": {
+    "partNo": "91650H9580",
+    "partName": "WIRING ASSY-TAIL GATE",
+    "vin": "3KPA25AD7PE570124",
+    "roNumber": "CC15081",
+    "dealerOrder": "CC15081",
+    "orderDate": "2026-06-15",
+    "history": [
+      {
+        "date": "2026-06-16",
+        "eta": "2026-07-17"
+      }
+    ]
+  },
+  "KNDCS3LF5R5166670_94001AT101": {
+    "partNo": "94001AT101",
+    "partName": "CLUSTER ASSY-INSTRUMENT",
+    "vin": "KNDCS3LF5R5166670",
+    "roNumber": "BR11627",
+    "dealerOrder": "BR11627",
+    "orderDate": "2026-06-15",
+    "history": [
+      {
+        "date": "2026-06-16",
+        "eta": "2026-07-07"
+      }
+    ]
+  },
+  "61153PF15R_976A3H9000": {
+    "partNo": "976A3H9000",
+    "partName": "SEAL WASHER-LIQUID",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0615",
+    "orderDate": "2026-06-15",
+    "history": [
+      {
+        "date": "2026-06-16",
+        "eta": "2026-06-23"
+      }
+    ]
+  },
+  "KNDADFS5XS6057889_97770DO000": {
+    "partNo": "97770DO000",
+    "partName": "PIPE ASSY-SUCTION & LIQUID,RR",
+    "vin": "KNDADFS5XS6057889",
+    "roNumber": "CLCHEM05",
+    "dealerOrder": "CLCHEM05A",
+    "orderDate": "2026-06-15",
+    "history": [
+      {
+        "date": "2026-06-16",
+        "eta": "2026-07-03"
+      }
+    ]
+  },
+  "KNDADFS5XS6057889_97770DO100": {
+    "partNo": "97770DO100",
+    "partName": "PIPE ASSY-SUCTION & LIQUID",
+    "vin": "KNDADFS5XS6057889",
+    "roNumber": "CLCHEM05",
+    "dealerOrder": "CLCHEM05A",
+    "orderDate": "2026-06-15",
+    "history": [
+      {
+        "date": "2026-06-16",
+        "eta": "2026-07-14"
+      }
+    ]
+  },
+  "KNDADFS5XS6057889_98321DO010QQK": {
+    "partNo": "98321DO010QQK",
+    "partName": "ARM ASSY-W/SHLD WPR(PASSENGER)",
+    "vin": "KNDADFS5XS6057889",
+    "roNumber": "CLCHEM05",
+    "dealerOrder": "CLCHEM05",
+    "orderDate": "2026-06-15",
+    "history": [
+      {
+        "date": "2026-06-16",
+        "eta": "2026-06-29"
+      }
+    ]
+  },
+  "KNDAFFS51R6047563_98321DO010QQK": {
+    "partNo": "98321DO010QQK",
+    "partName": "ARM ASSY-W/SHLD WPR(PASSENGER)",
+    "vin": "KNDAFFS51R6047563",
+    "roNumber": "CLTETR06",
+    "dealerOrder": "CLTETR06",
+    "orderDate": "2026-06-15",
+    "history": [
+      {
+        "date": "2026-06-16",
         "eta": "2026-06-29"
       }
     ]
