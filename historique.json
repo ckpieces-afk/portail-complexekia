@@ -40,8 +40,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -76,8 +79,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -96,8 +102,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -136,8 +145,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -160,8 +172,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -192,8 +207,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -216,8 +234,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -264,8 +285,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -288,8 +312,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -320,8 +347,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -340,8 +370,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -384,8 +417,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -440,8 +476,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -476,8 +515,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -500,8 +542,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -556,8 +601,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -580,8 +628,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -616,8 +667,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -652,8 +706,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -688,8 +745,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -802,8 +862,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -826,8 +889,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -858,8 +924,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -920,8 +989,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -948,8 +1020,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -984,8 +1059,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1008,8 +1086,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1040,8 +1121,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1126,8 +1210,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1154,8 +1241,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1174,8 +1264,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1226,8 +1319,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1246,8 +1342,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1266,8 +1365,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1286,8 +1388,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1306,8 +1411,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1326,8 +1434,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1346,8 +1457,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1366,8 +1480,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1386,8 +1503,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1406,8 +1526,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1430,8 +1553,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1450,8 +1576,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1470,8 +1599,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1506,8 +1638,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1526,8 +1661,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1574,8 +1712,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1614,8 +1755,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1634,8 +1778,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1654,8 +1801,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1678,8 +1828,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1702,8 +1855,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1722,8 +1878,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1742,8 +1901,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1762,8 +1924,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1782,8 +1947,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1802,8 +1970,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1822,8 +1993,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1862,8 +2036,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1882,8 +2059,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1902,8 +2082,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1922,8 +2105,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1942,8 +2128,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -1962,8 +2151,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -2028,8 +2220,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -2048,8 +2243,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -2068,8 +2266,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -2088,8 +2289,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -2116,8 +2320,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -2152,8 +2359,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -2208,8 +2418,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -2256,8 +2469,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -2308,8 +2524,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -2386,8 +2605,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -2476,8 +2698,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -2496,8 +2721,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -2516,8 +2744,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -2536,8 +2767,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -2556,8 +2790,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -2576,8 +2813,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -2604,8 +2844,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -2652,8 +2895,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -2696,8 +2942,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -2744,8 +2993,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -2764,8 +3016,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -2784,8 +3039,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -2854,8 +3112,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -2874,8 +3135,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -2918,8 +3182,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -2966,8 +3233,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3022,8 +3292,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3058,8 +3331,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3082,8 +3358,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3134,8 +3413,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3170,8 +3452,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3190,8 +3475,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3210,8 +3498,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3246,8 +3537,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3274,8 +3568,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3310,8 +3607,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3330,8 +3630,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3394,8 +3697,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3422,8 +3728,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3454,8 +3763,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3478,8 +3790,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3502,8 +3817,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3522,8 +3840,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3546,8 +3867,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3574,8 +3898,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3660,8 +3987,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3684,8 +4014,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3708,8 +4041,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3748,8 +4084,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3780,8 +4119,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3800,8 +4142,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3836,8 +4181,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3910,8 +4258,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3938,8 +4289,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -3978,8 +4332,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -4076,8 +4433,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -4192,8 +4552,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -4212,8 +4575,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -4236,8 +4602,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -4272,8 +4641,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -4296,8 +4668,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -4370,8 +4745,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -4390,8 +4768,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -4422,8 +4803,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -4442,8 +4826,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -4462,8 +4849,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -4482,8 +4872,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -4506,8 +4899,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -4526,8 +4922,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -4546,8 +4945,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -4566,8 +4968,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -4586,8 +4991,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -4652,8 +5060,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -4696,8 +5107,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -4716,8 +5130,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -4736,8 +5153,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -4768,8 +5188,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -4870,8 +5293,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -4890,8 +5316,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -4910,8 +5339,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -4946,8 +5378,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -4978,8 +5413,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -5028,8 +5466,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -5048,8 +5489,11 @@
     ],
     "shippingStatus": {
       "code": "delivered",
-      "label": "Livree (probable)",
+      "label": "Vraisemblablement livree",
       "final": true,
+      "dateShipped": "",
+      "etaDate": "",
+      "note": "Cette piece ne figure plus dans nos commandes actives — elle a probablement ete livree. Verifiez votre courriel de confirmation (Spoke) ou contactez-nous pour confirmer la reception.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -5072,6 +5516,7 @@
       "pdc": "MP1",
       "dateShipped": "2026-06-03",
       "etaDate": "2026-06-04",
+      "note": "Cette piece est en route. Surveillez votre courriel — notre transporteur (Spoke) vous confirmera l'heure de livraison prevue.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -5102,6 +5547,7 @@
       "pdc": "MP1",
       "dateShipped": "2026-06-10",
       "etaDate": "2026-06-11",
+      "note": "Cette piece est en route. Surveillez votre courriel — notre transporteur (Spoke) vous confirmera l'heure de livraison prevue.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -5138,6 +5584,7 @@
       "pdc": "MP1",
       "dateShipped": "2026-06-03",
       "etaDate": "2026-06-04",
+      "note": "Cette piece est en route. Surveillez votre courriel — notre transporteur (Spoke) vous confirmera l'heure de livraison prevue.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -5212,6 +5659,7 @@
       "pdc": "MP1",
       "dateShipped": "2026-06-15",
       "etaDate": "2026-06-24",
+      "note": "Cette piece est en route. Surveillez votre courriel — notre transporteur (Spoke) vous confirmera l'heure de livraison prevue.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -5234,6 +5682,7 @@
       "pdc": "MP1",
       "dateShipped": "2026-06-08",
       "etaDate": "2026-06-08",
+      "note": "Cette piece est en route. Surveillez votre courriel — notre transporteur (Spoke) vous confirmera l'heure de livraison prevue.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -5256,6 +5705,7 @@
       "pdc": "MP1",
       "dateShipped": "",
       "etaDate": "2026-06-23",
+      "note": "",
       "updatedAt": "2026-06-17"
     }
   },
@@ -5294,6 +5744,7 @@
       "pdc": "MP1",
       "dateShipped": "2026-06-16",
       "etaDate": "2026-06-17",
+      "note": "Cette piece est en route. Surveillez votre courriel — notre transporteur (Spoke) vous confirmera l'heure de livraison prevue.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -5316,6 +5767,7 @@
       "pdc": "MP1",
       "dateShipped": "2026-06-02",
       "etaDate": "2026-07-28",
+      "note": "Cette piece est en route. Surveillez votre courriel — notre transporteur (Spoke) vous confirmera l'heure de livraison prevue.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -5404,6 +5856,7 @@
       "pdc": "MP1",
       "dateShipped": "",
       "etaDate": "2026-07-03",
+      "note": "",
       "updatedAt": "2026-06-17"
     }
   },
@@ -5560,6 +6013,7 @@
       "pdc": "MP1",
       "dateShipped": "",
       "etaDate": "2026-06-18",
+      "note": "",
       "updatedAt": "2026-06-17"
     }
   },
@@ -5590,6 +6044,7 @@
       "pdc": "MP1",
       "dateShipped": "2026-06-11",
       "etaDate": "2026-06-12",
+      "note": "Cette piece est en route. Surveillez votre courriel — notre transporteur (Spoke) vous confirmera l'heure de livraison prevue.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -5612,6 +6067,7 @@
       "pdc": "MP1",
       "dateShipped": "",
       "etaDate": "2026-07-07",
+      "note": "",
       "updatedAt": "2026-06-17"
     }
   },
@@ -5646,6 +6102,7 @@
       "pdc": "MP1",
       "dateShipped": "",
       "etaDate": "2026-06-18",
+      "note": "",
       "updatedAt": "2026-06-17"
     }
   },
@@ -5668,6 +6125,7 @@
       "pdc": "MP1",
       "dateShipped": "",
       "etaDate": "2026-07-20",
+      "note": "",
       "updatedAt": "2026-06-17"
     }
   },
@@ -5690,6 +6148,7 @@
       "pdc": "MP1",
       "dateShipped": "",
       "etaDate": "2026-06-12",
+      "note": "",
       "updatedAt": "2026-06-17"
     }
   },
@@ -5716,6 +6175,7 @@
       "pdc": "MP1",
       "dateShipped": "2026-06-12",
       "etaDate": "2026-06-15",
+      "note": "Cette piece est en route. Surveillez votre courriel — notre transporteur (Spoke) vous confirmera l'heure de livraison prevue.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -5760,6 +6220,7 @@
       "pdc": "MP1",
       "dateShipped": "",
       "etaDate": "2026-07-14",
+      "note": "",
       "updatedAt": "2026-06-17"
     }
   },
@@ -5816,6 +6277,7 @@
       "pdc": "MP1",
       "dateShipped": "2026-06-12",
       "etaDate": "2026-06-15",
+      "note": "Cette piece est en route. Surveillez votre courriel — notre transporteur (Spoke) vous confirmera l'heure de livraison prevue.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -5842,6 +6304,7 @@
       "pdc": "MP1",
       "dateShipped": "2026-06-15",
       "etaDate": "2026-06-15",
+      "note": "Cette piece est en route. Surveillez votre courriel — notre transporteur (Spoke) vous confirmera l'heure de livraison prevue.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -5868,6 +6331,7 @@
       "pdc": "MP1",
       "dateShipped": "2026-06-10",
       "etaDate": "2026-06-11",
+      "note": "Cette piece est en route. Surveillez votre courriel — notre transporteur (Spoke) vous confirmera l'heure de livraison prevue.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -5924,6 +6388,7 @@
       "pdc": "MP1",
       "dateShipped": "",
       "etaDate": "2026-07-03",
+      "note": "",
       "updatedAt": "2026-06-17"
     }
   },
@@ -5946,6 +6411,7 @@
       "pdc": "MP1",
       "dateShipped": "",
       "etaDate": "2026-09-08",
+      "note": "",
       "updatedAt": "2026-06-17"
     }
   },
@@ -6052,6 +6518,7 @@
       "pdc": "MP1",
       "dateShipped": "2026-06-12",
       "etaDate": "2026-06-15",
+      "note": "Cette piece est en route. Surveillez votre courriel — notre transporteur (Spoke) vous confirmera l'heure de livraison prevue.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -6118,6 +6585,7 @@
       "pdc": "MP1",
       "dateShipped": "2026-06-15",
       "etaDate": "2026-06-15",
+      "note": "Cette piece est en route. Surveillez votre courriel — notre transporteur (Spoke) vous confirmera l'heure de livraison prevue.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -6140,6 +6608,7 @@
       "pdc": "MP1",
       "dateShipped": "",
       "etaDate": "2026-06-22",
+      "note": "Surveillez votre courriel — notre transporteur (Spoke) vous confirmera l'heure de livraison prevue.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -6184,6 +6653,7 @@
       "pdc": "MP1",
       "dateShipped": "",
       "etaDate": "2026-07-07",
+      "note": "",
       "updatedAt": "2026-06-17"
     }
   },
@@ -6206,6 +6676,7 @@
       "pdc": "MP1",
       "dateShipped": "",
       "etaDate": "2026-06-16",
+      "note": "",
       "updatedAt": "2026-06-17"
     }
   },
@@ -6246,6 +6717,7 @@
       "pdc": "MP1",
       "dateShipped": "2026-06-11",
       "etaDate": "2026-06-12",
+      "note": "Cette piece est en route. Surveillez votre courriel — notre transporteur (Spoke) vous confirmera l'heure de livraison prevue.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -6522,6 +6994,7 @@
       "pdc": "MP1",
       "dateShipped": "",
       "etaDate": "2026-07-07",
+      "note": "",
       "updatedAt": "2026-06-17"
     }
   },
@@ -6594,6 +7067,7 @@
       "pdc": "MP1",
       "dateShipped": "",
       "etaDate": "2026-06-18",
+      "note": "",
       "updatedAt": "2026-06-17"
     }
   },
@@ -6648,6 +7122,7 @@
       "pdc": "MP1",
       "dateShipped": "2026-06-16",
       "etaDate": "2026-06-25",
+      "note": "Cette piece est en route. Surveillez votre courriel — notre transporteur (Spoke) vous confirmera l'heure de livraison prevue.",
       "updatedAt": "2026-06-17"
     }
   },
@@ -6684,6 +7159,7 @@
       "pdc": "MP1",
       "dateShipped": "",
       "etaDate": "2026-06-18",
+      "note": "",
       "updatedAt": "2026-06-17"
     }
   },
