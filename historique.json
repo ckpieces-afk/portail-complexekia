@@ -45,7 +45,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-11",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -79,13 +79,13 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
       "final": true,
       "dateShipped": "2026-05-20",
       "etaDate": "2026-05-22",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "note": "Cette piece a ete facturee par Mobis le 2026-05-20 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -109,7 +109,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -153,7 +153,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-01",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -181,7 +181,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-20",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -217,7 +217,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-14",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -245,7 +245,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -297,7 +297,7 @@
       "dateShipped": "",
       "etaDate": "2026-07-21",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -325,7 +325,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-19",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -361,7 +361,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-26",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -385,7 +385,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-12",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -433,7 +433,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -493,7 +493,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -527,13 +527,13 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
       "final": true,
       "dateShipped": "2026-05-20",
       "etaDate": "2026-05-22",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "note": "Cette piece a ete facturee par Mobis le 2026-05-20 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -555,13 +555,13 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
       "final": true,
       "dateShipped": "2026-05-20",
       "etaDate": "2026-05-22",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "note": "Cette piece a ete facturee par Mobis le 2026-05-20 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -621,7 +621,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-05",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -649,7 +649,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -689,7 +689,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-14",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -729,7 +729,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-14",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -769,7 +769,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-14",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -881,13 +881,13 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
       "final": true,
       "dateShipped": "2026-05-20",
       "etaDate": "2026-05-22",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "note": "Cette piece a ete facturee par Mobis le 2026-05-20 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -915,7 +915,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-12",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -951,7 +951,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-25",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1017,7 +1017,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-14",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1043,13 +1043,13 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
       "final": true,
       "dateShipped": "2026-05-20",
       "etaDate": "2026-05-22",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "note": "Cette piece a ete facturee par Mobis le 2026-05-20 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1089,7 +1089,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-14",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1117,7 +1117,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1153,7 +1153,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-14",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1243,7 +1243,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1275,7 +1275,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-22",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1299,7 +1299,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-12",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1355,7 +1355,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-18",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1379,7 +1379,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-12",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1403,7 +1403,7 @@
       "dateShipped": "",
       "etaDate": "2026-07-08",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1427,7 +1427,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-26",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1451,7 +1451,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-12",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1475,7 +1475,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-02",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1499,7 +1499,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-12",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1523,7 +1523,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-12",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1547,7 +1547,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1571,7 +1571,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1593,13 +1593,13 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
       "final": true,
       "dateShipped": "2026-05-20",
       "etaDate": "2026-05-22",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "note": "Cette piece a ete facturee par Mobis le 2026-05-20 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1623,7 +1623,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1647,7 +1647,7 @@
       "dateShipped": "",
       "etaDate": "2026-08-18",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1687,7 +1687,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-22",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1711,7 +1711,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-14",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1763,7 +1763,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1807,7 +1807,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-05",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1831,7 +1831,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-12",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1855,7 +1855,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-12",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1883,7 +1883,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-12",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1911,7 +1911,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-02",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1935,7 +1935,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1959,7 +1959,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-14",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -1983,7 +1983,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -2007,7 +2007,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -2031,7 +2031,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -2055,7 +2055,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-12",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -2099,7 +2099,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-01",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -2123,7 +2123,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -2147,7 +2147,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -2171,7 +2171,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-05",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -2195,7 +2195,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-05",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -2219,7 +2219,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -2289,7 +2289,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -2313,7 +2313,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-05",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -2337,7 +2337,7 @@
       "dateShipped": "",
       "etaDate": "2026-08-05",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -2361,7 +2361,7 @@
       "dateShipped": "",
       "etaDate": "2026-07-20",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -2393,7 +2393,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-05",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -2433,7 +2433,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-05",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -2493,7 +2493,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -2545,7 +2545,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-11",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -2601,7 +2601,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-18",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -2683,7 +2683,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -2777,7 +2777,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-05",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -2801,7 +2801,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -2825,7 +2825,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -2849,7 +2849,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -2873,7 +2873,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-20",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -2897,7 +2897,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-20",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -2929,7 +2929,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -2981,7 +2981,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -3029,7 +3029,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -3081,7 +3081,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -3105,7 +3105,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -3129,7 +3129,7 @@
       "dateShipped": "",
       "etaDate": "2026-08-18",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -3203,7 +3203,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-26",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -3227,7 +3227,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -3275,7 +3275,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -3327,7 +3327,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-09",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -3387,7 +3387,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -3427,7 +3427,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-16",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -3455,7 +3455,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-05",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -3511,7 +3511,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -3551,7 +3551,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -3575,7 +3575,7 @@
       "dateShipped": "",
       "etaDate": "2026-08-10",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -3599,7 +3599,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-25",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -3639,7 +3639,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -3671,7 +3671,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -3711,7 +3711,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -3735,7 +3735,7 @@
       "dateShipped": "",
       "etaDate": "2026-08-18",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -3803,7 +3803,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-19",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -3835,7 +3835,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-02",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -3871,7 +3871,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -3893,13 +3893,13 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
       "final": true,
       "dateShipped": "2026-05-20",
       "etaDate": "2026-06-02",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "note": "Cette piece a ete facturee par Mobis le 2026-05-20 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -3927,7 +3927,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-25",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -3951,7 +3951,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -3973,13 +3973,13 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
       "final": true,
       "dateShipped": "2026-05-20",
       "etaDate": "2026-06-02",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "note": "Cette piece a ete facturee par Mobis le 2026-05-20 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -4011,7 +4011,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-02",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -4101,7 +4101,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-09",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -4129,7 +4129,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-25",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -4157,7 +4157,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-01",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -4197,11 +4197,11 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "final": true,
+      "final": false,
       "dateShipped": "2026-06-16",
       "etaDate": "2026-06-18",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -4237,7 +4237,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-09",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -4261,7 +4261,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-26",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -4301,7 +4301,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-16",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -4379,7 +4379,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-05",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -4411,7 +4411,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-02",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -4451,11 +4451,11 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "final": true,
+      "final": false,
       "dateShipped": "2026-06-16",
       "etaDate": "2026-06-30",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -4553,11 +4553,11 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "final": true,
+      "final": false,
       "dateShipped": "2026-06-16",
       "etaDate": "2026-06-18",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -4677,7 +4677,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-18",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -4701,7 +4701,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-02",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -4729,7 +4729,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-02",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -4769,7 +4769,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-09",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -4797,7 +4797,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-02",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -4875,7 +4875,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-02",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -4899,7 +4899,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-02",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -4935,7 +4935,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-09",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -4959,7 +4959,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-02",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -4983,7 +4983,7 @@
       "dateShipped": "",
       "etaDate": "2026-05-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -5007,7 +5007,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-02",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -5035,7 +5035,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-05",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -5059,7 +5059,7 @@
       "dateShipped": "",
       "etaDate": "2026-08-24",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -5083,7 +5083,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-01",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -5107,7 +5107,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-01",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -5131,7 +5131,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-02",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -5201,7 +5201,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-02",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -5249,7 +5249,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -5273,7 +5273,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-02",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -5297,7 +5297,7 @@
       "dateShipped": "",
       "etaDate": "2026-07-06",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -5333,7 +5333,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-09",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -5439,7 +5439,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -5463,7 +5463,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-05",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -5487,7 +5487,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-05",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -5523,11 +5523,11 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "final": true,
+      "final": false,
       "dateShipped": "2026-06-16",
       "etaDate": "2026-06-30",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -5563,7 +5563,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-09",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -5617,7 +5617,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-11",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -5641,7 +5641,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-02",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -5665,7 +5665,7 @@
       "dateShipped": "2026-06-03",
       "etaDate": "2026-06-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -5697,7 +5697,7 @@
       "dateShipped": "2026-06-10",
       "etaDate": "2026-06-11",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -5735,7 +5735,7 @@
       "dateShipped": "2026-06-03",
       "etaDate": "2026-06-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -5811,7 +5811,7 @@
       "dateShipped": "2026-06-15",
       "etaDate": "2026-06-24",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -5835,7 +5835,7 @@
       "dateShipped": "2026-06-08",
       "etaDate": "2026-06-08",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -5859,7 +5859,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-23",
       "note": "",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -5899,7 +5899,7 @@
       "dateShipped": "2026-06-16",
       "etaDate": "2026-06-17",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -5923,7 +5923,7 @@
       "dateShipped": "2026-06-02",
       "etaDate": "2026-07-28",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -6013,7 +6013,7 @@
       "dateShipped": "",
       "etaDate": "2026-07-03",
       "note": "",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -6171,7 +6171,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-18",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -6203,7 +6203,7 @@
       "dateShipped": "2026-06-11",
       "etaDate": "2026-06-12",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -6227,7 +6227,7 @@
       "dateShipped": "",
       "etaDate": "2026-07-07",
       "note": "",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -6263,7 +6263,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-18",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -6287,7 +6287,7 @@
       "dateShipped": "",
       "etaDate": "2026-07-20",
       "note": "",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -6311,7 +6311,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-12",
       "note": "",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -6339,7 +6339,7 @@
       "dateShipped": "2026-06-12",
       "etaDate": "2026-06-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -6385,7 +6385,7 @@
       "dateShipped": "",
       "etaDate": "2026-07-14",
       "note": "",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -6443,7 +6443,7 @@
       "dateShipped": "2026-06-12",
       "etaDate": "2026-06-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -6471,7 +6471,7 @@
       "dateShipped": "2026-06-15",
       "etaDate": "2026-06-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -6499,7 +6499,7 @@
       "dateShipped": "2026-06-10",
       "etaDate": "2026-06-11",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -6557,7 +6557,7 @@
       "dateShipped": "",
       "etaDate": "2026-07-03",
       "note": "",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -6581,7 +6581,7 @@
       "dateShipped": "",
       "etaDate": "2026-09-08",
       "note": "",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -6689,7 +6689,7 @@
       "dateShipped": "2026-06-12",
       "etaDate": "2026-06-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -6757,7 +6757,7 @@
       "dateShipped": "2026-06-15",
       "etaDate": "2026-06-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -6781,7 +6781,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-22",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -6827,7 +6827,7 @@
       "dateShipped": "",
       "etaDate": "2026-07-07",
       "note": "",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -6851,7 +6851,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-16",
       "note": "",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -6893,7 +6893,7 @@
       "dateShipped": "2026-06-11",
       "etaDate": "2026-06-12",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -7171,7 +7171,7 @@
       "dateShipped": "",
       "etaDate": "2026-07-07",
       "note": "",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -7245,7 +7245,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-18",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -7301,7 +7301,7 @@
       "dateShipped": "2026-06-16",
       "etaDate": "2026-06-25",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
@@ -7339,7 +7339,7 @@
       "dateShipped": "",
       "etaDate": "2026-06-18",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
-      "schemaVersion": 4,
+      "schemaVersion": 5,
       "updatedAt": "2026-06-17"
     }
   },
