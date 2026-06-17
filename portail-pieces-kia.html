@@ -65,6 +65,8 @@ header{background:var(--card);border-bottom:1px solid var(--border);padding:0 2r
 .status-value.s-backorder{color:var(--yellow);}
 .status-value.s-delivered{color:var(--soft);}
 .status-value.s-canceled{color:#ef4444;}
+.status-value.s-unknown{color:#94a3b8;}
+.status-value.s-invoiced{color:var(--green);}
 .result-card.is-shipped{border-color:#1a3a1a;background:#0e140e;}
 .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;}
 .card-field{background:#1a1a1a;border-radius:8px;padding:10px 14px;}
@@ -191,12 +193,6 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);}
 
 
 
-
-
-
-
-
-
 /* ── RESPONSIVE MOBILE ── */
 *{box-sizing:border-box;}
 body{overflow-x:hidden;}
@@ -238,12 +234,6 @@ body{overflow-x:hidden;}
   gtag('js', new Date());
   gtag('config', 'G-B7KWSBPV16');
 </script>
-
-
-
-
-
-
 
 
 
@@ -501,9 +491,17 @@ function doSearch() {
       html += '<div class="card-field"><div class="field-label">Expédiée le</div><div class="field-value">' + st.dateShipped + '</div></div>';
     }
     if (st.etaDate) {
-      html += '<div class="card-field"><div class="field-label">Arrivée prévue concession</div><div class="field-value">' + st.etaDate + '</div></div>';
+      html += '<div class="card-field"><div class="field-label">' + ((st.code === 'delivered' || st.code === 'unknown') ? 'Dernière date prévue connue' : 'Arrivée prévue concession') + '</div><div class="field-value">' + st.etaDate + '</div></div>';
     }
     html += '</div>';
+    if (st.note) {
+      var noteColors = {
+        unknown:  {bg:'#15161a', border:'#2a2c33', text:'#a8acb8'},
+        canceled: {bg:'#1a0d0d', border:'#3a1a1a', text:'#f0a8a8'}
+      };
+      var nc = noteColors[st.code] || {bg:'#0d1a0d', border:'#1a3a1a', text:'#9fd6a8'};
+      html += '<div style="margin-top:0.85rem;padding:0.65rem 0.85rem;background:' + nc.bg + ';border:1px solid ' + nc.border + ';border-radius:8px;font-size:0.78rem;color:' + nc.text + ';line-height:1.5;">&#128231; ' + st.note + '</div>';
+    }
     html += '</div>';
   }
 
