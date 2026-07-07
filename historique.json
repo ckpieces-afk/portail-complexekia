@@ -8477,7 +8477,17 @@
         "date": "2026-06-30",
         "eta": "2026-07-07"
       }
-    ]
+    ],
+    "shippingStatus": {
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
+      "dateShipped": "2026-07-06",
+      "etaDate": "2026-07-07",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "schemaVersion": 5,
+      "updatedAt": "2026-07-06"
+    }
   },
   "KNDNB5K38S6465159_89K06R0030OFB": {
     "partNo": "89K06R0030OFB",
@@ -8989,7 +8999,17 @@
         "date": "2026-07-03",
         "eta": "2026-07-09"
       }
-    ]
+    ],
+    "shippingStatus": {
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
+      "dateShipped": "2026-07-06",
+      "etaDate": "2026-07-09",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "schemaVersion": 5,
+      "updatedAt": "2026-07-06"
+    }
   },
   "KNDCR3L16R5128445_97763AO200": {
     "partNo": "97763AO200",
@@ -9409,7 +9429,17 @@
         "date": "2026-06-30",
         "eta": "2026-07-07"
       }
-    ]
+    ],
+    "shippingStatus": {
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
+      "dateShipped": "2026-07-06",
+      "etaDate": "2026-07-07",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "schemaVersion": 5,
+      "updatedAt": "2026-07-06"
+    }
   },
   "61153PF28R_86513B2100": {
     "partNo": "86513B2100",
@@ -9592,7 +9622,7 @@
       "code": "transit",
       "label": "En transit vers Complexe Kia",
       "pdc": "MP1",
-      "dateShipped": "",
+      "dateShipped": "2026-07-06",
       "etaDate": "2026-07-06",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 5,
@@ -9652,7 +9682,7 @@
       "code": "transit",
       "label": "En transit vers Complexe Kia",
       "pdc": "MP1",
-      "dateShipped": "",
+      "dateShipped": "2026-07-06",
       "etaDate": "2026-07-06",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 5,
