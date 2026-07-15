@@ -250,6 +250,7 @@ footer{text-align:center;padding:2.5rem 2rem;border-top:1px solid var(--border);
 
 
 
+
 /* ── RESPONSIVE MOBILE ── */
 *{box-sizing:border-box;}
 body{overflow-x:hidden;}
@@ -372,7 +373,8 @@ body{overflow-x:hidden;}
 
 
 
-<script>fetch('version.json?t='+Date.now()).then(r=>r.json()).then(d=>{if(d.v!=='20260715055232')location.reload(true);}).catch(()=>{});</script>
+
+<script>fetch('version.json?t='+Date.now()).then(r=>r.json()).then(d=>{if(d.v!=='20260715091728')location.reload(true);}).catch(()=>{});</script>
 </head>
 <body>
 <div class="print-header" style="display:none;justify-content:space-between;align-items:center;margin-bottom:24px;padding-bottom:16px;border-bottom:3px solid #C8102E;">
@@ -640,6 +642,48 @@ async function decodeVin() {
     // Freins supplémentaires
     const brakeType    = getVal(flat, 'BrakeSystemType');
 
+    // Recharge VE — connecteur
+    const chargerConnector = getVal(flat, 'ChargerConnectorType');
+
+    // ADAS avancé (Module 7/8 — carrosserie)
+    const laneCentering     = getVal(flat, 'LaneCenteringAssistance');
+    const blindSpotIntervention = getVal(flat, 'BlindSpotIntervention');
+    const rearCrossTraffic  = getVal(flat, 'RearCrossTrafficAlert');
+    const rearAEB           = getVal(flat, 'RearAutomaticEmergencyBraking');
+    const dynamicBrakeSupport = getVal(flat, 'DynamicBrakeSupport');
+    const crashImminentBraking = getVal(flat, 'CrashImminentBraking');
+
+    // Éclairage
+    const drl               = getVal(flat, 'DaytimeRunningLight');
+    const headlampSource    = getVal(flat, 'LowerBeamHeadlampLightSource');
+    const adaptiveDrivingBeam = getVal(flat, 'AdaptiveDrivingBeam');
+
+    // Autres
+    const keylessIgnition   = getVal(flat, 'KeylessIgnition');
+    const autoReverse       = getVal(flat, 'AutoReverseSystem');
+
+    // Notes libres NHTSA — souvent riches en détails ADAS/équipement
+    const activeSafetyNote  = getVal(flat, 'ActiveSafetySysNote');
+    const nhtsaNote         = getVal(flat, 'Note');
+
+    // Ronde 2 — champs additionnels trouvés dans la liste complète des 144 variables NHTSA
+    const basePrice         = getVal(flat, 'BasePrice');
+    const electrification   = getVal(flat, 'ElectrificationLevel');
+    const topSpeedMph       = getVal(flat, 'TopSpeedMPH');
+    const tractionControl   = getVal(flat, 'TractionControl');
+    const acn               = getVal(flat, 'AutomaticCrashNotification');
+    const edr               = getVal(flat, 'EventDataRecorder');
+    const pedestrianSound   = getVal(flat, 'AutomaticPedestrianAlertingSound');
+    const seatCushionAirbag = getVal(flat, 'SeatCushionAirBagLocations');
+    const wheelBaseType     = getVal(flat, 'WheelBaseType');
+    const trim2             = getVal(flat, 'Trim2');
+    const series2           = getVal(flat, 'Series2');
+    const otherEngineInfo   = getVal(flat, 'OtherEngineInfo');
+    const otherRestraintInfo = getVal(flat, 'OtherRestraintSystemInfo');
+    const otherBatteryInfo  = getVal(flat, 'OtherBatteryInfo');
+    const destinationMarket = getVal(flat, 'DestinationMarket');
+    const numberOfWheels    = getVal(flat, 'NumberOfWheels');
+
     // plantStr defined below with full city/state/country
     const hpStr      = engineHP ? engineHP + ' hp' + (engineKW ? ' / ' + Math.round(parseFloat(engineKW)) + ' kW' : '') : null;
     const dispStr    = engineDisp ? parseFloat(engineDisp).toFixed(1) + ' L' : null;
@@ -725,15 +769,23 @@ async function decodeVin() {
     html += buildCard('Modèle', model);
     html += buildCard('Année', year, 'gr');
     html += buildCard('Trim / Version', trim || '<span class="empty-val">Non disponible</span>', 'hl');
-    html += buildCard('Série', series);
+    html += buildCard('Série', series || series2);
+    html += buildCard('Marché', destinationMarket);
+    html += buildCard('Prix de base', basePrice ? '$' + Number(basePrice).toLocaleString('fr-CA') : null);
     html += buildCard('Carrosserie', bodyClass);
     html += buildCard('Portes', doors);
     html += buildCard('Type de véhicule', vehicleType);
     html += buildCard('Empattement', wheelbase ? wheelbase + ' po' : null);
+    html += buildCard('Type empattement', wheelBaseType);
+    html += buildCard('Nombre de roues', numberOfWheels);
+    html += buildCard('Vitesse maximale', topSpeedMph ? topSpeedMph + ' mph' : null);
     html += buildCard('Poids brut (GVWR)', gvwr);
     html += buildCard('Nombre de sièges', seats);
     html += buildCard('Rangées de sièges', seatRows);
     html += buildCard('Colonne de direction', steering);
+    html += buildCard('Toit', roofType);
+    html += buildCard('Toit ouvrant', sunroof);
+    html += buildCard('Infodivertissement', entertainment);
     html += '</div>';
 
     html += '<div class="info-card"><div class="card-title"><span>⚙️</span> Moteur</div>';
@@ -747,6 +799,12 @@ async function decodeVin() {
     html += buildCard('Carburant principal', fuelType);
     html += buildCard('Carburant secondaire', fuelType2);
     html += buildCard('Traction', driveType);
+    html += buildCard('Niveau électrification', electrification);
+    if (otherEngineInfo) html += buildCard('Info moteur additionnelle', otherEngineInfo);
+    html += buildCard('Cylindrée (CC)', displacement2 ? displacement2 + ' cc' : null);
+    html += buildCard('Temps moteur', engineStroke);
+    html += buildCard('Soupapes', engineValves);
+    html += buildCard('Refroidissement', coolingType);
     html += '</div></div>';
 
     // SECTION 2 — Transmission + Freins & Pneus
@@ -776,7 +834,7 @@ async function decodeVin() {
     html += '</div>';
 
     // Fetch wiper sizes after rendering
-    setTimeout(function() { fetchWiperSizes(wiperMake, wiperModel, year, make, model); }, 300);
+    setTimeout(function() { fetchWiperSizes(wiperMake, wiperModel, year, make, model, wiperFront, wiperRear); }, 300);
     setTimeout(function() { fetchCarQuerySpecs(make, model, year); }, 600);
 
     // SECTION 3b — Camion/Pickup (si applicable)
@@ -801,6 +859,9 @@ async function decodeVin() {
       html += buildCard('Niveau chargeur', chargerLevel);
       html += buildCard('Type moteur élec.', electricMotors);
       html += buildCard('Autonomie électrique', electricRange ? electricRange + ' mi' : null);
+      html += buildCard('Connecteur de recharge', chargerConnector, 'hl');
+      html += buildCard('Son avertisseur piétons', pedestrianSound);
+      if (otherBatteryInfo) html += buildCard('Info batterie additionnelle', otherBatteryInfo);
       html += '</div>';
     }
 
@@ -838,6 +899,9 @@ async function decodeVin() {
         if (r.gvwr) html += buildCard('PNBV (kg)', r.gvwr);
         if (r.fgawr) html += buildCard('Charge essieu avant (kg)', r.fgawr);
         if (r.rgawr) html += buildCard('Charge essieu arrière (kg)', r.rgawr);
+        if (r.twf) html += buildCard('Voie avant (mm)', r.twf);
+        if (r.twr) html += buildCard('Voie arrière (mm)', r.twr);
+        if (r.wd) html += buildCard('Distribution poids (av/ar)', r.wd + ' %');
         
         if (html !== '<div class="card-title"><span>🍁</span> Spécifications canadiennes — Transport Canada</div>') {
           canadaDiv.innerHTML = html;
@@ -852,6 +916,10 @@ async function decodeVin() {
     // CarQuery specs div
     html += '<div class="info-card" id="carquerySpecs" style="display:none;margin-bottom:14px;"></div>';
 
+    // EPA fueleconomy.gov specs div (actif et à jour, contrairement à CarQuery)
+    html += '<div class="info-card" id="epaSpecs" style="display:none;margin-bottom:14px;"></div>';
+    setTimeout(function() { fetchFuelEconomySpecs(make, model, year); }, 900);
+
     // SECTION 5 — Fabrication
     html += '<div class="grid-2">';
     html += '<div class="info-card"><div class="card-title"><span>🏭</span> Fabrication</div>';
@@ -864,6 +932,7 @@ async function decodeVin() {
     // SECTION 6 — Sécurité
     html += '<div class="info-card"><div class="card-title"><span>🛡️</span> Sécurité active</div>';
     html += buildCard('Freins ABS', abs);
+    html += buildCard('Contrôle de traction', tractionControl, 'hl');
     html += buildCard('Contrôle stabilité (ESC)', esc);
     html += buildCard('Surveillance pression pneus (TPMS)', tpms);
     html += buildCard('Avertissement collision avant', forwardCollision);
@@ -874,6 +943,18 @@ async function decodeVin() {
     html += buildCard('Aide au stationnement', parkingAssist);
     html += buildCard('Régulateur adaptatif', adaptiveCruise);
     html += buildCard('Freinage auto piétons', pedestrianAlert);
+    html += buildCard('Assistance centrage voie', laneCentering);
+    html += buildCard('Angle mort actif (intervention)', blindSpotIntervention);
+    html += buildCard('Alerte trafic transversal arrière', rearCrossTraffic);
+    html += buildCard('Freinage auto arrière', rearAEB);
+    html += buildCard('Aide au freinage dynamique', dynamicBrakeSupport);
+    html += buildCard('Freinage collision imminente', crashImminentBraking);
+    html += buildCard('Feux de jour (DRL)', drl);
+    html += buildCard('Source feux croisement', headlampSource);
+    html += buildCard('Feux adaptatifs', adaptiveDrivingBeam);
+    html += buildCard('Démarrage sans clé', keylessIgnition);
+    html += buildCard('Notification auto accident (ACN)', acn);
+    html += buildCard('Enregistreur données (EDR)', edr);
     if (ncapFront || ncapSide || ncapRollover) {
       html += '<div style="margin-top:10px;padding:8px 12px;background:#0d0d0d;border-radius:6px;">';
       html += '<div style="font-size:0.62rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:8px;">⭐ Cotes de sécurité NCAP</div>';
@@ -893,8 +974,31 @@ async function decodeVin() {
     html += buildCard('Coussins latéraux', airBagsSide);
     html += buildCard('Rideaux gonflables', airBagsCurtain);
     html += buildCard('Coussins genoux', airBagsKnee);
+    html += buildCard('Coussins additionnels', totalAirbags);
+    html += buildCard('Coussin de siège', seatCushionAirbag);
     html += buildCard('Ceintures', seatBelts);
+    if (otherRestraintInfo) html += buildCard('Info retenues additionnelle', otherRestraintInfo);
     html += buildCard('Rappels actifs', recalls.length > 0 ? '<span style="color:var(--orange);">' + recalls.length + ' rappel(s) — voir ci-dessous</span>' : '<span style="color:var(--green);">✅ Aucun rappel</span>');
+    html += '</div>';
+
+    // SECTION 7b — Carrosserie & Calibration (Module 7)
+    var needsCalibration = !!(forwardCollision || laneKeep || laneCentering || adaptiveCruise || backCamera || blindSpot || blindSpotIntervention || rearAEB || pedestrianAlert || adaptiveDrivingBeam);
+    html += '<div class="info-card" style="margin-bottom:14px;">';
+    html += '<div class="card-title"><span>🔧</span> Carrosserie &amp; Calibration</div>';
+    if (needsCalibration) {
+      html += '<div style="background:#1a0f08;border:1px solid #3a2510;border-radius:8px;padding:10px 14px;margin-bottom:12px;font-size:0.8rem;color:var(--orange);line-height:1.6;">⚠️ <strong>Calibration requise après intervention</strong> — ce véhicule est équipé d\'au moins un système ADAS lié à une caméra ou un radar. Vérifier le pare-brise, pare-choc ou rétroviseurs avant/après toute réparation.</div>';
+    }
+    html += buildCard('Caméra de recul', backCamera);
+    html += buildCard('Détection angle mort', blindSpot || blindSpotIntervention);
+    html += buildCard('Collision avant', forwardCollision);
+    html += buildCard('Régulateur adaptatif', adaptiveCruise);
+    html += buildCard('Rétroviseurs anti-pincement', autoReverse);
+    if (activeSafetyNote) {
+      html += '<div style="margin-top:10px;padding:8px 12px;background:#0d0d0d;border-radius:6px;font-size:0.75rem;color:var(--soft);line-height:1.6;"><strong style="color:var(--yellow);">Note NHTSA (sécurité) :</strong> ' + activeSafetyNote + '</div>';
+    }
+    if (nhtsaNote) {
+      html += '<div style="margin-top:8px;padding:8px 12px;background:#0d0d0d;border-radius:6px;font-size:0.75rem;color:var(--soft);line-height:1.6;"><strong style="color:var(--yellow);">Note NHTSA (générale) :</strong> ' + nhtsaNote + '</div>';
+    }
     html += '</div>';
 
     // Colour guide
@@ -1060,6 +1164,88 @@ function renderCarQuerySpecs(t) {
     div.innerHTML = html;
     div.style.display = 'block';
   }
+}
+
+// ── EPA fueleconomy.gov — source active et maintenue à jour (contrairement à CarQuery) ──
+function fetchFuelEconomySpecs(make, model, year) {
+  var div = document.getElementById('epaSpecs');
+  if (!div) return;
+
+  function proxied(url) {
+    return 'https://api.allorigins.win/get?url=' + encodeURIComponent(url);
+  }
+
+  function fetchXml(url) {
+    return fetch(proxied(url))
+      .then(function(res) { return res.json(); })
+      .then(function(data) {
+        var parser = new DOMParser();
+        return parser.parseFromString(data.contents || '', 'text/xml');
+      });
+  }
+
+  function findMenuValue(xml, matchFn) {
+    var items = xml.getElementsByTagName('menuItem');
+    for (var i = 0; i < items.length; i++) {
+      var valEl = items[i].getElementsByTagName('value')[0];
+      var text = valEl ? valEl.textContent : '';
+      if (text && matchFn(text)) return text;
+    }
+    return null;
+  }
+
+  var modelUrl = 'https://www.fueleconomy.gov/ws/rest/vehicle/menu/model?year=' + encodeURIComponent(year) + '&make=' + encodeURIComponent(make);
+  var modelUC = (model || '').toUpperCase();
+
+  fetchXml(modelUrl).then(function(xml) {
+    var matched = findMenuValue(xml, function(t) { return t.toUpperCase().indexOf(modelUC) === 0; })
+               || findMenuValue(xml, function(t) { return t.toUpperCase().indexOf(modelUC) !== -1; });
+    if (!matched) throw new Error('no model match');
+    var optionsUrl = 'https://www.fueleconomy.gov/ws/rest/vehicle/menu/options?year=' + encodeURIComponent(year) + '&make=' + encodeURIComponent(make) + '&model=' + encodeURIComponent(matched);
+    return fetchXml(optionsUrl);
+  }).then(function(xml) {
+    var items = xml.getElementsByTagName('menuItem');
+    if (!items || items.length === 0) throw new Error('no options');
+    var valEl = items[0].getElementsByTagName('value')[0];
+    var vehicleId = valEl ? valEl.textContent : null;
+    if (!vehicleId) throw new Error('no vehicle id');
+    return fetchXml('https://www.fueleconomy.gov/ws/rest/vehicle/' + vehicleId);
+  }).then(function(xml) {
+    function tag(name) {
+      var el = xml.getElementsByTagName(name)[0];
+      return el ? el.textContent : null;
+    }
+    var cylinders  = tag('cylinders');
+    var displ      = tag('displ');
+    var trany      = tag('trany');
+    var drive      = tag('drive');
+    var vclass     = tag('VClass');
+    var city08     = tag('city08');
+    var highway08  = tag('highway08');
+    var comb08     = tag('comb08');
+
+    var html = '<div class="card-title"><span>⛽</span> Spécifications EPA (fueleconomy.gov)</div>';
+    var hasData = false;
+    if (cylinders) { html += buildCard('Cylindres (EPA)', cylinders + ' cyl.'); hasData = true; }
+    if (displ)     { html += buildCard('Cylindrée (EPA)', displ + ' L'); hasData = true; }
+    if (trany)     { html += buildCard('Transmission (EPA)', trany); hasData = true; }
+    if (drive)     { html += buildCard('Traction (EPA)', drive); hasData = true; }
+    if (vclass)    { html += buildCard('Catégorie EPA', vclass); hasData = true; }
+    if (city08 && highway08) {
+      html += '<div style="margin-top:8px;padding:8px 12px;background:#0d0d0d;border-radius:6px;">';
+      html += '<div style="font-size:0.62rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:6px;">Consommation officielle EPA (mpg US)</div>';
+      html += '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;">';
+      html += '<div style="background:#1a1a1a;border-radius:6px;padding:6px 10px;text-align:center;"><div style="font-size:0.6rem;color:var(--muted);">Ville</div><div style="font-size:0.9rem;font-weight:600;">' + city08 + '</div></div>';
+      html += '<div style="background:#1a1a1a;border-radius:6px;padding:6px 10px;text-align:center;"><div style="font-size:0.6rem;color:var(--muted);">Route</div><div style="font-size:0.9rem;font-weight:600;">' + highway08 + '</div></div>';
+      if (comb08) html += '<div style="background:#1a1a1a;border-radius:6px;padding:6px 10px;text-align:center;"><div style="font-size:0.6rem;color:var(--muted);">Mixte</div><div style="font-size:0.9rem;font-weight:600;">' + comb08 + '</div></div>';
+      html += '</div></div>';
+      hasData = true;
+    }
+    if (hasData) {
+      div.innerHTML = html;
+      div.style.display = 'block';
+    }
+  }).catch(function() {});
 }
 
 
@@ -1528,7 +1714,7 @@ function renderWiperFallback(make, model, year) {
   wiperDiv.innerHTML = html;
 }
 
-function fetchWiperSizes(wiperMake, wiperModel, year, make, model) {
+function fetchWiperSizes(wiperMake, wiperModel, year, make, model, nhtsaFront, nhtsaRear) {
   var wiperDiv = document.getElementById("wiperContent");
   if (!wiperDiv) return;
 
@@ -1536,6 +1722,12 @@ function fetchWiperSizes(wiperMake, wiperModel, year, make, model) {
   var localData = getWiperFromDB(make, model, year);
   if (localData) {
     renderWiperResult(localData.d, localData.p, localData.r || null, null, make, model, year);
+    return;
+  }
+
+  // NHTSA fallback (rarement rempli, mais gratuit si présent)
+  if (nhtsaFront || nhtsaRear) {
+    renderWiperResult(nhtsaFront, null, nhtsaRear, null, make, model, year);
     return;
   }
 
