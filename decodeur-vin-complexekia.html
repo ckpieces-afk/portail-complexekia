@@ -252,6 +252,7 @@ footer{text-align:center;padding:2.5rem 2rem;border-top:1px solid var(--border);
 
 
 
+
 /* ── RESPONSIVE MOBILE ── */
 *{box-sizing:border-box;}
 body{overflow-x:hidden;}
@@ -376,7 +377,8 @@ body{overflow-x:hidden;}
 
 
 
-<script>fetch('version.json?t='+Date.now()).then(r=>r.json()).then(d=>{if(d.v!=='20260716102059')location.reload(true);}).catch(()=>{});</script>
+
+<script>fetch('version.json?t='+Date.now()).then(r=>r.json()).then(d=>{if(d.v!=='20260717053529')location.reload(true);}).catch(()=>{});</script>
 </head>
 <body>
 <div class="print-header" style="display:none;justify-content:space-between;align-items:center;margin-bottom:24px;padding-bottom:16px;border-bottom:3px solid #C8102E;">
@@ -510,6 +512,32 @@ function buildCard(label, value, cls) {
   return '<div class="info-row"><span class="info-label">' + label + '</span><span class="info-value ' + (cls||'') + '">' + dash(value) + '</span></div>';
 }
 
+// ── Table locale de secours — modèles jamais vendus aux É.-U. ──
+// NHTSA vPIC ne décode QUE les véhicules soumis sous 49 CFR Part 565 (marché américain).
+// Les modèles Canada/international-only (ex: Kia Rondo, Carens) ont un WMI (KNA...) reconnu
+// mais aucun pattern de positions 4-8 enregistré => Make se décode, Model reste vide.
+// Clé = 8 premiers caractères du VIN (WMI + VDS), qui identifient le modèle/génération/moteur.
+// Alimenter cette table au fil des VIN rencontrés via les rapports Infomedia (catalogue "RONDO/CARENS 12" etc.)
+var CANADA_ONLY_MODELS = {
+  // Kia Rondo / Carens — 2e génération (2013-2016), catalogue Infomedia "RONDO/CARENS 12"
+  "KNAHT8A3": { make: "KIA", model: "Rondo", series: "Carens (marché international)", years: "2013-2016" },
+  "KNAHT8A2": { make: "KIA", model: "Rondo", series: "Carens (marché international)", years: "2013-2016" },
+  // Kia Rondo — 1re génération (2007-2012)
+  "KNAFG528": { make: "KIA", model: "Rondo", series: "1re génération", years: "2007-2012" }
+  // 👉 Ajouter ici toute nouvelle plaque Canada/intl-only rencontrée :
+  // "XXXXXXXX": { make: "MARQUE", model: "Modèle", series: "Info additionnelle", years: "AAAA-AAAA" },
+};
+
+function getCanadaOnlyModel(vin) {
+  var prefix8 = vin.substring(0, 8);
+  if (CANADA_ONLY_MODELS[prefix8]) return CANADA_ONLY_MODELS[prefix8];
+  var prefix7 = vin.substring(0, 7);
+  for (var key in CANADA_ONLY_MODELS) {
+    if (key.substring(0, 7) === prefix7) return CANADA_ONLY_MODELS[key];
+  }
+  return null;
+}
+
 async function decodeVin() {
   const vin = document.getElementById('vinInput').value.trim().toUpperCase();
   if (vin.length < 17) { showError('Veuillez entrer un VIN complet de 17 caractères.'); return; }
@@ -526,8 +554,25 @@ async function decodeVin() {
 
     // Identification
     const make         = getVal(flat, 'Make') || '';
-    const model        = getVal(flat, 'Model') || '';
+    let   model        = getVal(flat, 'Model') || '';
     const year         = getVal(flat, 'ModelYear') || '';
+
+    // Fallback modèle — NHTSA n'a aucune donnée pour les véhicules jamais vendus aux É.-U.
+    // (ex: Kia Rondo/Carens). On tente d'abord la table locale Complexe Kia, sinon on
+    // affiche un message clair plutôt qu'un tiret trompeur.
+    let modelSource = 'nhtsa';
+    let modelUnavailableReason = null;
+    if (!model && make) {
+      const localMatch = getCanadaOnlyModel(vin);
+      if (localMatch && localMatch.make === make) {
+        model = localMatch.model;
+        modelSource = 'local';
+        var canadaOnlySeries = localMatch.series;
+        var canadaOnlyYears = localMatch.years;
+      } else {
+        modelUnavailableReason = "Non vendu aux É.-U. — NHTSA n'a pas ce modèle dans sa base";
+      }
+    }
     const trim         = getVal(flat, 'Trim');
     const series       = getVal(flat, 'Series');
     const bodyClass    = getVal(flat, 'BodyClass');
@@ -694,7 +739,12 @@ async function decodeVin() {
     const colorGuide = getColorGuide(make);
 
     // Fetch recalls from Transports Canada only
+    // IMPORTANT: on ne lance la recherche que si on a un modèle fiable (NHTSA ou table locale).
+    // Avec model='' l'API Transports Canada peut retourner les rappels de TOUS les modèles
+    // de la marque pour l'année, ou aucun par erreur — les deux sont trompeurs.
     var recalls = [];
+    var recallsSkipped = !model;
+    if (model) {
     try {
       var tcUrl = 'https://api.allorigins.win/get?url=' + encodeURIComponent(
         'http://data.tc.gc.ca/v1.3/api/eng/vehicle-recall-database/recall?format=json&make=' + 
@@ -714,10 +764,13 @@ async function decodeVin() {
         });
       });
     } catch(e) { }
+    }
 
     // Build recalls HTML
     let recallsHtml = '';
-    if (recalls.length === 0) {
+    if (recallsSkipped) {
+      recallsHtml = '<div class="no-recall" style="color:var(--soft);">⚠️ Recherche de rappels non disponible — modèle non identifié par NHTSA</div>';
+    } else if (recalls.length === 0) {
       recallsHtml = '<div class="no-recall">✅ Aucun rappel actif trouvé — Transports Canada &amp; NHTSA</div>';
     } else {
       recalls.forEach(function(rec) {
@@ -752,7 +805,7 @@ async function decodeVin() {
     html += '<div class="vehicle-hero">';
     html += '<div class="vehicle-title">';
     html += '<div class="vehicle-eyebrow">' + year + ' · ' + make + '</div>';
-    html += '<div class="vehicle-name">' + make + ' ' + model + '</div>';
+    html += '<div class="vehicle-name">' + make + (model ? ' ' + model : ' <span style="font-size:0.6em;font-weight:400;color:var(--soft);">(modèle non identifié par NHTSA)</span>') + '</div>';
     if (trim) {
       html += '<div class="vehicle-trim">' + trim + '</div>';
     } else {
@@ -768,10 +821,15 @@ async function decodeVin() {
     html += '<div class="grid-2">';
     html += '<div class="info-card"><div class="card-title"><span>🚗</span> Identification</div>';
     html += buildCard('Marque', make);
-    html += buildCard('Modèle', model);
+    if (model) {
+      var modelDisplay = model + (modelSource === 'local' ? ' <span style="font-size:0.72em;color:var(--soft);font-weight:400;">(table locale CK' + (typeof canadaOnlyYears !== 'undefined' && canadaOnlyYears ? ', ' + canadaOnlyYears : '') + ')</span>' : '');
+      html += buildCard('Modèle', modelDisplay);
+    } else {
+      html += '<div class="info-row"><span class="info-label">Modèle</span><span class="info-value" style="color:var(--soft);font-style:italic;font-size:0.82rem;">' + (modelUnavailableReason || 'Non disponible') + '</span></div>';
+    }
     html += buildCard('Année', year, 'gr');
     html += buildCard('Trim / Version', trim || '<span class="empty-val">Non disponible</span>', 'hl');
-    html += buildCard('Série', series || series2);
+    html += buildCard('Série', series || series2 || (typeof canadaOnlySeries !== 'undefined' ? canadaOnlySeries : null));
     html += buildCard('Marché', destinationMarket);
     html += buildCard('Prix de base', basePrice ? '$' + Number(basePrice).toLocaleString('fr-CA') : null);
     html += buildCard('Carrosserie', bodyClass);
@@ -832,12 +890,18 @@ async function decodeVin() {
 
     html += '<div class="info-card" style="margin-bottom:14px;" id="wiperCard">';
     html += '<div class="card-title"><span>🌧️</span> Essuie-glaces</div>';
-    html += '<div id="wiperContent"><div style="display:flex;align-items:center;gap:10px;padding:12px 0;"><div style="width:20px;height:20px;border:2px solid var(--border);border-top-color:var(--red);border-radius:50%;animation:spin 0.8s linear infinite;flex-shrink:0;"></div><span style="font-size:0.82rem;color:var(--soft);">Recherche des dimensions...</span></div></div>';
+    if (model) {
+      html += '<div id="wiperContent"><div style="display:flex;align-items:center;gap:10px;padding:12px 0;"><div style="width:20px;height:20px;border:2px solid var(--border);border-top-color:var(--red);border-radius:50%;animation:spin 0.8s linear infinite;flex-shrink:0;"></div><span style="font-size:0.82rem;color:var(--soft);">Recherche des dimensions...</span></div></div>';
+    } else {
+      html += '<div id="wiperContent"><span style="font-size:0.82rem;color:var(--soft);font-style:italic;">Non disponible — modèle non identifié par NHTSA</span></div>';
+    }
     html += '</div>';
 
-    // Fetch wiper sizes after rendering
-    setTimeout(function() { fetchWiperSizes(wiperMake, wiperModel, year, make, model, wiperFront, wiperRear); }, 300);
-    setTimeout(function() { fetchCarQuerySpecs(make, model, year); }, 600);
+    // Fetch wiper sizes after rendering (seulement si on a un modèle fiable)
+    if (model) {
+      setTimeout(function() { fetchWiperSizes(wiperMake, wiperModel, year, make, model, wiperFront, wiperRear); }, 300);
+      setTimeout(function() { fetchCarQuerySpecs(make, model, year); }, 600);
+    }
 
     // SECTION 3b — Camion/Pickup (si applicable)
     if (cabType || bedType || bedLength) {
@@ -879,6 +943,7 @@ async function decodeVin() {
     }
 
     // SECTION 4d — Spécifications canadiennes (Transport Canada CVS)
+    if (model) {
     var canadaUrl = 'https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?year=' + year + '&make=' + encodeURIComponent(make) + '&model=' + encodeURIComponent(model) + '&units=0&format=json';
     
     fetch(canadaUrl)
@@ -911,6 +976,7 @@ async function decodeVin() {
         }
       })
       .catch(function() {});
+    }
 
     // Canada specs placeholder
     html += '<div class="info-card" id="canadaSpecs" style="display:none;margin-bottom:14px;"></div>';
@@ -920,7 +986,7 @@ async function decodeVin() {
 
     // EPA fueleconomy.gov specs div (actif et à jour, contrairement à CarQuery)
     html += '<div class="info-card" id="epaSpecs" style="display:none;margin-bottom:14px;"></div>';
-    setTimeout(function() { fetchFuelEconomySpecs(make, model, year); }, 900);
+    if (model) { setTimeout(function() { fetchFuelEconomySpecs(make, model, year); }, 900); }
 
     // SECTION 5 — Fabrication
     html += '<div class="grid-2">';
@@ -1619,6 +1685,11 @@ function getBatteryFromDB(make, model, year) {
   var m  = (make  || "").toUpperCase();
   var mo = (model || "").toUpperCase().trim();
   var yr = parseInt(year) || 0;
+
+  // Garde-fou: sans modèle, aucun match n'est fiable — évite de retourner
+  // silencieusement les données du premier modèle de la table (ex: Sportage
+  // affiché à tort pour un Rondo à cause de "".indexOf() qui matche tout).
+  if (!mo) return null;
 
   // Try exact match first
   if (BATTERY_DB[m] && BATTERY_DB[m][mo]) {
