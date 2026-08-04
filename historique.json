@@ -49,12 +49,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-05",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-06",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PD12R_58731H8000": {
@@ -114,12 +114,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-06",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-07",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "5XXG24J29PG171967_645J4L2000": {
@@ -158,12 +158,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-21",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-22",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPXDDG2T7286437_66321P1500": {
@@ -186,12 +186,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-15",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-21",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "5XXG64J2XMG060330_71503L3C00": {
@@ -222,12 +222,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-11",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-11",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDCP3L18P5054688_81710AT000WK": {
@@ -250,12 +250,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-14",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-19",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDADFS50S6056489_84774DO100MG6": {
@@ -300,14 +300,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-07-21",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDRJDJH3T5435988_85770P2000WK": {
@@ -330,12 +330,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-13",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-14",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDRMDJH9S5359909_85770P2000WK": {
@@ -366,12 +366,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-19",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-19",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDCS3LF1R5199567_865B5AT000": {
@@ -390,12 +390,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-07",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-08",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPXCDF7T7456499_86512P1700BKL": {
@@ -438,12 +438,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-21",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-22",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDCP3LE7S5253923_86611AT001": {
@@ -498,12 +498,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-22",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-18",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPXCDF7T7456499_86631P1800": {
@@ -628,12 +628,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-01",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-01",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDAFFS53S6056092_86652DO000": {
@@ -656,12 +656,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-12",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-13",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDAFFS57S6060937_86842DO000": {
@@ -696,12 +696,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-07",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-08",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDAFFS54T6066261_86842DO000": {
@@ -736,12 +736,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-07",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-08",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDADFS50T6066215_86842DO000": {
@@ -776,12 +776,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-07",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-08",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "5XYPHDA54KG606889_87721C6000": {
@@ -812,12 +812,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-22",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-22",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "5XYPHDA18HG202273_87721C6000": {
@@ -848,12 +848,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-22",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-22",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDETCA20N7318455_88200Q5OM0AXA": {
@@ -892,12 +892,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-29",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-01",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPUCDF8R7264395_88840P1550WK": {
@@ -953,12 +953,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-12",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-13",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "3KPFL4A83JE179561_91507B0010": {
@@ -989,12 +989,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-08",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-11",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "3KPA25AD5PE564404_91720H9240": {
@@ -1029,12 +1029,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-09",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-10",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDRGDJG7S5404506_91885P2AK0": {
@@ -1065,12 +1065,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-07",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-08",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPNCAC7N7024322_91955D9AH0": {
@@ -1138,12 +1138,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-11",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-11",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "5XYC4DJC4SG004311_96611CV600": {
@@ -1166,12 +1166,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-13",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-14",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDEP2AA4P7357994_97490Q5000QA1": {
@@ -1202,12 +1202,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-07",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-08",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPU3DF1R7261421_DEMO-92850S2000": {
@@ -1290,14 +1290,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-05-15",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE01R_56820DO000": {
@@ -1324,12 +1324,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-13",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-14",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE01R_69100S9500": {
@@ -1346,14 +1346,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-05-12",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDCB3LCXN5544319_84750G5400WK": {
@@ -1404,12 +1404,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-12",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE01R_85730S9AA0WK": {
@@ -1426,14 +1426,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-05-12",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE01R_85770S9600WK": {
@@ -1450,14 +1450,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-07-08",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE01R_86531P1520BKL": {
@@ -1474,14 +1474,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-05-26",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE01R_86577P1500": {
@@ -1498,14 +1498,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-05-12",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE01R_86591P1000": {
@@ -1522,14 +1522,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-06-02",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE01R_86596P1520BKL": {
@@ -1546,14 +1546,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-05-12",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE04D_86636AT050": {
@@ -1572,12 +1572,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-06",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-07",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE01R_866612K500": {
@@ -1594,14 +1594,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-05-29",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE01R_87712AT000": {
@@ -1618,14 +1618,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-05-15",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDCS3LF0S5262728_91686GI020": {
@@ -1671,14 +1671,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-05-29",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "3KPA25AD1ME404046_58737H8000": {
@@ -1695,14 +1695,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-08-18",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "5XYP5DGC4RG548873_69100S9500": {
@@ -1737,12 +1737,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-19",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-19",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE03R_76003H9000": {
@@ -1759,14 +1759,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-05-14",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "5XYP5DGC4RG548873_85770S9600WK": {
@@ -1813,12 +1813,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-03",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPVCDF6T7434418_86531P1520BKL": {
@@ -1857,12 +1857,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-01",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-01",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPVCDF6T7434418_86577P1500": {
@@ -1879,14 +1879,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-05-12",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPVCDF6T7434418_86596P1520BKL": {
@@ -1905,12 +1905,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-08",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-11",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDCR3L10S5137549_87712AT000": {
@@ -1933,12 +1933,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-12",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-13",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "5XYP5DGC4RG548873_92501S9000": {
@@ -1961,12 +1961,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-08",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-01",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE03R_98110D4000": {
@@ -1983,14 +1983,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-05-29",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "3KPA25AB4KE168018_76003H9000": {
@@ -2009,12 +2009,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-14",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-19",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDCP3LE1R5128734_81710AT000WK": {
@@ -2033,12 +2033,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-13",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-14",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPVDDG6T7296779_86512P1500BKL": {
@@ -2057,12 +2057,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-21",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-22",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPVDDG6T7296779_86531CH520BKL": {
@@ -2081,12 +2081,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-13",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-14",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPVDDG6T7296779_86577P1500": {
@@ -2105,12 +2105,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-08",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-11",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDC4DLC2R5229388_91240CV040": {
@@ -2149,12 +2149,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-28",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "5XYC4DJC6SG001233_96611CV600": {
@@ -2173,12 +2173,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-13",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-14",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "5XYC4DJC6SG001233_96621CV500": {
@@ -2197,12 +2197,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-12",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-13",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE06R_54625P2000": {
@@ -2219,14 +2219,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-06-05",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE06R_54633N9000": {
@@ -2243,14 +2243,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-06-05",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE06R_54831CV000": {
@@ -2267,14 +2267,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-05-29",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE04R_58101J2A00SLHW": {
@@ -2297,12 +2297,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-20",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-22",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE06R_86811J2000": {
@@ -2353,12 +2353,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-10",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-11",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE06R_86812CV000": {
@@ -2375,14 +2375,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-06-05",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE06R_868421M500": {
@@ -2399,14 +2399,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-08-05",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE06R_92102P4100": {
@@ -2423,14 +2423,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-07-20",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDC3DLC6N5083820_54625P2000": {
@@ -2457,12 +2457,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-01",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-01",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDC3DLC6N5083820_54831CV000": {
@@ -2497,12 +2497,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-01",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-01",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDCP3LE3S5277636_86611AT001": {
@@ -2557,12 +2557,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-11",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-12",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDC3DLC6N5083820_86812CV000": {
@@ -2609,12 +2609,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-08",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-08",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNAFT5A27C5517072_868421M500": {
@@ -2665,12 +2665,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-12",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDRMDLH1N5068239_92102P4100": {
@@ -2733,12 +2733,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-26",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE09R_XAH68AK500": {
@@ -2765,12 +2765,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-21",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-22",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "3KPF44ACXNE468797_25450M6000": {
@@ -2837,12 +2837,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-23",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-24",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE09R_29110J2000": {
@@ -2877,12 +2877,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-01",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-01",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE09R_85730Q5500WK": {
@@ -2899,14 +2899,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-05-29",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE09R_86512P1500BKL": {
@@ -2923,14 +2923,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-05-29",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE09R_86560C6520": {
@@ -2947,14 +2947,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-05-29",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE09R_86577P1500": {
@@ -2973,12 +2973,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-13",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-14",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE09R_866A1J2000": {
@@ -2997,12 +2997,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-13",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-14",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE09R_86812AO000": {
@@ -3029,12 +3029,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-21",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-22",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE14D_88590D9021": {
@@ -3081,12 +3081,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-10",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-11",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPNCAC1N7964423_88590D9021": {
@@ -3129,12 +3129,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-08",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-08",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDRFDJG3T5493804_89823P4500WK": {
@@ -3181,12 +3181,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-10",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-11",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE10R_55316A4000": {
@@ -3203,14 +3203,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-05-29",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE10R_82413P1000": {
@@ -3227,14 +3227,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-08-18",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE10R_82651C5710QQK": {
@@ -3301,12 +3301,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-30",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-02",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDEP2AA8S7699490_85730Q5500WK": {
@@ -3325,12 +3325,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-22",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-25",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPU3DF0T7425281_86512P1500BKL": {
@@ -3349,12 +3349,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-21",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-22",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "5XYPGDA50LG635259_86560C6520": {
@@ -3397,12 +3397,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-01",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-01",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE10R_92453B0600QQK": {
@@ -3449,12 +3449,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-05",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-08",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "5XYRHDJF7SG371647_99310L1810MLB": {
@@ -3509,12 +3509,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-12",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDCP3LE3R5128363_2816408200": {
@@ -3549,12 +3549,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-11",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-12",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPUCDF1T7473517_52960R2710": {
@@ -3577,12 +3577,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-01",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-01",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPUCDF9R7306220_82413P1000": {
@@ -3633,12 +3633,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-10",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-11",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNALC4J1XJ5107058_28610F6420": {
@@ -3673,12 +3673,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-01",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-01",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE12R_65710P1000": {
@@ -3695,14 +3695,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-08-10",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE12R_87293Q5000HMS": {
@@ -3719,14 +3719,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-05-25",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE22D_96032R0000": {
@@ -3761,12 +3761,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-01",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-01",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDNB5H38R6450050_96032R0000": {
@@ -3793,12 +3793,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-21",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-22",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNALC4J1XJ5107058_97606F6151": {
@@ -3833,12 +3833,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-01",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-01",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE12R_99310P1400DWR": {
@@ -3855,14 +3855,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-08-18",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPUCDF8R7236144_65710P1000": {
@@ -3923,14 +3923,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-06-19",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE12R_86611J2010": {
@@ -3957,12 +3957,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-29",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-01",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPVCAF3P7211411_99310P1400DWR": {
@@ -3993,12 +3993,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-01",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-01",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE14R_1140412756P": {
@@ -4050,12 +4050,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-22",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-25",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDETCA27N7311423_1898009620": {
@@ -4074,12 +4074,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-21",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-22",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE14R_29110M6200": {
@@ -4135,12 +4135,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-27",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-28",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE14R_54559D1000QQK": {
@@ -4199,12 +4199,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-18",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-19",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE14R_54830AA000": {
@@ -4235,12 +4235,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-03",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE14R_55530AAAA0": {
@@ -4263,12 +4263,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-22",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-25",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDC34LA8R5618926_56400CV500": {
@@ -4291,12 +4291,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-27",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-28",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE14R_56820DO000": {
@@ -4370,14 +4370,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-06-09",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDCP3LE7P5115063_54830AA000": {
@@ -4396,12 +4396,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-25",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-25",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "5XYPKDA53KG606982_81611C5001": {
@@ -4434,14 +4434,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-06-16",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNADN4A39F6529811_865611W110": {
@@ -4530,12 +4530,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-01",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-01",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDNB5K30S6495028_83908R0000": {
@@ -4562,12 +4562,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-27",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-28",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "3KPFT5DE5TE292387_87742GG500BKL": {
@@ -4667,12 +4667,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-18",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-19",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "3KPA25AD7ME404861_58737H8000": {
@@ -4840,12 +4840,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-27",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-28",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE15R_86512P1000": {
@@ -4864,12 +4864,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-26",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-27",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE15R_86812M6500": {
@@ -4892,12 +4892,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-29",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-01",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE15R_87311Q5500": {
@@ -4932,12 +4932,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-05",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-08",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPXDDH9S7204520_91890CH260": {
@@ -4960,12 +4960,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-27",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-28",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE15R_98321DO010QQK": {
@@ -5040,12 +5040,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-02",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-02",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE16R_282402B760": {
@@ -5062,14 +5062,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-06-02",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE16R_58302N9A15": {
@@ -5088,12 +5088,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-27",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-28",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE34D_58511Q4300": {
@@ -5124,12 +5124,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-04",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-05",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE16R_82413GI010": {
@@ -5146,14 +5146,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-06-02",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE16R_85740P1000WK": {
@@ -5172,12 +5172,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-27",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-28",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE16R_86535AO000": {
@@ -5194,14 +5194,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-06-02",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE16R_96611CV600": {
@@ -5224,12 +5224,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-01",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-01",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "3KPFL4A89HE106723_1890206223AS": {
@@ -5248,12 +5248,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-28",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "3KPF44AC2PE594350_282402B760": {
@@ -5272,12 +5272,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-28",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE17R_285102GBB0": {
@@ -5296,12 +5296,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-28",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE17R_29110M6200": {
@@ -5320,12 +5320,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-29",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-01",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDEUCAA4R7538501_54559D1000QQK": {
@@ -5376,12 +5376,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-18",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-19",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE17R_54830P1000": {
@@ -5400,12 +5400,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-28",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-05-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE17R_77111P1000": {
@@ -5446,14 +5446,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-06-15",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDCP3L15R5117510_86535AO000": {
@@ -5472,12 +5472,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-29",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-01",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE17R_86811CV500": {
@@ -5494,14 +5494,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-07-06",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDC4DLC2R5217998_97763CV550": {
@@ -5532,12 +5532,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-03",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNAFX4A63G5587157_86430A7000": {
@@ -5580,12 +5580,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-23",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-24",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDC4DLC4P5105555_86811CV500": {
@@ -5624,12 +5624,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-02",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-02",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDC5DLE6R5186849_86811CV500": {
@@ -5668,12 +5668,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-02",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-02",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE18R_66310P2600": {
@@ -5690,14 +5690,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-06-04",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE18R_86350D9600": {
@@ -5716,12 +5716,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-05-29",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-05",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PE18R_86625P1500": {
@@ -5738,14 +5738,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-06-05",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "3KPFT5DE5TE292387_87741GG500BKL": {
@@ -5817,12 +5817,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-05",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-08",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDADFS56T6066252_97777DO550": {
@@ -5861,12 +5861,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-24",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-25",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDJP3A50H7434501_211112EG01FFF": {
@@ -5889,12 +5889,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-08",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-08",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPUCDF0T7501064_86625P1500": {
@@ -5913,12 +5913,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-02",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-03",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF02R_49501AO000": {
@@ -5937,12 +5937,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-03",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF02R_80000S9511QQK": {
@@ -5969,12 +5969,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-10",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-11",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF02R_86530M7000": {
@@ -6015,12 +6015,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-03",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDADFS56R6047225_97770DO000": {
@@ -6112,12 +6112,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-24",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-25",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDJP3A52J7578346_211012EG03FFFR": {
@@ -6148,12 +6148,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-15",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-24",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDJP3A52J7578346_211112EG01FFF": {
@@ -6172,12 +6172,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-08",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-08",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF03D_54551GI000": {
@@ -6194,14 +6194,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-06-23",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF04R_58738H8000": {
@@ -6261,12 +6261,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-02",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-28",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF04R_81590GG000": {
@@ -6301,12 +6301,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-30",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-02",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "3KPF24ADXME394309_86530M7000": {
@@ -6375,12 +6375,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-29",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF05D_1886709095QQK": {
@@ -6405,14 +6405,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-07-03",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "3KPFT4DE2SE147316_81590GG000": {
@@ -6459,12 +6459,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-08",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-08",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDCB3LC1N5543429_83306G5010EE1": {
@@ -6499,12 +6499,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-24",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-25",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDCC3LDXK5308075_91511G5721": {
@@ -6559,12 +6559,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-29",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-30",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDCR3L17R5128437_25473AO200": {
@@ -6591,12 +6591,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-24",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-25",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF05R_25660CV600": {
@@ -6631,12 +6631,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-24",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-25",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF05R_66321AT000": {
@@ -6708,12 +6708,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-11",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-12",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF05R_841161G000": {
@@ -6730,14 +6730,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-07-07",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "3KPA25AD9PE569640_85823H9000WK": {
@@ -6791,14 +6791,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-07-20",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF05R_86512P1500BKL": {
@@ -6815,14 +6815,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-06-12",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF05R_86524L3000": {
@@ -6845,12 +6845,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-12",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF05R_96032R0000": {
@@ -6904,14 +6904,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-07-14",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDNB5H35R6450040_83908R0000": {
@@ -6946,12 +6946,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-18",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-19",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNADH5B32B6826179_841171G000": {
@@ -6974,12 +6974,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-12",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "5XXG34J20PG172065_863B5L3000": {
@@ -7002,12 +7002,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-15",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPU3DF5T7508088_86512P1500BKL": {
@@ -7030,12 +7030,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-10",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-11",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDCP3LE9R5128741_97762AT000": {
@@ -7074,12 +7074,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-23",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-24",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF07R_1886709095QQK": {
@@ -7096,14 +7096,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-07-03",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF07R_83240P2001": {
@@ -7120,14 +7120,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-09-08",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPUCDF9T7438787_86650P1710BKL": {
@@ -7195,12 +7195,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-25",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-26",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDAFFS53S6059977_98321DO010QQK": {
@@ -7251,12 +7251,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-02",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-03",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDADFS50S6056489_98321DO010QQK": {
@@ -7299,12 +7299,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-02",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-03",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDC34LA4R5621676_1898007348AS": {
@@ -7323,12 +7323,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-12",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDADFS50S6056489_25445DO000": {
@@ -7363,12 +7363,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-29",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDC34LA4R5621676_25660CV600": {
@@ -7399,12 +7399,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-22",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-22",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF09R_283103L100": {
@@ -7427,12 +7427,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-15",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-15",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF09R_51712C1000SL": {
@@ -7451,12 +7451,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-22",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-22",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDRJDJH2S5393005_83240P2001": {
@@ -7491,12 +7491,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-24",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-25",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF09R_83665R0700": {
@@ -7513,14 +7513,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-07-07",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF09R_86530K0BA0": {
@@ -7537,14 +7537,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-06-16",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDADFS50S6056489_976R2DO500": {
@@ -7575,12 +7575,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-24",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-25",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDCR3L13P5054267_97626AO100": {
@@ -7599,12 +7599,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-11",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-12",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDC34LA4R5621676_97626CV300": {
@@ -7639,12 +7639,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-25",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-26",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDADFS50S6056489_97761DO000": {
@@ -7727,12 +7727,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-22",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-23",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDADFS50S6056489_97770DO000": {
@@ -7869,12 +7869,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-25",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-26",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDETCA25P7396751_54559D1000QQK": {
@@ -7905,12 +7905,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-18",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-19",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDADFS55R6049886_84547T4000": {
@@ -7949,12 +7949,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-25",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-26",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDADFS55R6049886_97774DO500": {
@@ -8046,12 +8046,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-25",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-26",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDADFS55R6049886_98321DO010QQK": {
@@ -8094,12 +8094,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-02",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-03",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF11R_54612C1000QQK": {
@@ -8126,12 +8126,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-24",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-25",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF11R_54830J9000": {
@@ -8150,12 +8150,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-23",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-24",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF11R_54830P1000": {
@@ -8178,12 +8178,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-29",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF11R_86510R5300": {
@@ -8200,14 +8200,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-07-07",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDEPCAA8R7470985_54559D1000QQK": {
@@ -8230,12 +8230,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-18",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-19",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "5XYRKDLF2MG072312_86510R5300": {
@@ -8264,14 +8264,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-14",
       "etaDate": "2026-07-15",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-14 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDAFFS54T6071721_98321DO010QQK": {
@@ -8306,12 +8307,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-02",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-03",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF15R_DWH13AP100": {
@@ -8359,12 +8360,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-24",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-25",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF15R_55530AAAA0": {
@@ -8449,12 +8450,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-30",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-02",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNADN4A3XD6259422_866121W011": {
@@ -8573,12 +8574,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-22",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-22",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDADFS5XS6057889_97770DO000": {
@@ -8703,12 +8704,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-02",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-03",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDAFFS51R6047563_98321DO010QQK": {
@@ -8743,12 +8744,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-02",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-03",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "3KPFL4A7XHE105331_29136B0000": {
@@ -8781,14 +8782,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-15",
       "etaDate": "2026-07-16",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-15 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDCC3LG7N5159428_97626K4010": {
@@ -8913,12 +8915,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-29",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPU3DF0R7228460_82413P1000": {
@@ -9048,12 +9050,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-24",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-25",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF22R_82651S9700": {
@@ -9070,14 +9072,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-06-26",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF22R_86591P1000": {
@@ -9094,14 +9096,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-06-26",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF22R_86595P1710": {
@@ -9118,14 +9120,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-06-26",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF22R_86650AO000BKL": {
@@ -9142,14 +9144,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-06-30",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDCP3L12R5084191_86650AO000BKL": {
@@ -9217,12 +9219,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-22",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-22",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDAEFS59R6047409_87610DO500": {
@@ -9284,14 +9286,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-06-30",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPU3DF9R7238288_86591P1000": {
@@ -9314,12 +9316,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-29",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPUCDF9T7492770_86595P1710": {
@@ -9338,12 +9340,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-23",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-24",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF25R_58101J2A00": {
@@ -9702,12 +9704,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-29",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-06-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDJT2A24A7129245_861102K040": {
@@ -9732,14 +9734,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-07-28",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF25R_86310M6500": {
@@ -9809,14 +9811,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-08-05",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPXDDG4T7398608_DWH17AP500": {
@@ -9862,14 +9864,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-07-03",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "3KPFT4DE3SE172452_81590GG000": {
@@ -9888,12 +9890,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-06-30",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-02",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF27R_86530AO070AHV": {
@@ -9910,14 +9912,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-07-21",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDCP3L15T5146514_86650AO000BKL": {
@@ -10164,14 +10166,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-07-07",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDCE3LG5K5022087_366400E070": {
@@ -10225,14 +10227,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-08-04",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDNB5H38R6371591_85395R0000": {
@@ -10253,14 +10255,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-07-30",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF28R_86314AT000": {
@@ -10347,14 +10349,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-07-28",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF29R_85750P4600": {
@@ -10371,14 +10373,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-09-28",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDRMDJH8S5302875_86636P2510": {
@@ -10409,12 +10411,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-27",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-27",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF29R_86811M6500": {
@@ -10456,14 +10458,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-07-07",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF29R_92201R0500": {
@@ -10480,14 +10482,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-07-10",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PF29R_9999713UM01": {
@@ -10504,14 +10506,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-09-03",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG01R_DWH13AP100": {
@@ -10536,14 +10538,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-15",
       "etaDate": "2026-07-16",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-15 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG01R_54830H8000": {
@@ -10564,14 +10567,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-08",
       "etaDate": "2026-07-09",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-08 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG01R_86314AT000": {
@@ -10588,14 +10592,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-06",
       "etaDate": "2026-07-06",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-06 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG01R_86316H9000": {
@@ -10620,14 +10625,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-16",
       "etaDate": "2026-07-17",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-16 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG01R_86317G5000": {
@@ -10652,14 +10658,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-09",
       "etaDate": "2026-07-10",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-09 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG01R_86515CV010": {
@@ -10676,14 +10683,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-06",
       "etaDate": "2026-07-06",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-06 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG01D_86637P2500": {
@@ -10700,14 +10708,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-07",
       "etaDate": "2026-07-08",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-07 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDCR3L16R5117462_91450AO010": {
@@ -10734,12 +10743,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-22",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-23",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPUCAF2P7081009_97777N9700": {
@@ -10764,14 +10773,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-14",
       "etaDate": "2026-07-17",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP3",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-14 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDRMDJH9S5359909_85750P4600": {
@@ -10802,12 +10812,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-30",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-31",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNAF55AC5R5198573_86812M6500": {
@@ -10824,14 +10834,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-07",
       "etaDate": "2026-07-08",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-07 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDNC5K38S6548295_92201R0500": {
@@ -10856,14 +10867,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-13",
       "etaDate": "2026-07-15",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-13 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDCP3L14R5120821_97777AO010": {
@@ -10890,12 +10902,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-08-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG07D_DWH15AP000": {
@@ -10928,12 +10940,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-23",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-22",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG04R_XAH68AK300": {
@@ -10972,14 +10984,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-09",
       "etaDate": "2026-07-10",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-09 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG05R_251003CAC0": {
@@ -10996,14 +11009,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-09",
       "etaDate": "2026-07-10",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-09 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG04R_366400E070": {
@@ -11020,14 +11034,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-13",
       "etaDate": "2026-07-13",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-13 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG04R_54830P1000": {
@@ -11048,14 +11063,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-16",
       "etaDate": "2026-07-17",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-16 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG04R_56820BE000": {
@@ -11076,14 +11092,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-15",
       "etaDate": "2026-07-16",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-15 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "5XYP5DGC5PG342314_77004S9011": {
@@ -11112,14 +11129,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-15",
       "etaDate": "2026-07-16",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-15 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG04R_86110H9630": {
@@ -11136,14 +11154,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-07-24",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG05R_865231U510": {
@@ -11160,14 +11178,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-07-21",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG05R_86637P2500": {
@@ -11188,14 +11206,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-17",
       "etaDate": "2026-07-20",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-17 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "3KPFT5DE8TE337418_86650GGFF0": {
@@ -11220,14 +11239,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-15",
       "etaDate": "2026-07-16",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-15 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "3KPFT5DE2TE271111_86650GGFF0": {
@@ -11262,12 +11282,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-22",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-23",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "3KPFT5DE8TE337418_86821GG500": {
@@ -11306,12 +11326,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-28",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "3KPFT5DE2TE292525_87742GG500BKL": {
@@ -11346,12 +11366,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-28",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG05R_89389R0980QQK": {
@@ -11382,12 +11402,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-08-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDNC5H36N6060779_89389R0980QQK": {
@@ -11418,12 +11438,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-08-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG05R_89389R0990QQK": {
@@ -11454,12 +11474,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-27",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-27",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDNC5H36N6060779_89389R0990QQK": {
@@ -11490,12 +11510,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-27",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-27",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDEUCAA1S7726530_96641Q5300": {
@@ -11518,12 +11538,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-23",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-23",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG05R_976W6CV550": {
@@ -11582,14 +11602,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-30",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
+      "dateShipped": "2026-07-14",
       "etaDate": "2026-07-31",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP3",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-14 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG04R_97690D2000": {
@@ -11606,14 +11627,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-10",
       "etaDate": "2026-07-13",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-10 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG05R_99310L1810AGT": {
@@ -11630,14 +11652,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-07-14",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDCC3LG5L5056974_54630Q4000": {
@@ -11664,12 +11686,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-08-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "5XYKTDA79FG571699_865231U510": {
@@ -11690,14 +11712,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-09-11",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG06R_211113CK10QQK": {
@@ -11732,12 +11754,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-20",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-20",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG06R_452264C000": {
@@ -11754,14 +11776,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-13",
       "etaDate": "2026-07-13",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-13 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG06R_54625F2000": {
@@ -11778,14 +11801,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-13",
       "etaDate": "2026-07-13",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-13 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG06R_81280GG000": {
@@ -11828,12 +11852,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-29",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-30",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG06R_99310L1810EB": {
@@ -11850,14 +11874,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-09-11",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG06R_25380P2040": {
@@ -11874,14 +11898,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-08-10",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG06R_97805K4500": {
@@ -11898,14 +11922,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-16",
       "etaDate": "2026-07-17",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-16 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "5XYRHDJF1SG362961_99310L1810EB": {
@@ -11936,12 +11961,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-24",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-27",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG08R_251002M801": {
@@ -11958,14 +11983,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-15",
       "etaDate": "2026-07-16",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-15 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "5XYRHDJF1SG362961_25380P2040": {
@@ -11982,14 +12008,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-15",
       "etaDate": "2026-07-16",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-15 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG08R_29110GG000": {
@@ -12006,14 +12033,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-15",
       "etaDate": "2026-07-16",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-15 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDCR3L10S5130942_49501AO000": {
@@ -12036,12 +12064,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-23",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-24",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG08R_51712BE000": {
@@ -12058,14 +12086,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-15",
       "etaDate": "2026-07-16",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-15 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG08R_54530BE000": {
@@ -12096,12 +12125,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-08-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "3KPFT4DE7SE076968_82540GG000": {
@@ -12118,14 +12147,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-15",
       "etaDate": "2026-07-16",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-15 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "3KPFT5DE2TE271111_86310GG100": {
@@ -12182,12 +12212,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-08-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG08R_87850BS000": {
@@ -12206,12 +12236,13 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "final": false,
       "dateShipped": "2026-07-14",
       "etaDate": "2026-10-13",
+      "pdc": "MP1",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG08R_97606K4500": {
@@ -12228,14 +12259,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-16",
       "etaDate": "2026-07-17",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-16 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG08R_97762C6801": {
@@ -12252,14 +12284,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-08-11",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "5XYRGDLC7MG050054_97927P2000": {
@@ -12286,12 +12318,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-08-05",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG09R_976A3H9000": {
@@ -12308,14 +12340,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-21",
       "etaDate": "2026-07-22",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-21 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG17D_97924P2000": {
@@ -12332,14 +12365,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-16",
       "etaDate": "2026-07-17",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-16 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG10R_XAH68AK300": {
@@ -12400,14 +12434,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-08-24",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG10R_211112GK70QQK": {
@@ -12438,12 +12472,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-23",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-24",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG10R_65475DO000": {
@@ -12460,14 +12494,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-08-24",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG10R_83260C5000": {
@@ -12484,14 +12518,15 @@
       }
     ],
     "shippingStatus": {
-      "code": "transit",
-      "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "code": "delivered",
+      "label": "Livree (facture confirmee)",
+      "final": true,
       "dateShipped": "2026-07-21",
       "etaDate": "2026-07-22",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "pdc": "MP1",
+      "note": "Cette piece a ete facturee par Mobis le 2026-07-21 et devrait deja etre arrivee a la concession. Si vous ne l'avez pas recue, contactez-nous.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG10R_86990CVAA0": {
@@ -12508,14 +12543,14 @@
       }
     ],
     "shippingStatus": {
-      "code": "canceled",
-      "label": "Commande annulee — contactez le departement des pieces",
-      "pdc": "MP1",
+      "code": "transit",
+      "label": "En transit vers Complexe Kia",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-07-27",
-      "note": "",
+      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG10R_9999711003": {
@@ -12548,12 +12583,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-27",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-08-05",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG10R_64900P4510": {
@@ -12584,12 +12619,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-28",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-29",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDAFFS57T6071552_65475DO000": {
@@ -12656,12 +12691,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-22",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-23",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDC4DLC3R5229545_86990CVAA0": {
@@ -12680,12 +12715,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-23",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-24",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDC4DLC2R5229150_97690CV210": {
@@ -12778,12 +12813,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-30",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-31",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDC4DLC2R5229150_97775CV550": {
@@ -12814,12 +12849,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-30",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-31",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDEP2AA1T7938847_86260Q5100": {
@@ -12854,12 +12889,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-08-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "5XYP5DGC2SG614391_86510S9510": {
@@ -12926,12 +12961,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-08-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDNB5K33T6578244_89389R0990QQK": {
@@ -12950,12 +12985,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-27",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-27",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG14R_284912M800": {
@@ -12974,12 +13009,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-23",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-24",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG14R_56500N9100": {
@@ -13010,12 +13045,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-31",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-08-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG30D_56500N9100": {
@@ -13050,12 +13085,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-31",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-08-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDCE3LG7N5146088_97761K4560": {
@@ -13104,12 +13139,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-31",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-08-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNADM5A30H6819429_866121W710": {
@@ -13158,12 +13193,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-29",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-30",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDAFFS57T6071552_97570DO000": {
@@ -13380,12 +13415,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-08-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDCT3L1XS5133624_97728BF000": {
@@ -13440,12 +13475,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-31",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-08-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "KNDPXCDF9T7438439_86510P1720": {
@@ -13478,12 +13513,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-30",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-31",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG16R_97936DO000": {
@@ -13516,12 +13551,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-08-07",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG22R_97606AT000": {
@@ -13540,12 +13575,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-30",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-31",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG22R_97606N9610": {
@@ -13564,12 +13599,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
-      "dateShipped": "2026-07-30",
+      "final": false,
+      "dateShipped": "",
       "etaDate": "2026-07-31",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "61153PG23R_452264C000": {
@@ -13583,6 +13618,10 @@
       {
         "date": "2026-07-31",
         "eta": "2026-09-01"
+      },
+      {
+        "date": "2026-08-04",
+        "eta": "2026-09-14"
       }
     ]
   },
@@ -13602,12 +13641,12 @@
     "shippingStatus": {
       "code": "transit",
       "label": "En transit vers Complexe Kia",
-      "pdc": "MP1",
+      "final": false,
       "dateShipped": "",
       "etaDate": "2026-08-04",
       "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
-      "updatedAt": "2026-08-03"
+      "updatedAt": "2026-08-04"
     }
   },
   "3KPA25AD4PE578228_91300H9030": {
@@ -13621,6 +13660,188 @@
       {
         "date": "2026-08-03",
         "eta": "2026-09-15"
+      }
+    ]
+  },
+  "61153PH01R_215902S000": {
+    "partNo": "215902S000",
+    "partName": "SENSOR-OIL LEVEL",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0803",
+    "orderDate": "2026-08-03",
+    "history": [
+      {
+        "date": "2026-08-04",
+        "eta": "2026-08-25"
+      }
+    ]
+  },
+  "61153PH01R_28710R0300": {
+    "partNo": "28710R0300",
+    "partName": "MUFFLER ASSY-REAR",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0803",
+    "orderDate": "2026-08-03",
+    "history": [
+      {
+        "date": "2026-08-04",
+        "eta": "2026-11-02"
+      }
+    ]
+  },
+  "61153PH01R_54650AO100": {
+    "partNo": "54650AO100",
+    "partName": "STRUT ASSY-FR,LH",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0803",
+    "orderDate": "2026-08-03",
+    "history": [
+      {
+        "date": "2026-08-04",
+        "eta": "2026-08-14"
+      }
+    ]
+  },
+  "61153PH01R_56500N9100": {
+    "partNo": "56500N9100",
+    "partName": "GEAR ASSY-STEERING",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0803",
+    "orderDate": "2026-08-03",
+    "history": [
+      {
+        "date": "2026-08-04",
+        "eta": "2026-08-28"
+      }
+    ]
+  },
+  "61153PH01R_86512GG000BKL": {
+    "partNo": "86512GG000BKL",
+    "partName": "COVER-FR BUMPER,LWR",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0803",
+    "orderDate": "2026-08-03",
+    "history": [
+      {
+        "date": "2026-08-04",
+        "eta": "2026-09-22"
+      }
+    ]
+  },
+  "KNDEUCAA7R7532496_88160Q5130BQ6": {
+    "partNo": "88160Q5130BQ6",
+    "partName": "COVERING ASSY-FR CUSH,LH",
+    "vin": "KNDEUCAA7R7532496",
+    "roNumber": "FC87451",
+    "dealerOrder": "FC87451",
+    "orderDate": "2026-08-03",
+    "history": [
+      {
+        "date": "2026-08-04",
+        "eta": "2026-08-14"
+      }
+    ]
+  },
+  "61153PH01R_92406R0500": {
+    "partNo": "92406R0500",
+    "partName": "LAMP ASSY-BACK UP,RH",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0803",
+    "orderDate": "2026-08-03",
+    "history": [
+      {
+        "date": "2026-08-04",
+        "eta": "2026-09-14"
+      }
+    ]
+  },
+  "KNDC4DLC5R5622429_976W6CV550": {
+    "partNo": "976W6CV550",
+    "partName": "CONDENSER ASSY-WATER",
+    "vin": "KNDC4DLC5R5622429",
+    "roNumber": "",
+    "dealerOrder": "BR12931",
+    "orderDate": "2026-08-03",
+    "history": [
+      {
+        "date": "2026-08-04",
+        "eta": "2026-08-11"
+      }
+    ]
+  },
+  "KNDC4DLC5R5622429_97690CV730": {
+    "partNo": "97690CV730",
+    "partName": "O-RING",
+    "vin": "KNDC4DLC5R5622429",
+    "roNumber": "",
+    "dealerOrder": "BR12931",
+    "orderDate": "2026-08-03",
+    "history": [
+      {
+        "date": "2026-08-04",
+        "eta": "2026-08-27"
+      }
+    ]
+  },
+  "KNDPVCDF5S7393343_97701N9600": {
+    "partNo": "97701N9600",
+    "partName": "COMPRESSOR ASSY",
+    "vin": "KNDPVCDF5S7393343",
+    "roNumber": "",
+    "dealerOrder": "BR12915",
+    "orderDate": "2026-08-03",
+    "history": [
+      {
+        "date": "2026-08-04",
+        "eta": "2026-09-09"
+      }
+    ]
+  },
+  "KNDC4DLC5R5622429_97775CV550": {
+    "partNo": "97775CV550",
+    "partName": "TUBE ASSY-SUCTION & LIQUID",
+    "vin": "KNDC4DLC5R5622429",
+    "roNumber": "",
+    "dealerOrder": "BR12931",
+    "orderDate": "2026-08-03",
+    "history": [
+      {
+        "date": "2026-08-04",
+        "eta": "2026-08-14"
+      }
+    ]
+  },
+  "61153PH01R_99310L1820AAL": {
+    "partNo": "99310L1820AAL",
+    "partName": "ULTRASONIC SENSOR ASSY-P.A.S",
+    "vin": "",
+    "roNumber": "",
+    "dealerOrder": "S0803",
+    "orderDate": "2026-08-03",
+    "history": [
+      {
+        "date": "2026-08-04",
+        "eta": "2026-08-28"
+      }
+    ]
+  },
+  "KNDNB5K37S6485855_99310L1820AAL": {
+    "partNo": "99310L1820AAL",
+    "partName": "ULTRASONIC SENSOR ASSY-P.A.S",
+    "vin": "KNDNB5K37S6485855",
+    "roNumber": "",
+    "dealerOrder": "B12920",
+    "orderDate": "2026-08-03",
+    "history": [
+      {
+        "date": "2026-08-04",
+        "eta": "2026-08-28"
       }
     ]
   }
