@@ -14172,11 +14172,11 @@
     ],
     "shippingStatus": {
       "code": "transit",
-      "label": "En transit vers Complexe Kia",
+      "label": "En transit — transferee d'un autre concessionnaire",
       "pdc": "MP1",
       "dateShipped": "2026-08-05",
       "etaDate": "KNDPVCDF5S7393343",
-      "note": "Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
+      "note": "Cette piece etait en rupture de stock chez Mobis. Un autre concessionnaire qui l'avait en inventaire a accepte de nous la liberer (transfert entre concessionnaires). Vous recevrez un courriel du systeme Spoke vous avisant que votre livraison est en route le jour de la reception.",
       "schemaVersion": 6,
       "updatedAt": "2026-08-20"
     }
